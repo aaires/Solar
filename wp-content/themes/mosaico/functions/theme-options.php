@@ -147,32 +147,32 @@ $options[] = array( "name" => "General Text Font Style",
 $options[] = array( "name" =>  "Body Background Color",
 					"desc" => "Pick a custom color for background color of the theme e.g. #32333d",
 					"id" => "themnific_body_color",
-					"std" => "#fff",
+					/*"std" => "#fff",*/
 					"type" => "color");
 
 					
 $options[] = array( "name" =>  "Link Color",
 					"desc" => "Pick a custom color for links. e.g. #585a66",
 					"id" => "themnific_link_color",
-					"std" => "#525252",
+				/*	"std" => "#525252",*/
 					"type" => "color");     
 
 $options[] = array( "name" =>  "Link Hover Color & Hover Border Color",
 					"desc" => "Pick a custom color for links (hover). #73b8f5",
 					"id" => "themnific_link_hover_color",
-					"std" => "#10AFCC",
+				/*	"std" => "#10AFCC",*/
 					"type" => "color"); 
 					
 $options[] = array( "name" =>  "Text Shadows",
 					"desc" => "Pick a custom color for text shadows. e.g. #fff",
 					"id" => "themnific_shadows_color",
-					"std" => "#e0e0e0",
+			/*		"std" => "#e0e0e0",*/
 					"type" => "color");   
 					
 $options[] = array( "name" =>  "Borders",
 					"desc" => "Pick a custom color for text shadows. e.g. #fff",
 					"id" => "themnific_border_color",
-					"std" => "#d5d5d5",
+				/*	"std" => "#d5d5d5",*/
 					"type" => "color"); 
 				
 $options[] = array( "name" => "Background overlay",
@@ -448,11 +448,13 @@ $options[] = array("name" => "About Us - Info text",
 $options[] = array( "name" => "Social Networks",
     				"type" => "heading");
 
-$options[] = array( "name" => "Rss Feed",
-					"desc" => "",
-					"id" => $shortname."_socials_rss",
-					"std" => "",
-					"type" => "text");
+
+$options[] = array( "name" => "Twitter",
+		"desc" => "",
+		"id" => $shortname."_socials_tw",
+		"std" => "",
+		"type" => "text");
+
 
 $options[] = array( "name" => "Facebook",
 					"desc" => "",
@@ -460,12 +462,20 @@ $options[] = array( "name" => "Facebook",
 					"std" => "",
 					"type" => "text");
 
-$options[] = array( "name" => "Twitter",
-					"desc" => "",
-					"id" => $shortname."_socials_tw",
-					"std" => "",
-					"type" => "text");
-					
+$options[] = array( "name" => "TripAdvisor",
+		"desc" => "",
+		"id" => $shortname."_tripadvisor",
+		"std" => "",
+		"type" => "text");
+
+
+$options[] = array( "name" => "Rss Feed",
+		"desc" => "",
+		"id" => $shortname."_socials_rss",
+		"std" => "",
+		"type" => "text");
+
+
 $options[] = array( "name" => "Google+",
 					"desc" => "",
 					"id" => $shortname."_socials_googleplus",
@@ -496,11 +506,6 @@ $options[] = array( "name" => "Tumblr",
 					"std" => "",
 					"type" => "text");
 
-$options[] = array( "name" => "Deviant Art",
-					"desc" => "",
-					"id" => $shortname."_socials_de",
-					"std" => "",
-					"type" => "text");
 
 $options[] = array( "name" => "Flickr",
 					"desc" => "",

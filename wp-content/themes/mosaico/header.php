@@ -51,6 +51,30 @@
 
     <div id="header" class="container body3 raster bottomzero">
     
+    
+    
+    
+    
+    
+        <div class="row">	
+             <div class="eightcol first">
+    
+                    <h1 class="tagline"><?php echo get_option('themnific_tagline');?></h1>
+
+        	</div>
+            
+            <div class="fourcol"> 
+            
+    			<?php get_template_part('/includes/uni-social');?>
+                
+    		</div>
+    
+    	</div>
+    
+    
+    
+    
+    
         <!-- Logo Section -->
         <div class="row">
   
