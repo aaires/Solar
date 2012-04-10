@@ -3,7 +3,7 @@
 /*-------------------------------------------------------------------------------------------*/
 /* 1. Info Boxes */
 /*-------------------------------------------------------------------------------------------*/
-p.tmnf-sc-box, div.tmnf-sc-box {margin:1em 0 1.5em 0; padding:9px 10px 9px 50px; border-width:1px 0 1px 0; border-style:solid;color:#555;text-shadow:none;}
+p.tmnf-sc-box, div.tmnf-sc-box {margin:1em 0 1.5em 0; padding:9px 10px 9px 50px; border-width:1px 0 1px 0; border-style:solid;color:#555;}
 .tmnf-sc-box.none {border-width:0;}
 .tmnf-sc-box.full {border-width:1px;}
 .tmnf-sc-box.medium {padding:18px 20px 18px 50px; font-size:1.1em;}
@@ -30,7 +30,6 @@ a.tmnf-sc-button {
 	border-bottom-color: #20559a;
 	color: white !important;
 	text-align: center;
-	text-shadow: 0 -1px 0 hsla(0,0%,0%,.3);
 	text-decoration: none !important;
 	
 	/*Border radius*/
@@ -102,7 +101,7 @@ a.tmnf-sc-button.active  {
 				0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
 }
 
-a.tmnf-sc-button.dark span { color:#555; text-shadow:0 1px #fff;}
+a.tmnf-sc-button.dark span { color:#555;}
 a.tmnf-sc-button.custom:hover { opacity:0.85; }
 
 a.tmnf-sc-button span { line-height:1.2em; min-height: 16px; }
@@ -191,7 +190,6 @@ a.tmnf-sc-button.pink:hover {
 
 a.tmnf-sc-button.silver { 
 	color: #444 !important;
-	text-shadow:0 1px #fff;
 	border-color: #bbb; border-bottom-color: #999; background-color: #d8d8d8;
 	background: -webkit-gradient(linear,left top,left bottom,color-stop(.2, #e9e9e9),color-stop(1, #ccc));
 	background: -moz-linear-gradient(center top,#e9e9e9 20%,#ccc 100%);
@@ -319,7 +317,6 @@ a.tmnf-sc-button.silver:hover {
 	border-bottom-color: #20559a;
 	color: white !important;
 	text-align: center;
-	text-shadow: 0 -1px 0 hsla(0,0%,0%,.3);
 	text-decoration: none;
 	font-style:normal;
 	font-weight:bold;
@@ -331,7 +328,6 @@ a.tmnf-sc-button.silver:hover {
 	
 	/*Background*/
 	color: #444 !important;
-	text-shadow:0 1px #fff;
 	border-color: #bbb; border-bottom-color: #999; background-color: #d8d8d8;
 	background: -webkit-gradient(linear,left top,left bottom,color-stop(.2, #e9e9e9),color-stop(1, #ccc));
 	background: -moz-linear-gradient(center top,#e9e9e9 20%,#ccc 100%);
@@ -456,7 +452,7 @@ span.dropcap { font-size: 350%; font-weight: bold; float: left; position: relati
 /* 16. Highlight and Abbreviation */
 /*-------------------------------------------------------------------------------------------*/
 
-span.shortcode-highlight { background: #6DAFE9; color:#fff; padding: 3px 3px 1px; text-shadow:none; }
+span.shortcode-highlight { background: #6DAFE9; color:#fff; padding: 3px 3px 1px; }
 
 abbr { border-bottom: 1px dashed #999999; cursor: help; }
 

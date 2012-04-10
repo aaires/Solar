@@ -235,6 +235,8 @@ $options[] = array( "name" =>  "Secondary Text Shadows",
 	
 
 // other styling	
+
+/*
 	
 $options[] = array( "name" => "Other Styling - Elements & Alternatives",
 					"type" => "heading");				     
@@ -272,7 +274,7 @@ $options[] = array( "name" =>  "Alternative Text Shadows",
 					"std" => "#f9f9f9",
 					"type" => "color");  
 					
-
+*/
 // typography
 
 $options[] = array( "name" => "Headings Typography",

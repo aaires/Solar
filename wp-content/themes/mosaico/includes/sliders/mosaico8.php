@@ -23,7 +23,7 @@
         
         <div class="inpost">
             <h2 class="mosaic-small"><a href="<?php the_permalink() ?>"><?php echo short_title('...', 10); ?></a></h2>
-            <p><?php echo pov_excerpt( get_the_excerpt(), '35'); ?></p>
+            <p><?php echo pov_excerpt( get_the_excerpt(), '150'); ?></p>
         </div>
                     
     </div>
@@ -46,6 +46,7 @@
         
         <div class="inpost">
             <h2 class="mosaic-small"><a href="<?php the_permalink() ?>"><?php echo short_title('...', 5); ?></a></h2>
+            <p><?php echo pov_excerpt( get_the_excerpt(), '150'); ?></p>
         </div>
                     
     </div>
@@ -87,7 +88,7 @@
         
         <div class="inpost">
             <h2 class="mosaic-small"><a href="<?php the_permalink() ?>"><?php echo short_title('...', 10); ?></a></h2>
-            <p><?php echo pov_excerpt( get_the_excerpt(), '35'); ?></p>
+            <p><?php echo pov_excerpt( get_the_excerpt(), '150'); ?></p>
         </div>
                     
     </div>
@@ -109,6 +110,7 @@ while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $pos
         
         <div class="inpost">
             <h2 class="mosaic-small"><a href="<?php the_permalink() ?>"><?php echo short_title('...', 5); ?></a></h2>
+            <p><?php echo pov_excerpt( get_the_excerpt(), '150'); ?></p>
         </div>
                     
     </div>
@@ -129,6 +131,7 @@ while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $pos
         
         <div class="inpost">
             <h2 class="mosaic-small"><a href="<?php the_permalink() ?>"><?php echo short_title('...', 5); ?></a></h2>
+            <p><?php echo pov_excerpt( get_the_excerpt(), '150'); ?></p>
         </div>
                     
     </div>
@@ -170,7 +173,7 @@ while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $pos
         
         <div class="inpost">
             <h2 class="mosaic-small"><a href="<?php the_permalink() ?>"><?php echo short_title('...', 5); ?></a></h2>
-            <p><?php echo pov_excerpt( get_the_excerpt(), '40'); ?></p>
+            <p><?php echo pov_excerpt( get_the_excerpt(), '150'); ?></p>
         </div>
                     
     </div>

@@ -46,31 +46,16 @@
 
      
 <body <?php body_class(); ?>>
-
-	<div class="boorder"></div>
     
-    
-    <div id="topnav" class="container">
-
-    <div class="row">
-
-        <div class="twelvecol">
-                
-            <div id="navigation">
-            
-                    <?php get_template_part('/includes/uni-navigation');?>
-                    
-            </div><!--end #navigation-->	
-    
-        </div>
-    
-    </div>
-    
-	</div>    
     
 
     <div id="header" class="container body3 raster bottomzero">
     
+
+
+    
+
+        
         <div class="row">
   
             
@@ -89,7 +74,20 @@
             </div>
     
             
-    <div style="clear: both;"></div> 
+    <div style="clear: both;"></div>
+
+
+    <div class="row">
+
+        <div class="twelvecol">
+                
+            <div id="navigation">
+            
+                    <?php get_template_part('/includes/uni-navigation');?>
+                    
+            </div><!--end #navigation-->    
+    
+        </div> 
         
             <div class="twelvecol">
                     
