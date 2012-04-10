@@ -1,3 +1,10 @@
+
+ 
+ 
+ 
+ 
+ 
+ 
  <!--     <div class="container body3 raster-bottom"> 
     
         <div class="row">	
@@ -36,6 +43,25 @@
    
     <div id="footer">
     <div class="container">    
+    
+    
+     
+  <div id="homebottomrow" class="row">
+        
+       <div class="twelvecol">
+       
+                    
+           <?php if(is_home()) 
+           {
+    			
+					echo get_template_part('/includes/sliders/mosaico8bottom' );;	
+											
+				} 
+			?>
+                   
+       	</div>
+    </div>
+    
         
 
         <?php if (get_option('themnific_dis_foowidgets') <> "true") { ?>
