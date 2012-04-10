@@ -194,7 +194,11 @@ img {
 .mosaicitem45,		
 .mosaicitem46,
 .mosaicitem47,
-.mosaicitem48{ 
+.mosaicitem48,
+.mosaicitembottom41,
+.mosaicitembottom42,
+.mosaicitembottom43,
+.mosaicitembottom44{ 
 	position:relative !important; 
 	overflow:hidden; 
 	background:#fff; 
@@ -255,7 +259,11 @@ img {
 .mosaicitem45 img,
 .mosaicitem46 img,
 .mosaicitem47 img,
-.mosaicitem48 img,{
+.mosaicitem48 img,
+.mosaicitembottom41,
+.mosaicitembottom42,
+.mosaicitembottom43,
+.mosaicitembottom44{
 	width:100% !important; 
 } 
 
@@ -446,7 +454,11 @@ ul#social-menu,ul#social-menu li {
 	.mosaicitem45,
 	.mosaicitem46,
 	.mosaicitem47,
-	.mosaicitem48{ 
+	.mosaicitem48,
+	.mosaicitembottom41,
+	.mosaicitembottom42,
+	.mosaicitembottom43,
+	.mosaicitembottom44{ 
 		position:relative !important; 
 		overflow:hidden; 
 		background:#fff; 
@@ -501,7 +513,11 @@ ul#social-menu,ul#social-menu li {
 	.mosaicitem45,
 	.mosaicitem46,
 	.mosaicitem47,
-	.mosaicitem48{ 
+	.mosaicitem48,
+	.mosaicitembottom41,
+	.mosaicitembottom42,
+	.mosaicitembottom43,
+	.mosaicitembottom44{ 
 	
 		height:80px; 
 	
@@ -550,7 +566,11 @@ ul.medpost li img {
 	.mosaicitem45,
 	.mosaicitem46,
 	.mosaicitem47,
-	.mosaicitem48{ 
+	.mosaicitem48,
+	.mosaicitembottom41,
+	.mosaicitembottom42,
+	.mosaicitembottom43,
+	.mosaicitembottom44{ 
 	
 		position:relative !important; 
 		overflow:hidden; 

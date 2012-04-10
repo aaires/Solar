@@ -378,6 +378,22 @@ $options[] = array( "name" => "Mosaico 8",
 					"type" => "select",
 					"options" => $themnific_pages);
 
+
+$options[] = array( "name" => "Mosaic 9",
+		"desc" => "Select corresponding category. Tipically used for Special Offers",
+		"id" => $shortname."_mosaicitem9",
+		"std" => "Select a category:",
+		"type" => "select",
+		"options" => $themnific_categories);
+
+$options[] = array( "name" => "Mosaic 10",
+		"desc" => "Select corresponding category. Tipically used for News",
+		"id" => $shortname."_mosaicitem10",
+		"std" => "Select a category:",
+		"type" => "select",
+		"options" => $themnific_categories);
+
+
 // magazine sliders
 
 $options[] = array( "name" => "Featured Section",
