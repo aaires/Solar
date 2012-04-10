@@ -33,7 +33,7 @@ $('ul.bigtips li,ul.smalltips li').hover(function() {
 });
 
 
-$('.mosaicitem1,.mosaicitem2,.mosaicitem3,.mosaicitem4,.mosaicitem5,.mosaicitem6,.mosaicitem7,.mosaicitem8,.mosaicitem9,.mosaicitem10,.mosaicitem11,.mosaicitem12,.mosaicitem13,.mosaicitem14,.mosaicitem15,.mosaicitem16,.mosaicitem17,.mosaicitem18,.mosaicitem19,.mosaicitem20,.mosaicitem21,.mosaicitem41,.mosaicitem42,.mosaicitem43,.mosaicitem44,.mosaicitem45,.mosaicitem46,.mosaicitem47,.mosaicitem48').hoverIntent(function() {
+$('.mosaicitem1,.mosaicitem2,.mosaicitem3,.mosaicitem4,.mosaicitem5,.mosaicitem6,.mosaicitem7,.mosaicitem8,.mosaicitem9,.mosaicitem10,.mosaicitem11,.mosaicitem12,.mosaicitem13,.mosaicitem14,.mosaicitem15,.mosaicitem16,.mosaicitem17,.mosaicitem18,.mosaicitem19,.mosaicitem20,.mosaicitem21,.mosaicitem41,.mosaicitem42,.mosaicitem43,.mosaicitem44,.mosaicitem45,.mosaicitem46,.mosaicitem47,.mosaicitem48,.mosaicitembottom41,.mosaicitembottom42,.mosaicitembottom43,.mosaicitembottom44').hoverIntent(function() {
 	$(this).css({});
 	$(this).find('.folioinfo')
 		.animate({
@@ -56,6 +56,31 @@ $('.mosaicitem1,.mosaicitem2,.mosaicitem3,.mosaicitem4,.mosaicitem5,.mosaicitem6
 		}, 400); 
 	
 });
+
+$('.mosaicitem1,.mosaicitem2,.mosaicitem3,.mosaicitem4,.mosaicitem5,.mosaicitem6,.mosaicitem7,.mosaicitem8,.mosaicitem9,.mosaicitem10,.mosaicitem11,.mosaicitem12,.mosaicitem13,.mosaicitem14,.mosaicitem15,.mosaicitem16,.mosaicitem17,.mosaicitem18,.mosaicitem19,.mosaicitem20,.mosaicitem21,.mosaicitem41,.mosaicitem42,.mosaicitem43,.mosaicitem44,.mosaicitem45,.mosaicitem46,.mosaicitem47,.mosaicitem48,.mosaicitembottom41,.mosaicitembottom42,.mosaicitembottom43,.mosaicitembottom44').hoverIntent(function() {
+	$(this).css({});
+	$(this).find('.inpost')
+		.animate({
+			opacity: '1',	
+		}, 400); 
+	$(this).find('img')
+		.animate({
+			opacity: '0.1', 	
+		}, 400); 
+
+	} , function() {
+	$(this).css({}); 
+	$(this).find('.inpost')
+		.animate({
+			opacity: '0',
+		}, 800);
+	$(this).find('img')
+		.animate({
+			opacity: '1', 	
+		}, 400); 
+	
+});
+
 
 
 /* end line posts hover */

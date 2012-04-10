@@ -1374,7 +1374,11 @@ h2.mosaic-small p{
 .mosaicitem45,
 .mosaicitem46,
 .mosaicitem47,
-.mosaicitem48{
+.mosaicitem48,
+.mosaicitembottom41,
+.mosaicitembottom42,
+.mosaicitembottom43,
+.mosaicitembottom44{
 position:absolute;
 overflow:hidden;
 background:#fff;
@@ -1424,10 +1428,14 @@ overflow:hidden;
 .mosaicitem45 img,
 .mosaicitem46 img,
 .mosaicitem47 img,
-.mosaicitem48 img,{
-position:relative;
+.mosaicitem48 img,
+.mosaicitembottom41,
+.mosaicitembottom42,
+.mosaicitembottom43,
+.mosaicitembottom44{
+/*position:relative;
 z-index:9;
-padding:2px
+padding:2px*/
 }
 
 .mosaicintro .inpost,
@@ -1466,7 +1474,20 @@ top:0;
 left:0;
 z-index:8;
 padding:10px 20px;
+opacity:0;
 }
+
+.mosaicitembottom41,
+.mosaicitembottom42,
+.mosaicitembottom43,
+.mosaicitembottom44{
+position:absolute;
+top:0;
+left:0;
+z-index:8;
+}
+
+
 
 .mosaicitem1{
 width:240px;
@@ -1651,6 +1672,34 @@ left:480px;
 width:240px;
 height:240px;
 top:240px;
+left:720px;
+}
+
+.mosaicitembottom41{
+	width:240px;
+	height:129px;
+	top:0px;
+	left:0px;
+}
+
+.mosaicitembottom42{
+width:240px;
+height:129px;
+top:0px;
+left:240px;
+}
+
+.mosaicitembottom43{
+width:240px;
+height:129px;
+top:0px;
+left:480px;
+}
+
+.mosaicitembottom44{
+width:240px;
+height:129px;
+top:0px;
 left:720px;
 }
 

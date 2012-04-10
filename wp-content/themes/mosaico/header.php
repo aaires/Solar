@@ -51,11 +51,7 @@
 
     <div id="header" class="container body3 raster bottomzero">
     
-
-
-    
-
-        
+        <!-- Logo Section -->
         <div class="row">
   
             
@@ -72,11 +68,12 @@
                 </a></h1>
                 
             </div>
-    
+    	</div>
             
     <div style="clear: both;"></div>
 
 
+    <!-- Nav Menu Section -->
     <div class="row">
 
         <div class="twelvecol">
@@ -89,18 +86,9 @@
     
         </div> 
         
-            <div class="twelvecol">
-                    
-                    
-                    <?php if(is_home()) {
-    			
-						echo get_template_part('/includes/mag-sliders');	
-											
-						} else {}?>
-                    
-        	</div>
-
-        </div>
-        
-    </div>
-    <div style="clear: both;"></div> 
+     </div>   
+      
+       
+    </div> <!-- #header -->
+    
+    
