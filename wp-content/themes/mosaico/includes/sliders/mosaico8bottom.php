@@ -76,13 +76,10 @@
 	while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $post->ID; ?>	
 	
     <div class="mosaicitem44">
-        <a href="<?php the_permalink(); ?>">
-        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight'); ?>
-        <img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>"/>
-        </a>
         
-        <div class="inpost">
-            <h2 class="mosaic-small"><a href="<?php the_permalink() ?>"><?php echo short_title('...', 10); ?></a></h2>
+        
+        <div class="inpost2">
+            <h2 class="mosaic-small "><a href="<?php the_permalink() ?>"><?php _e('Registo','solar'); ?></a></h2>
             <p><?php echo pov_excerpt( get_the_excerpt(), '150'); ?></p>
         </div>
                     
