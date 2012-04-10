@@ -1,0 +1,313 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in function
+#: thiel/comments.php:34
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#. Text in function
+#: thiel/template-portfolio3.php:60
+#: thiel/template-portfolio-project.php:49
+#: thiel/template-portfolio4.php:61
+#: thiel/archive.php:54
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#. Text in echo
+#: thiel/template-portfolio3.php:12
+#: thiel/template-portfolio4.php:12
+#: thiel/archive.php:6
+msgid "All"
+msgstr ""
+
+#. Text in echo
+#: thiel/404.php:34
+msgid "All Blog Posts"
+msgstr ""
+
+#. Text in echo
+#: thiel/date.php:20
+#: thiel/date.php:24
+#: thiel/date.php:28
+msgid "Archive for"
+msgstr ""
+
+#. Text in echo
+#: thiel/tag.php:11
+#: thiel/category.php:10
+#: thiel/date.php:12
+msgid "Archive for the"
+msgstr ""
+
+#. Text in echo
+#: thiel/date.php:32
+msgid "Author Archive"
+msgstr ""
+
+#. Text in echo
+#: thiel/date.php:36
+msgid "Blog Archives"
+msgstr ""
+
+#. Text in echo
+#: thiel/404.php:26
+msgid "Categories"
+msgstr ""
+
+#. Text in echo
+#: thiel/tag.php:11
+#: thiel/category.php:10
+#: thiel/date.php:12
+msgid "Category"
+msgstr ""
+
+#. Text in echo
+#: thiel/comments.php:46
+msgid "Comments are closed."
+msgstr ""
+
+#. Text in function
+#: thiel/functions/js/shortcode-generator/dialog.php:51
+msgid "Customize the Shortcode"
+msgstr ""
+
+#. Text in echo
+#: thiel/footer.php:37
+msgid "Designed by"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "E-mail has not been setup properly. Please add your contact e-mail!"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Email"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Follow"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/js/shortcode-generator/dialog.php:77
+msgid "Framework does not support shortcodes."
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "From: "
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Hide the Content"
+msgstr ""
+
+#. Text in echo
+#: thiel/includes/uni-navigation.php:15
+msgid "Home"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "If you want to submit this form, do not enter anything in this field"
+msgstr ""
+
+#. Text in echo
+#: thiel/includes/uni-tabs.php:5
+msgid "Latest"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Message"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Message via the contact form"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "My %s Profile"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Name"
+msgstr ""
+
+#. Text in function
+#: thiel/comments.php:35
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. Text in function
+#: thiel/template-portfolio3.php:61
+#: thiel/template-portfolio-project.php:50
+#: thiel/template-portfolio4.php:62
+#: thiel/archive.php:55
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. Text in echo
+#: thiel/404.php:9
+msgid "Nothing found here"
+msgstr ""
+
+#. Text in function
+#: thiel/header.php:5
+msgid "Page %s"
+msgstr ""
+
+#. Text in echo
+#: thiel/404.php:18
+msgid "Pages"
+msgstr ""
+
+#. Text in function
+#: thiel/single.php:21
+#: thiel/page.php:13
+msgid "Pages:"
+msgstr ""
+
+#. Text in echo
+#: thiel/404.php:11
+msgid "Perhaps You will find something interesting form these lists..."
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Please enter your email address (and please make sure it\\'s valid)"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Please enter your message"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Please enter your name"
+msgstr ""
+
+#. Text in echo
+#: thiel/includes/uni-tabs.php:6
+msgid "Popular"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/posttypes/ptype-portfolio.php:1
+msgid "Portfolio"
+msgstr ""
+
+#. Text in echo
+#: thiel/tag.php:15
+#: thiel/category.php:14
+#: thiel/date.php:16
+msgid "Posts Tagged"
+msgstr ""
+
+#. Text in echo
+#: thiel/footer.php:35
+msgid "Powered by"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/js/shortcode-generator/dialog.php:60
+msgid "Preview"
+msgstr ""
+
+#. Text in function
+#: thiel/functions.php:1
+msgid "Primary Menu"
+msgstr ""
+
+#. Text in echo
+#: thiel/includes/uni-tabs.php:7
+msgid "Random"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Read Less"
+msgstr ""
+
+#. Text in echo
+#: thiel/includes/post-types/medpost.php:10
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Read More"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Reply-To: "
+msgstr ""
+
+#. Text in echo
+#: thiel/search.php:6
+msgid "Search Results for"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Send a copy of this email to yourself"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Show the Content"
+msgstr ""
+
+#. Text in echo
+#: thiel/single.php:31
+#: thiel/page.php:23
+msgid "Sorry, no posts matched your criteria"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Submit"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Subscribe to our RSS feed"
+msgstr ""
+
+#. Text in echo
+#: thiel/includes/uni-tabs.php:8
+msgid "Tags"
+msgstr ""
+
+#. Text in function
+#: thiel/single.php:22
+#: thiel/page.php:14
+msgid "Tags: "
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "There were one or more errors while submitting the form."
+msgstr ""
+
+#. Text in echo
+#: thiel/template-portfolio3.php:51
+#: thiel/template-portfolio-project.php:36
+#: thiel/includes/folio-types/foliopost-full.php:24
+#: thiel/template-portfolio4.php:51
+#: thiel/archive.php:44
+msgid "Visit Project"
+msgstr ""
+
+#. Text in function
+#: thiel/functions/admin-shortcodes.php:1
+msgid "Your email was successfully sent."
+msgstr ""
