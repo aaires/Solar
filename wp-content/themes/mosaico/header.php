@@ -50,37 +50,14 @@
     
 
     <div id="header" class="container body3 raster bottomzero">
-    
-    
-    
-    
-    
-    
-        <div class="row">	
-             <div class="eightcol first">
-    
-                    <h1 class="tagline"><?php echo get_option('themnific_tagline');?></h1>
 
-        	</div>
-            
-            <div class="fourcol"> 
-            
-    			<?php get_template_part('/includes/uni-social');?>
-                
-    		</div>
-    
-    	</div>
-    
-    
-    
-    
-    
         <!-- Logo Section -->
         <div class="row">
-  
-            
-            <div class="twelvecol">
+          
+               
+            <!--    <div class="contentor"> -->
                 
+                <div class="eightcol first">
                 <h1><a href="<?php echo home_url(); ?>/">
                 
 					<?php if(get_option('themnific_logo')) { ?>
@@ -90,9 +67,19 @@
                     else { bloginfo('name'); } ?>	
                     
                 </a></h1>
+
+                </div>
+
+                <div class="fourcol" id="socialicons"> 
+            
+                <?php get_template_part('/includes/uni-social');?>
                 
-            </div>
+                </div>
+
+               
+           
     	</div>
+
             
     <div style="clear: both;"></div>
 

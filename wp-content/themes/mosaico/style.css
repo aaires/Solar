@@ -255,14 +255,19 @@ h4.leading{
 #topnav{margin:0; padding:0;}	
 	
 
-#header h1{ display:block; margin:0 0 15px auto; float:none;}
+#header h1{ display:block; float:none;}
 
-#header h1 img{ display:block; margin:0 auto; float:none;}
+#header h1 img{ 
+  margin-bottom: 20px;
+  margin-left: 10px;
+  float:left;
+
+}
+
 
 /* @core
 ********************************************************************************************
 ********************************************************************************************/
-#core{ overflow:hidden;padding:60px 0;}
 
 
 #core .row{}
@@ -271,12 +276,8 @@ h4.leading{
 #sidebar {
 	padding:0}
 	
-#tagline{
-	border-top: 1px solid #ccc;}
+
 	
-	h1.tagline{
-		padding:0;
-		margin:30px 0 40px 0;}
 
 /* @navigations
 ********************************************************************************************
@@ -284,7 +285,6 @@ h4.leading{
 
 
 #navigation {
-	float:none;
   font-family: 'PalatinoLTStdMedium';
 	text-align:center;
   border-bottom: 1px solid #BBB1A3;
@@ -292,35 +292,33 @@ h4.leading{
   letter-spacing: -0.1em;
   }
   #navigation .nav li a {
-    padding-bottom: 6px;
   }
   #navigation .nav li:first-child a {
   }
   #navigation .nav li:last-child a {
   }
   #navigation .nav li ul {
-    margin: 0 0 0 -1px;
-    padding: 10px;
+    /*margin: 10px 0 0 0;*/
+    padding: 0;
     position: absolute;
-    width: 180px;
+    width: auto;
     z-index: 999;
+    font-size: 105%;
+
     }
   #navigation .nav li ul .sf-sub-indicator {
-    background: url(../images/arrow-superfish-right.png) no-repeat;
     top: 38%;
   }
   #navigation .nav li ul li a {
-    padding: 12px 0px;
-    width: 180px;
-    background: none;
-    border: none;
-	  text-align:left;
+	  text-align:center;
+    color: #638B92;
+  }
   }
   #navigation .nav li ul li a:hover {
     background: none;
+    color:#BBB1A3;
   }
   #navigation .nav li ul li a.sf-with-ul {
-    padding-right: 0;
   }
   #navigation .nav li ul li.current_page_item a,
   #navigation .nav li ul li.current_page_parent a,
@@ -331,7 +329,7 @@ h4.leading{
     background: none;
   }
   #navigation .nav li ul ul {
-    margin: -37px 0 0 180px;
+    margin: -45px 0 0 180px;
   }
 
 
@@ -339,7 +337,6 @@ h4.leading{
   z-index: 99;
   padding: 0;
   list-style: none;
-  line-height: 1;
 	display:inline-block;
 }
 
@@ -348,7 +345,6 @@ h4.leading{
 #homes{ background:none;}   
 
 .nav a {
-  position: relative;
   color: #BBB1A3;
   display: block;
   z-index: 100;
@@ -359,12 +355,11 @@ h4.leading{
   color: #fff;
 }
 .nav li {
-display:inline;
-  position: relative;
+  display:inline;
 	float:left;
 }
 .nav li a.sf-with-ul {
-  padding-right: 28px;
+  /*padding-right: 28px;*/
 }
 .nav li.current_page_item a,
 .nav li.current_page_parent a,
@@ -376,23 +371,28 @@ display:inline;
 /* Optional Styling */
 #navigation {}
 #navigation .nav .sf-sub-indicator {
-  background: url(images/arrow-superfish.png) no-repeat;
+/*background: url(images/arrow-superfish.png) no-repeat;*/
   position: absolute;
   display: block;
-  right: 0.6em;
   top: 45%;
   width: 10px;
   height: 10px;
   text-indent: -999em;
   overflow: hidden;
-}
-/* 2.2.1 Drop-down menus */
+ }                                   
+/*2.2.1 Drop-down menus*/
 .nav li ul {
   position: absolute;
   left: -999em;
+  letter-spacing: 0em;
+  width: 10px;
+  background-color: #fff;
+  opacity: 0.8;
+  color: #638B92 !important;
+  z-index: 999;
 }
 .nav li:hover, .nav li.hover {
-  position: static;
+
 }
 .nav li:hover ul ul,
 .nav li.sfhover ul ul,
@@ -413,10 +413,19 @@ display:inline;
   left: auto;
 }
 #navigation .nav li ul {
+  position: absolute;
+  width: auto;
 }
 #navigation .nav li ul li a {
 }
 #navigation .nav li ul li a:hover {
+  text-decoration: none;
+  color: #303030 ;
+}
+
+.sub-menu li{
+  clear: both;
+  float: none;
 }
 
 
@@ -1055,8 +1064,8 @@ ul#serinfo {
 ********************************************************************************************
 ********************************************************************************************/
 #footer {
-	padding:20px 0 0 0;
-	margin: 0;
+	padding:0 0 0 0;
+	margin-top: -13px;
 	width: 100%;
 	overflow: hidden;
 	width: 100%; }
@@ -1072,17 +1081,16 @@ ul#serinfo {
  
 	#footer img { }
 		
-	#footer .row{
-		padding-top:20px;}
+	#footer .row{}
 
 
  
-#footer ul { margin: 0 0 40px 0; }
+#footer ul { margin: 0 0 0 0; }
  
 	#footer ul li ul { margin: 0; }
 
 
-#footer .lasttwit{margin:0 0 20px 0}
+#footer .lasttwit{margin:0 0 0 0}
 
 #footer .flickwrap a img {
 		float: left;
@@ -1103,7 +1111,43 @@ ul#serinfo {
 	padding: 5px 0; }
  
 #credit { text-align: right; }
- 
+
+
+#newsletter{
+  background: #638B92;
+  border-top: solid 1px #BBB1A3;
+  border-bottom: solid 1px #BBB1A3;
+  border-right: solid 1px #BBB1A3;
+}
+
+.newsletter {
+  font-family: 'RockwellStdRegular';
+  color: #BBB1A3 ;
+  font-size: 21px;
+  margin: 5% 0 0 24px;
+}
+
+.newsletter input {
+  border: solid 1px #BBB1A3 ;
+  background: #E4E0DA;
+  width:85%;
+  font-family: 'RockwellStdCondensed';
+  padding: 1%;
+  height: 18%;
+  margin-top: 3%;
+  font-size: 60%;
+}
+
+.newsletter .submit {
+  background:none;
+  border: none;
+  font-family: 'RockwellStdBold';
+  color: #534741 ;
+  text-align: right;
+  font-size: 75%;
+  margin-top: 2.5%;
+  padding-top: 0.5%;
+}
 
 	
 	
@@ -1196,26 +1240,29 @@ img.alignleft,
 /* @social
 ********************************************************************************************
 ********************************************************************************************/
+#socialicons{
+  float: right;
+  margin-top: 15px;
+}
+
+
 
  
 ul.social-menu {
 	display: inline;
-	float: right;
 	position: relative;
 	overflow: hidden;
-	padding: 0;
-	margin:40px 0; }
+   }
 	
 	#sidebar>ul.social-menu {
 	display: inline;
-	float: left;
 	position: relative;
 	overflow: hidden;
 	padding: 0;
-	margin:0 0 30px 0; }
+	}
 	
 	#sidebar>ul.social-menu>li {
-	float: left;
+	float: right;
 		margin: 0 10px 10px 0;
 		padding:0 0 0 0; }
  
@@ -1226,7 +1273,7 @@ ul.social-menu {
 		float: right;
 		width:32px !important;
 		height:32px !important;
-		margin: 0 0 10px 10px;
+		margin: 0 0 0 10px;
 		padding:0 0 0 0;
 		background-image: url(images/social-spirit.png);
 		background-repeat: no-repeat;
@@ -1684,13 +1731,13 @@ left:720px;
 
 .mosaicitembottom42{
 width:240px;
-height:129px;
+height:127px;
 top:0px;
 left:240px;
 }
 
 .mosaicitembottom43{
-width:240px;
+width:239px;
 height:129px;
 top:0px;
 left:480px;
