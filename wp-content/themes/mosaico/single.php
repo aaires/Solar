@@ -6,9 +6,10 @@
 	
 
 <div id="core" class="container raster">
-	<div class="row">
+	<div class="row" id="intblog">
     
         <div class="eightcol first">
+            <div id="post">
         		<h2 class="leading"> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 		<div <?php post_class(); ?>>
                 <div class="meta">
@@ -35,14 +36,16 @@
 
 	<?php endif; ?>
 
-                <div style="clear: both;"></div>
+                <div style="clear: both;">
+                    </div>
+                </div>
 
         </div><!-- end #core .eightcol-->
 
     
     
     
-        <div class="fourcol last">
+        <div class="fourcol last" id="featured">
         
         		<?php get_sidebar(); ?>
         

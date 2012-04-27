@@ -7,7 +7,7 @@ Template Name: Blog
 
 <div id="core" class="container raster">
 
-	<div class="row">
+	<div class="row" id="templateblog">
         <div class="eightcol first">
 
           <ul class="medpost">

@@ -145,14 +145,14 @@ $('.panel').hoverIntent(function() {
 		$(".flickr_badge_image a img,ul.social-menu li a").hover(function() {								
 			var btn = $(this);
 			
-			tt.children("p").text(btn.attr("title"));								
+			//tt.children("p").text(btn.attr("title"));								
 						
 			var t = Math.floor(tt.outerWidth(true)/2),
 				b = Math.floor(btn.outerWidth(true)/2),							
 				y = btn.offset().top - 30,
 				x = btn.offset().left - (t-b);
 						
-			tt.css({"top" : y+"px", "left" : x+"px", "display" : "block"});			
+			//tt.css({"top" : y+"px", "left" : x+"px", "display" : "block"});			
 			   
 		}, function() {		
 			tt.hide();			

@@ -2,7 +2,7 @@
 
 
 <!-- Mosaico -->
-      <div class="row">
+      <div class="row" id="mosaicogrande">
         
        <div class="twelvecol">
                     

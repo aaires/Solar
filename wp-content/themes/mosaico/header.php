@@ -52,13 +52,13 @@
     <div id="header" class="container body3 raster bottomzero">
 
         <!-- Logo Section -->
-        <div class="row">
+        <div id= "logotipo" class="row">
           
                
             <!--    <div class="contentor"> -->
                 
                 <div class="eightcol first">
-                <h1><a href="<?php echo home_url(); ?>/">
+                <a href="<?php echo home_url(); ?>/">
                 
 					<?php if(get_option('themnific_logo')) { ?>
                     
@@ -66,7 +66,7 @@
 					
                     else { bloginfo('name'); } ?>	
                     
-                </a></h1>
+                </a>
 
                 </div>
 

@@ -28,24 +28,24 @@
 	$my_query = new WP_Query('&cat='. $m2 .'&showposts=1');	 
 	while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $post->ID; ?>	
 	
-    <div class="mosaicitembottom42" id="newsletter">
-        <div class="inpost2">
+    <div class="mosaicitembottom42  idnewsletter newslayout" id="newsletter" >
+        <!--<div class="inpost2">
             <div class="newsletter">
-                <?php _e('Newsletter','solar'); ?>
+            <?php _e('Newsletter','solar'); ?>
                 <form action="">
                 <input type="text" id="name" value="<?php _e('Nome','solar'); ?>" onfocus="this.value=''" />
                 <input type="text" id="e-mail" value= "<?php _e('e-mail','solar'); ?>" onfocus="this.value=''" />
                 <input class="submit" type="submit" value="<?php _e('Subscrever','solar'); ?>">
                 </form>
             </div>
-        </div>                
+        </div>    -->            
     </div>
 <?php endwhile;?>
 <!-- end mosaic #2 -->
 
 
 
-<?php $m3 = get_option('themnific_mosaicitem9');
+<?php $m3 = get_option('themnific_mosaicitem10');
 	$my_query = new WP_Query('&cat='. $m3 .'&showposts=1');	 
 	while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $post->ID; ?>	
 	
@@ -70,14 +70,18 @@
 		$my_query = new WP_Query('&cat='. $m4 .'&showposts=1');	 
 	while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $post->ID; ?>	
 	
-    <div class="mosaicitem44">
-        
-        
+    <div class="mosaicitem44" id="reserva">
         <div class="inpost2">
-            <h2 class="mosaic-small "><a href="<?php the_permalink() ?>"><?php _e('Reserva','solar'); ?></a></h2>
+            <form action="">
+            <div class="reserva"><?php _e('Reserve já','solar'); ?>
+                <input class="search" type="submit" value="<?php _e('Procurar','solar'); ?>">
+            </div>
+            </form>
         </div>
-                    
     </div>
+
+
+
 <?php endwhile;?>
 <!-- end mosaic #4 -->
 

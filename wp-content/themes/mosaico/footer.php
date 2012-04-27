@@ -41,8 +41,7 @@
     
    -->  
    
-    <div id="footer">
-    <div class="container">    
+    <div id="footer">  
     
     
      
@@ -63,12 +62,33 @@
     </div>
     
         
-
+<!--
         <?php if (get_option('themnific_dis_foowidgets') <> "true") { ?>
             <?php get_template_part('/includes/uni-bottombox');?>
         <?php } ?>
         	
-	</div><!-- end #footer container -->
+
+
+-->
+
+        
+          <div id="lastfooter" class="row">
+          <div id="legal" class="sixcol first">
+              <a href="http://www.google.com">Informação Legal&nbsp;&nbsp;|</a><a href="http://www.youtube.com">&nbsp; Termos e Condições</a> <br />
+              <a href="http://www.amazon.com"> &copy; 2012 Solar Egas Moniz Todos os Direitos Reservados</a>
+          </div>
+              <div id="web" class="sixcol last">
+                <a href="http://web.me.com/pmgarciamarques/Site/Eu.html">Pedro Garcia Marques &middot; Web Design /</a><a href="http://www.widgilabs.com">&nbsp; WidgiLabs &middot; Web Development</a>
+              </div>
+              <div class="twelvecol" id="logos">
+          </div>
+        </div>
+        
+
+
+
+
+
     
 	</div><!-- /#footer  -->
 
