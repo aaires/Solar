@@ -1,5 +1,4 @@
 .DS_Store*
-/wp-content/uploads
 /wp-content/themes/mosaico/js/cache
 wp-content/themes/mosaico/js/cache/*
 wp-content/themes/mosaico/js/cache/timthumb_cacheLastCleanTime.touch
