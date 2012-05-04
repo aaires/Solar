@@ -478,11 +478,11 @@ ul.medpost li{ overflow:hidden;margin-bottom:40px}
 
 ul.medpost li h2, h2.leading{ padding:0 0 15px 0; margin:0 0 10px 0;}
 	
-ul.medpost li p{margin:20px 0 10px 0;}
+ul.medpost li p{margin:11% 0 10px 0;}
 
 .meta, .meta a, .meta a:hover, .meta a:visited{
-	padding-bottom:10px;
-	margin-bottom:10px;
+	padding-bottom:0px;
+	margin-bottom:0px;
 	font-size:90%; 
 	text-transform:uppercase;
   color: #303030}
@@ -978,10 +978,35 @@ ul.tweet_list { margin-bottom: 10px !important; }
  
 /* Blog Author Widget */
 #templateblog {
-  background-color: #EAE7E3 ;
+  background-color: #EAE7E3;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
 }
 
+#rowposts{
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
+#rowposts h2{
+  font-family: 'PalatinoLTStdMedium';
+  padding-bottom: 7px;
+  margin-bottom: 0;
+  border-bottom: solid 1px #4D4D4D ;
+  color: #534741;
+}
+
+#rowposts h2 a:link, #rowposts h2 a:hover, #rowposts h2 a:visited{
+  color: #4D4D4D;
+} 
+
+#rowposts img{
+  border: none;
+}
+
+#rowposts p{
+  
+}
 
 img.avatar {  }
  
@@ -1142,6 +1167,10 @@ ul#serinfo {
 /* @footer
 ********************************************************************************************
 ********************************************************************************************/
+#homebottomrow{
+  margin-top:15px;
+}
+
 #footer {
 	padding:0;
 	margin-top: 15px;
@@ -1183,7 +1212,6 @@ ul#serinfo {
 #lastfooter {
   max-width: 940px;
   background: #EAE7E3;
-  margin-top: 15px;
   padding: 10px;
 }
 
@@ -2117,3 +2145,69 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 .page-numbers.current { padding:3px 8px; border:1px solid #ddd; line-height:1; font-weight:bold;margin-right:5px;  }
 .page-numbers { font-size: 13pt; line-height:1 }
 .dots { letter-spacing: 1px;margin-right:5px; }
+
+
+
+/* @roomtemplate
+********************************************************************************************
+********************************************************************************************/
+
+.rooms{
+  padding-bottom: 5px !important;
+}
+
+#roompost {
+  background: #CCC5BA;
+  padding-left: 3.2%;
+  margin-left: 0 !important;
+  padding-right: 1%;
+  padding-top: 3%;
+  min-height: 446px;
+}
+
+#room {
+  font-family: 'PalatinoLTStdMedium';
+}
+.roomcontent {
+  margin-right: 2.5%;
+}
+
+.roomcontent h2, .roomcontent h2 a:link, .roomcontent h2:hover, .roomcontent h2 a:visited{
+  font-family: 'PalatinoLTStdMedium';
+  color: #534741 ;
+}
+
+.roomcontent p {
+  line-height: 1.6em;
+  font-size: 110%;
+  margin-bottom: 8%;
+}
+
+#sharingoptions {
+  padding-bottom: 5%;
+  margin-top: 10%;
+}
+
+
+#sharingoptions a, #sharingoptions a:link, #sharingoptions a:hover, #sharingoptions a:visited {
+  color: #303030;
+}
+
+.send {
+  float: left;
+  margin-right: 8%;
+}
+
+.send img{float:left; margin-right: 5px;}
+.send p{float:right;}
+
+.share{float: left;
+margin-right: 10%;
+}
+
+.share img{float: left; margin-right: 5px;}
+.share p{float:right;}
+.like p{
+  margin-left: 75%;
+}
+

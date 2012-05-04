@@ -8,9 +8,9 @@ Template Name: Blog
 <div id="core" class="container raster">
 
 	<div class="row" id="templateblog">
-        <div class="eightcol first">
+        <div class="twelvecol first">
 
-          <ul class="medpost">
+          <ul class="medpost" id="rowposts">
           
                 	<?php
 						$temp = $wp_query;
@@ -46,11 +46,11 @@ Template Name: Blog
 
     
     
-        <div class="fourcol">
+        <!-- <div class="fourcol">
         
         	<?php get_sidebar(); ?>
         
-        </div>
+        </div>    
         
 	</div><!--end #core .row-->
     

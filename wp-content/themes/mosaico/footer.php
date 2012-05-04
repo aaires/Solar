@@ -41,7 +41,7 @@
     
    -->  
    
-    <div id="footer">  
+  
     
     
      
@@ -70,7 +70,7 @@
 
 
 -->
-
+<div id="footer">
         
           <div id="lastfooter" class="row">
           <div id="legal" class="sixcol first">
