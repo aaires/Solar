@@ -2151,6 +2151,25 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 /* @roomtemplate
 ********************************************************************************************
 ********************************************************************************************/
+#postroom {
+  max-height: 300px;
+  overflow: auto;
+}
+
+#postroom::-webkit-scrollbar {
+    width: 12px;
+}
+
+#postroom::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+#postroom::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
 
 .rooms{
   padding-bottom: 5px !important;
@@ -2170,6 +2189,7 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 }
 .roomcontent {
   margin-right: 2.5%;
+  max-height: 446px;
 }
 
 .roomcontent h2, .roomcontent h2 a:link, .roomcontent h2:hover, .roomcontent h2 a:visited{
@@ -2178,14 +2198,14 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 }
 
 .roomcontent p {
-  line-height: 1.6em;
+    line-height: 1.6em;
   font-size: 110%;
   margin-bottom: 8%;
 }
 
 #sharingoptions {
   padding-bottom: 5%;
-  margin-top: 10%;
+  margin-top: 7%;
 }
 
 

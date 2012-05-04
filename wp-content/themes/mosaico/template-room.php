@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Room
+Template Name: Single-Room
 */
 ?>
 <?php get_header(); ?>
@@ -11,7 +11,7 @@ Template Name: Room
     
         <div class="sixcol first" id="roomimg">
 
-<img src="wp-content/themes/mosaico/images/room-quarto-1.jpg" alt="quartosimples"/>
+<?php the_post_thumbnail('full'); ?>
 
 	<?php endwhile; else: ?>
 
@@ -28,8 +28,9 @@ Template Name: Room
     
         <div class="sixcol last" id="roompost">
             <div class="roomcontent">
+
                 <h2 class="leading"> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                 <div class="entry">
+                 <div class="entry" id="postroom">
                  <?php the_content(); ?>
                     <?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:','themnific') . '</span>', 'after' => '</div>' ) ); ?>
                     <?php the_tags( '<p>' . __( 'Tags: ','themnific') . '', ', ', '</p>'); ?>
@@ -37,10 +38,10 @@ Template Name: Room
             </div>
              <div id="sharingoptions">
                 <div class="send">
-                    <a href="/"><img src="wp-content/themes/mosaico/images/envia.png"/><?php _e('Envie a um amigo','solar'); ?></a>
+                    <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/envia.png"/><?php _e('Envie a um amigo','solar'); ?></a>
                 </div>
                 <div class="share">
-                    <a href="/"><img src="wp-content/themes/mosaico/images/partilha.png"/><?php _e('Partilhar','solar'); ?></a>
+                    <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/partilha.png"/><?php _e('Partilhar','solar'); ?></a>
                 </div>
                 <div class="like">
                     <p>Like</p>
