@@ -1295,6 +1295,7 @@ ul#serinfo {
   font-size: 75%;
   margin-top: 2.5%;
   padding-top: 0.5%;
+  cursor: pointer;
 }
 
 
@@ -1325,6 +1326,7 @@ max-height: 127px !important;
   position: absolute;
   right: 0px;
   bottom: 8px;
+  cursor: pointer;
 }
 
 	
