@@ -29,7 +29,7 @@
 	while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $post->ID; ?>	
 	
     <div class="mosaicitembottom42  idnewsletter newslayout" id="newsletter" >
-        <!--<div class="inpost2">
+        <div class="inpost2">
             <div class="newsletter">
             <?php _e('Newsletter','solar'); ?>
                 <form action="">
@@ -38,7 +38,7 @@
                 <input class="submit" type="submit" value="<?php _e('Subscrever','solar'); ?>">
                 </form>
             </div>
-        </div>    -->            
+        </div>              
     </div>
 <?php endwhile;?>
 <!-- end mosaic #2 -->

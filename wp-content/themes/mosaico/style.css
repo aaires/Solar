@@ -671,7 +671,7 @@ a.comment-edit-link:hover {
 }
 
 input[type=submit] {
-	background-color: #EAE7E3 !important;
+	background-color: #EAE7E3;
 }
 #respond {
 	margin:12px 0 0 0;
@@ -1287,7 +1287,7 @@ ul#serinfo {
 }
 
 .newsletter .submit {
-  background:none;
+  background: none;
   border: none;
   font-family: 'RockwellStdBold';
   color: #534741 ;
@@ -1296,6 +1296,7 @@ ul#serinfo {
   margin-top: 2.5%;
   padding-top: 0.5%;
 }
+
 
 .newslayout{
 background: url(images/newsletter.png) no-repeat !important;
