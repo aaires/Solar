@@ -1,3 +1,7 @@
+<?php
+?>
+
+
 <?php get_header(); ?>
 
 
@@ -7,19 +11,17 @@
        <div class="twelvecol">
                     
                     
-           <?php if(is_home()) {
-    			
+           
+    			<?php
 					echo get_template_part('/includes/mag-sliders');	
 											
-				} else {}?>
+				?>
                    
        	</div>
       </div>
         
     
     <div style="clear: both;"></div> 
-
-
     
     
 
