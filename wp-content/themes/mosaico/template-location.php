@@ -49,7 +49,7 @@ Template Name: Location
                 <input type="text" id="postal" placeholder="<?php _e('Código Postal...','solar'); ?>" />
                 <input type="text" id="city" placeholder="<?php _e('Cidade...','solar'); ?>" />
                 <input id="howlocation" class="submit" type="submit" value="<?php _e('Ver Percurso','solar'); ?>">
-            
+
 
                 </div> 
     <div style="clear: both;"></div>
@@ -74,7 +74,7 @@ Template Name: Location
                     <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/partilha.png"/><?php _e('Partilhar','solar'); ?></a>
                 </div>
                 <div class="like">
-<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FWidgiLabs&amp;send=false&amp;layout=box_count&amp;width=200&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=90" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:20px;" allowTransparency="true"></iframe>
+<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.solaregasmoniz.com&amp;send=false&amp;layout=button_count&amp;width=26&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:21px;" allowTransparency="true"></iframe>
                 </div>
                 </div>
              </div>

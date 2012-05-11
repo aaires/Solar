@@ -2272,6 +2272,7 @@ ul.post-meta li span{
 .locationsubtitle{
   float: left;
   padding-top: 1%;
+  padding-bottom: 3%;
 }
 
 .locationsubtitle h6{
@@ -2321,15 +2322,19 @@ ul.post-meta li span{
 }
 
 #sharingoptionslocation{
-  margin-top: 8%;
+  margin-top: 3%;
   margin-left: 4.5%;
   padding-top: 3%;
+}
+
+#sharingoptionslocation, #sharingoptionslocation a:link, #sharingoptionslocation a:hover, #sharingoptionslocation a:visited{
+  color: #303030;
 }
 
 
 .locationformtitle{
  font-family: 'PalatinoLTStdMedium';
- font-size: 140%;
+ font-size: 150%;
  margin-bottom: 0;
 }
 
@@ -2337,18 +2342,37 @@ ul.post-meta li span{
 .locationformsubtitle {
 font-family: 'PalatinoLTStdMedium';
 font-size: 98%;
-margin-top: 3px;
+margin-top: 5px;
 }
 
 .locationform input {
 border:none;
 padding: 7px;
 width: 50%;
-margin-top: 0.5%;
+margin-top: 1%;
+background-color: #EAE7E3;
+color: #4e4946 ;
+}
+
+::-webkit-input-placeholder{
+  color: #4e4946;
+}
+:-moz-placeholder {
+  color: #4e4946;
 }
 
 #howlocation {
   float: left;
   width: 33%;
+  cursor: pointer;
+  margin-bottom: 1%;
+  background-color: #638c92;
+  color: white;
+  font-family: 'PalatinoLTStdBold';
+  font-size: 130%;
+  padding: 4px;
+}
+
+.locationairport{
   cursor: pointer;
 }
