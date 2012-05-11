@@ -1308,13 +1308,6 @@ max-width: 240px !important;
 max-height: 127px !important;
 }
 
-.newslayout2{
-background: url(images/newsletter2.png) no-repeat !important;
-max-width: 240px !important;
-max-height: 127px !important;
-}
-
-
 #reserva {
   background: #9F2D3D;
   height:129px;
@@ -2254,17 +2247,107 @@ margin-right: 10%;
 /* @map
 ************************************/
 
-#map span{
-  display: none;
+ul.post-meta li span{
+  display: none !important;
 }
 
 
+#map iframe{
+  max-width: 104% !important;
+}
+
 #locationpost {
+  margin-left: 1.9% ;
+  min-height: 484px;
   background: #CCC5BA;
-  padding-left: 3.2%;
-  margin-left: 0 !important;
-  padding-right: 1%;
-  padding-top: 2%;
-  min-height: 455px;
-  
+  padding-right: 2.2%;
+  padding-top: 1%;
+}
+
+.locationtitle{
+  font-family: 'PalatinoLTStdMedium';
+  margin-left: 4.8%;
+}
+
+.locationsubtitle{
+  float: left;
+  padding-top: 1%;
+}
+
+.locationsubtitle h6{
+  font-family: 'PalatinoLTStdBold';
+  float: right;
+  font-size: 125%;
+  margin-top: 3px;
+  padding-left: 10%;
+}
+
+.locationsubtitle h5{
+  font-family: 'PalatinoLTStdMedium';
+  font-size: 125%;
+  float: left;
+  margin-top: 3px;
+}
+
+
+#locationcontent{
+  margin-left:4.5%;
+}
+
+#locationcontent p{
+  line-height: 1.4em;
+  font-family: 'PalatinoLTStdMedium';
+
+}
+
+
+#locationcontent {
+  max-height: 390px;
+  overflow: auto;
+}
+
+#locationcontent::-webkit-scrollbar {
+    width: 12px;
+}
+
+#locationcontent::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+#locationcontent::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
+}
+
+#sharingoptionslocation{
+  margin-top: 8%;
+  margin-left: 4.5%;
+  padding-top: 3%;
+}
+
+.locationformtitle{
+ font-family: 'PalatinoLTStdMedium';
+ font-size: 140%;
+ margin-bottom: 0;
+}
+
+
+.locationformsubtitle {
+font-family: 'PalatinoLTStdMedium';
+font-size: 98%;
+margin-top: 3px;
+}
+
+.locationform input {
+border:none;
+padding: 7px;
+width: 50%;
+margin-top: 0.5%;
+}
+
+#howlocation {
+  float: left;
+  width: 33%;
+  cursor: pointer;
 }
