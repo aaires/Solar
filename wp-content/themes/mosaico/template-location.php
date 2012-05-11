@@ -49,6 +49,7 @@ Template Name: Location
                 <input type="text" id="postal" placeholder="<?php _e('Código Postal...','solar'); ?>" />
                 <input type="text" id="city" placeholder="<?php _e('Cidade...','solar'); ?>" />
                 <input id="howlocation" class="submit" type="submit" value="<?php _e('Ver Percurso','solar'); ?>">
+            
 
                 </div> 
     <div style="clear: both;"></div>
