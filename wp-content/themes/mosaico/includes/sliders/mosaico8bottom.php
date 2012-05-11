@@ -32,12 +32,24 @@
         <div class="inpost2">
             <div class="newsletter">
             <?php _e('Newsletter','solar'); ?>
-                <form action="">
+            
+            
+            <form action="http://wordpress.us5.list-manage1.com/subscribe/post?u=c4a298ac48b121d8405b851ff&amp;id=f3dc3eee92" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+			
+				<input type="text" name="MERGE1" id="MERGE1" value="" placeholder="<?php _e('name','solar');?>" >
+			
+				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="<?php _e('email address','solar');?>" required>
+				<div class="clear"><input type="submit" value="<?php _e('Subscribe','solar'); ?>" name="subscribe" id="mc-embedded-subscribe" class="button submit"></div>
+			</form>
+            
+            
+            <!-- 
+                 <form action="">
                 <input type="text" id="name" value="<?php _e('Nome','solar'); ?>" onfocus="this.value=''" />
                 <input type="text" id="e-mail" value= "<?php _e('e-mail','solar'); ?>" onfocus="this.value=''" />
                 <input class="submit" type="submit" value="<?php _e('Subscrever','solar'); ?>">
-                </form>
-            </div>
+                </form>  -->
+            </div>  
         </div>              
     </div>
 <?php endwhile;?>

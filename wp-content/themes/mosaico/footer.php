@@ -1,8 +1,3 @@
-
- 
- 
- 
- 
  
  
  <!--     <div class="container body3 raster-bottom"> 
@@ -39,11 +34,7 @@
     </div><!-- end #archives --> 
  <!--    <div id="toggleArchives" class="rad boxshadow" onclick="toggleArchives();">&darr; More &darr;</div> 
     
-   -->  
-   
-  
-    
-    
+   -->    
      
   <div id="homebottomrow" class="row">
         

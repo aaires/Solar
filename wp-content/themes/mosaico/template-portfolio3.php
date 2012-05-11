@@ -1,6 +1,7 @@
 <?php
 /*
 Template Name: Portfolio 3 Columns
+TODO: Disable
 */
 ?>
 <?php get_header(); ?>
