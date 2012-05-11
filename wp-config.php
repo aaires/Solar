@@ -19,10 +19,10 @@
 define('DB_NAME', 'solar');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'username');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'xpto123');
+define('DB_PASSWORD', 'password');
 
 /** MySQL hostname */
 define('DB_HOST', '127.0.0.1');
