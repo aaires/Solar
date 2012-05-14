@@ -36,7 +36,6 @@ Template Name: Location
             <div id="locationcontent">
             <?php the_content(); ?>
         <div class="locationsubtitle">
-            <h5><?php _e('Coordenadas GPS','solar'); ?></h5>
             <h6><?php  $coordenadas = get_post_meta($post->ID,'gps',true);
                 echo $coordenadas; ?></h6>
         </div>
@@ -64,8 +63,8 @@ Template Name: Location
 
 
             </div>
-    <div style="clear: both;"></div>
             </div>
+            <div style="clear: both;"></div>
              <div id="sharingoptionslocation">
                 <div class="send">
                     <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/envia.png"/><?php _e('Envie a um amigo','solar'); ?></a>
