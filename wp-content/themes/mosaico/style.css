@@ -423,7 +423,7 @@ h4.leading{
 }
 #navigation .nav li ul {
   position: absolute;
-  width: auto;
+  width: 115px;
 }
 #navigation .nav li ul li a {
 }
@@ -2161,6 +2161,7 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 ********************************************************************************************
 ********************************************************************************************/
 #postroom {
+  height: 300px;
   max-height: 300px;
   overflow: auto;
 }
@@ -2224,7 +2225,7 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 
 #sharingoptions {
   padding-bottom: 4%;
-  margin-top: 9%;
+  margin-top: 2.5%;
   margin-left: 4.5%;
 }
 
@@ -2247,13 +2248,6 @@ margin-right: 10%;
 
 .share img{float: left; margin-right: 5px;}
 .share p{float:right;}
-.like p{
-  height: 20px !important;
-  overflow: none;
-  margin-left: 75%;
-}
-
-.like {}
 
 
 /* @map
@@ -2274,7 +2268,7 @@ ul.post-meta li span{
 
 #locationpost {
   margin-left: 1.9% ;
-  min-height: 484px;
+  height: 484px;
   background: #CCC5BA;
   padding-right: 2.2%;
   padding-top: 1%;
@@ -2293,19 +2287,9 @@ ul.post-meta li span{
 
 .locationsubtitle h6{
   font-family: 'PalatinoLTStdBold';
-  float: right;
   font-size: 125%;
   margin-top: 3px;
-  padding-left: 10%;
 }
-
-.locationsubtitle h5{
-  font-family: 'PalatinoLTStdMedium';
-  font-size: 125%;
-  float: left;
-  margin-top: 3px;
-}
-
 
 #locationcontent{
   margin-left:4.5%;
@@ -2338,9 +2322,9 @@ ul.post-meta li span{
 }
 
 #sharingoptionslocation{
-  margin-top: 3%;
   margin-left: 4.5%;
-  padding-top: 3%;
+  margin-top: 4.5%;
+  
 }
 
 #sharingoptionslocation, #sharingoptionslocation a:link, #sharingoptionslocation a:hover, #sharingoptionslocation a:visited{
@@ -2394,9 +2378,89 @@ color: #4e4946 ;
 }
 
 
+
 /* @special offers
 ********************************************************************************************
 ********************************************************************************************/
 
 
 .featured-image{ display:none;}
+
+/* @experience
+************************************/
+
+#relatedpost {
+  margin-left: 1.9% ;
+  min-height: 474px;
+  background: #CCC5BA;
+  padding-right: 2.2%;
+  padding-top: 2%;
+}
+
+#sharingoptionsrelated{
+  margin-top: 4.5%;
+  margin-left: 4.5%;
+}
+
+#sharingoptionsrelated, #sharingoptionsrelated a:link, #sharingoptionsrelated a:hover, #sharingoptionsrelated a:visited{
+  color: #303030;
+}
+
+.relatedheader {
+  background-color: #808075 ;
+  padding-left: 4.5%;
+  color: white;
+  width: 101%;
+  margin-top: 3.3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 120%;
+}
+
+#postexperience {
+  height:195px;
+  max-height: 195px;
+  overflow: auto;
+}
+
+
+#postexperience::-webkit-scrollbar {
+    width: 12px;
+}
+
+#postexperience::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+#postexperience::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
+}
+
+
+.relatedtopic1{
+  float: left;
+  height: 117px;
+  width: 53%;
+}
+
+.relatedtopic2{
+  float: right;
+  height: 117px;
+  width: 47%;
+}
+
+.relatedtopic1 img{
+  max-width: 100%;
+}
+
+
+.relatedtopic1 p, .relatedtopic2 p{
+  float: right;
+  margin-top: 3%;
+}
+
+.relatedtopic1 p{
+  margin-right: 12%;
+}
