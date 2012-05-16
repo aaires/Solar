@@ -71,6 +71,10 @@ if ( function_exists('register_sidebar') )
 // sidebar widget
 register_sidebar(array('name' => 'Sidebar','before_widget' => '','after_widget' => '','before_title' => '<h2>','after_title' => '</h2>')); 
 
+
+
+
+/*
 //index widgets
 register_sidebar(array('name' => 'Index Left','before_widget' => '','after_widget' => '','before_title' => '<h2 class="archives-small">','after_title' => '</h2>'));  
 register_sidebar(array('name' => 'Index Center','before_widget' => '','after_widget' => '','before_title' => '<h2 class="archives-small">','after_title' => '</h2>'));   
@@ -80,6 +84,7 @@ register_sidebar(array('name' => 'Index Right','before_widget' => '','after_widg
 register_sidebar(array('name' => 'Footer Left','before_widget' => '','after_widget' => '','before_title' => '<h3>','after_title' => '</h3>'));   
 register_sidebar(array('name' => 'Footer Center','before_widget' => '','after_widget' => '','before_title' => '<h3>','after_title' => '</h3>'));
 register_sidebar(array('name' => 'Footer Right','before_widget' => '','after_widget' => '','before_title' => '<h3>','after_title' => '</h3>')); 
+*/
 }
 
 // Make theme available for translation
@@ -142,17 +147,18 @@ function wpe_excerptmore($more) {
 
 function wpe_excerpt($length_callback='', $more_callback='') {
     global $post;
+
     if(function_exists($length_callback)){
-    add_filter('excerpt_length', $length_callback);
+    	add_filter('excerpt_length', $length_callback);
     }
-    if(function_exists($more_callback)){
-    add_filter('excerpt_more', $more_callback);
+	    if(function_exists($more_callback)){
+    	add_filter('excerpt_more', $more_callback);
     }
-    $output = get_the_excerpt();
-    $output = apply_filters('wptexturize', $output);
-    $output = apply_filters('convert_chars', $output);
-    $output = '<p>'.$output.'</p>';
-    echo $output;
+	    $output = get_the_excerpt();
+   		$output = apply_filters('wptexturize', $output);
+   		$output = apply_filters('convert_chars', $output);
+  		  $output = '<p>'.$output.'</p>';
+   		echo $output;
     }
 
 

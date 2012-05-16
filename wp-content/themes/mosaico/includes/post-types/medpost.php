@@ -12,8 +12,14 @@
     } else {?>
 
     <a href="<?php the_permalink(); ?>">
-    <?php if ( $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image')){ ?>
-    <img class="bags" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=220&amp;h=200" alt="<?php the_title(); ?>"/></a>
+    <?php if ( $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'thumbnail')){ ?>
+    <img class="bags" src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>"/></a>
     <?php }?>
     <?php }?>    
-		<?php wpe_excerpt('wpe_excerptlength_teaser', 'wpe_excerptmore'); ?>
+		<?php 
+		
+			the_excerpt();
+		
+//		wpe_excerpt('wpe_excerptlength_teaser', 'wpe_excerptmore'); ?>
+
+		
