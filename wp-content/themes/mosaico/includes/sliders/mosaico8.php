@@ -8,6 +8,7 @@
     
 <?php 
 
+
 	$m1 = get_option('themnific_mosaicitem1'); 
 	
 	$my_query = new WP_Query('&pagename='.$m1.'&showposts=1');	 

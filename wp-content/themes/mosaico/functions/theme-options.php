@@ -394,6 +394,9 @@ $options[] = array( "name" => "Mosaic 10",
 		"options" => $themnific_categories);
 
 
+
+
+
 // magazine sliders
 
 $options[] = array( "name" => "Featured Section",

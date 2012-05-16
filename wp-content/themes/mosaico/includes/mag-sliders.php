@@ -1,6 +1,7 @@
 <?php 
 
 	$type_slider_mag = get_option('themnific_type_slider_mag'); 
+	
 
 	if($type_slider_mag == 'mosaico')  
 	{
@@ -8,7 +9,13 @@
 	}
 	elseif($type_slider_mag == 'mosaico8')
 	{
-		get_template_part('/includes/sliders/mosaico8' );
+		
+		if(is_home())			
+			get_template_part('/includes/sliders/mosaico8' );
+		else
+			get_template_part('/includes/sliders/mosaicopage' );
+		
+			
 	}
 	elseif($type_slider_mag == 'mosaico10')
 	{
