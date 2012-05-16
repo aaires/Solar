@@ -72,6 +72,9 @@
                 <a href="http://web.me.com/pmgarciamarques/Site/Eu.html">Pedro Garcia Marques &middot; Web Design /</a><a href="http://www.widgilabs.com">&nbsp; WidgiLabs &middot; Web Development</a>
               </div>
               <div class="twelvecol" id="logos">
+                <div class="logo1"><img src="<?php bloginfo('template_url'); ?>/images/on2-logo.jpg"/></div>
+                <div class="logo2"><img src="<?php bloginfo('template_url'); ?>/images/qren-logo.jpg"/></div>
+                <div class="logo3"><img src="<?php bloginfo('template_url'); ?>/images/ue-logo.jpg"/></div>
           </div>
         </div>
         

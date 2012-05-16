@@ -54,12 +54,14 @@ Template Name: Experience
                     <div class="relatedheader"><?php _e('Outras experiências que talvez goste','solar'); ?></div>
                     <div class="relatedtopics">
                     <div class="relatedtopic1"> 
-                        <?php echo get_the_post_thumbnail( $post_id, array(117,117), $attr ); ?> 
-                        <p><?php echo the_title(); ?></p>
+                        <div class="relatedimg1"><?php echo get_the_post_thumbnail( $post_id, array(117,117), $attr ); ?></div>
+                        <div class="relatedtitle1"> 
+                        <p><?php echo the_title(); ?></p></div>
                      </div>
                     <div class="relatedtopic2"> 
-                        <?php echo get_the_post_thumbnail( $post_id, array(117,117), $attr ); ?>
-                        <p><?php echo the_title(); ?></p>
+                        <div class="relatedimg2"><?php echo get_the_post_thumbnail( $post_id, array(117,117), $attr ); ?></div>
+                        <div class="relatedtitle2">
+                        <p><?php echo the_title(); ?></p></div>
                     </div>
                 </div>
 
