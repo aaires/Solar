@@ -478,7 +478,11 @@ ul.medpost li{ overflow:hidden;margin-bottom:40px}
 
 ul.medpost li h2, h2.leading{ padding:0 0 15px 0; margin:0 0 10px 0;}
 	
-ul.medpost li p{margin:2% 0 2% 0;}
+
+ul.medpost li p{margin:9% 0 10px 0;
+font-size: 120%;
+font-family: 'PalatinoLTStdMedium';
+}
 
 .meta, .meta a, .meta a:hover, .meta a:visited{
 	padding-bottom:0px;
@@ -1572,9 +1576,10 @@ line-height: 18px;
 }
 
 h2.mosaic-small{
-  font-family: 'PalatinoLTStdMedium';
-	font-size:14pt;
+  font-family: 'PalatinoLTStdBold';
+	font-size:16pt;
   color: #534741;
+  text-align: center;
 }
 
 h2.mosaic-small a{
@@ -1585,6 +1590,8 @@ h2.mosaic-small a{
 h2.mosaic-small p{
   color: #534741;
   font-size: 14px;
+  text-align: center;
+  color: white;
 }
 
 .mosaicitem1,
@@ -1944,6 +1951,14 @@ top:0px;
 left:720px;
 }
 
+.mosaicitembottom43 p{
+  font-family: 'PalatinoLTStdMedium';
+  font-size: 13px;
+  color: white;
+  text-align: center;
+}
+
+
 /* @announcement
 ********************************************************************************************
 ********************************************************************************************/
@@ -2280,11 +2295,13 @@ ul.post-meta li span{
   background: #CCC5BA;
   padding-right: 2.2%;
   padding-top: 1%;
+  color: #474441;
 }
 
 .locationtitle{
   font-family: 'PalatinoLTStdMedium';
   margin-left: 4.8%;
+  color: #534741 ;
 }
 
 .locationsubtitle{
@@ -2297,6 +2314,7 @@ ul.post-meta li span{
   font-family: 'PalatinoLTStdBold';
   font-size: 125%;
   margin-top: 3px;
+  color:#534741  ;
 }
 
 #locationcontent{
@@ -2306,6 +2324,7 @@ ul.post-meta li span{
 #locationcontent p{
   line-height: 1.4em;
   font-family: 'PalatinoLTStdMedium';
+  color: #2F2C29 ;
 
 }
 
@@ -2342,6 +2361,7 @@ ul.post-meta li span{
 
 .locationformtitle{
  font-family: 'PalatinoLTStdMedium';
+ color: #534741;
  font-size: 150%;
  margin-bottom: 0;
 }
@@ -2351,6 +2371,7 @@ ul.post-meta li span{
 font-family: 'PalatinoLTStdMedium';
 font-size: 98%;
 margin-top: 5px;
+color: #534741;
 }
 
 .locationform input {
@@ -2450,13 +2471,13 @@ color: #4e4946 ;
 .relatedtopic1{
   float: left;
   height: 117px;
-  width: 53%;
+  width: 52%;
 }
 
 .relatedtopic2{
   float: right;
   height: 117px;
-  width: 47%;
+  width: 48%;
 }
 
 .relatedimg1, .relatedimg2 {
@@ -2466,17 +2487,9 @@ color: #4e4946 ;
   float: left;
 }
 
-.relatedtopic1 img{
-  max-width: 100%;
-}
-
-
-.relatedtopic1 p, .relatedtopic2 p{
-  float: right;
-  margin-top: 3%;
-}
-
-.relatedtopic1 p{
-  margin-right: 12%;
+.relatedtitle1, .relatedtitle2 {
+  line-height: 150%;
+  margin-top: 5%;
+  font-size: 120%;
 }
 
