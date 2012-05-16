@@ -17,7 +17,7 @@ $GLOBALS['template_path'] = get_template_directory_uri();;
 $themnific_categories = array();  
 $themnific_categories_obj = get_categories('hide_empty=0');
 foreach ($themnific_categories_obj as $themnific_cat) {
-    $themnific_categories[$themnific_cat->cat_ID] = $themnific_cat->cat_name;}
+    $themnific_categories[$themnific_cat->cat_ID] = $themnific_cat->slug;}
 $categories_tmp = array_unshift($themnific_categories, "Select a category:");    
        
 //Access the WordPress Pages via an Array
