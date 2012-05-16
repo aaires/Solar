@@ -1230,6 +1230,7 @@ ul#serinfo {
   font-family: 'PalatinoLTStdMedium';
   color: #837165;
   font-size: 13px;
+  text-align: left;
 }
 
 
@@ -1246,7 +1247,14 @@ ul#serinfo {
 }
 
 
+#logos {
+ margin-top: 1%;
+}
 
+.logo1, .logo2, .logo3{
+float: left;
+margin-right: 2%;
+}
 
 
 
@@ -2225,7 +2233,7 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 
 #sharingoptions {
   padding-bottom: 4%;
-  margin-top: 2.5%;
+  margin-top: 12.5%;
   margin-left: 4.5%;
 }
 
@@ -2451,6 +2459,13 @@ color: #4e4946 ;
   width: 47%;
 }
 
+.relatedimg1, .relatedimg2 {
+  height: 117px;
+  width: 117px;
+  margin: 0;
+  float: left;
+}
+
 .relatedtopic1 img{
   max-width: 100%;
 }
@@ -2464,3 +2479,4 @@ color: #4e4946 ;
 .relatedtopic1 p{
   margin-right: 12%;
 }
+
