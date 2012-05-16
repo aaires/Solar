@@ -1316,6 +1316,12 @@ max-width: 240px !important;
 max-height: 127px !important;
 }
 
+.newslayout2{
+background: url(images/newsletter2.png) no-repeat !important;
+max-width: 240px !important;
+max-height: 127px !important;
+}
+
 #reserva {
   background: #9F2D3D;
   height:129px;
@@ -2219,6 +2225,12 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
   max-width: 104% !important;
 }
 
+
+/* @share
+********************************************************************************************
+********************************************************************************************/
+
+
 #sharingoptions {
   padding-bottom: 4%;
   margin-top: 12.5%;
@@ -2257,6 +2269,10 @@ ul.post-meta li span{
 #map iframe{
   max-width: 104% !important;
 }
+
+/* @location
+********************************************************************************************
+********************************************************************************************/
 
 #locationpost {
   margin-left: 1.9% ;
@@ -2369,6 +2385,15 @@ color: #4e4946 ;
   cursor: pointer;
 }
 
+
+
+/* @special offers
+********************************************************************************************
+********************************************************************************************/
+
+
+.featured-image{ display:none;}
+
 /* @experience
 ************************************/
 
@@ -2440,3 +2465,18 @@ color: #4e4946 ;
   margin: 0;
   float: left;
 }
+
+.relatedtopic1 img{
+  max-width: 100%;
+}
+
+
+.relatedtopic1 p, .relatedtopic2 p{
+  float: right;
+  margin-top: 3%;
+}
+
+.relatedtopic1 p{
+  margin-right: 12%;
+}
+
