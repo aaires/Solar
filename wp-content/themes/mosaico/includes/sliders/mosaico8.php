@@ -14,7 +14,7 @@
 	$my_query = new WP_Query('&pagename='.$m1.'&showposts=1');	 
 	while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $post->ID; ?>	
 	
-	
+	<?php print_r($post);?>
 	
     <div class="mosaicitem41">
         <a href="<?php the_permalink(); ?>">

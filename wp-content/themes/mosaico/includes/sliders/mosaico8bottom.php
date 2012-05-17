@@ -36,10 +36,10 @@
             
             <form action="http://wordpress.us5.list-manage1.com/subscribe/post?u=c4a298ac48b121d8405b851ff&amp;id=f3dc3eee92" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 			
-				<input type="text" name="MERGE1" id="MERGE1" value="" placeholder="<?php _e('Nome','solar');?>" >
+				<input type="text" name="MERGE1" id="MERGE1" value="" placeholder="<?php _e('Name','solar');?>" >
 			
 				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="<?php _e('e-mail','solar');?>" required>
-				<div class="clear"><input type="submit" value="<?php _e('Subscrever','solar'); ?>" name="subscribe" id="mc-embedded-subscribe" class="button submit"></div>
+				<div class="clear"><input type="submit" value="<?php _e('Subscribe','solar'); ?>" name="subscribe" id="mc-embedded-subscribe" class="button submit"></div>
 			</form>
            
             </div>  
@@ -80,8 +80,8 @@
     <div class="mosaicitem44" id="reserva">
         <div class="inpost2">
             <form action="">
-            <div class="reserva"><?php _e('Reserve já','solar'); ?>
-                <input class="search" type="submit" value="<?php _e('Procurar','solar'); ?>">
+            <div class="reserva"><?php _e('Book now','solar'); ?>
+                <input class="search" type="submit" value="<?php _e('Search','solar'); ?>">
             </div>
             </form>
         </div>
