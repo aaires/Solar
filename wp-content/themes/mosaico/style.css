@@ -2257,6 +2257,10 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
   color: #303030;
 }
 
+li.current_page_item a, li.current-page-parent a{
+	color: #fff;
+}
+
 .send {
   float: left;
   margin-right: 8%;
