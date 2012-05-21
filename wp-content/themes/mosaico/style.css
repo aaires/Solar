@@ -1579,7 +1579,6 @@ h2.mosaic-small{
   font-family: 'PalatinoLTStdBold';
 	font-size:16pt;
   color: #534741;
-  text-align: center;
 }
 
 h2.mosaic-small a{
@@ -2493,3 +2492,6 @@ color: #4e4946 ;
   font-size: 120%;
 }
 
+.galleryimg {
+  margin-bottom: 5px;
+}
