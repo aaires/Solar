@@ -263,6 +263,8 @@ function mosaico_enqueue_scripts() {
 		// Enqueue nivo slicer script
 		wp_enqueue_script( 'conference',  get_template_directory_uri() . '/js/mosaico.js', 'jquery','1.0',true);
 
+	
+		
 	}
 }
 // Enqueue at proper hook
