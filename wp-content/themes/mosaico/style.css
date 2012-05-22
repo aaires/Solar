@@ -745,6 +745,12 @@ display: none;
   font-size: 130%;
 }
 
+.post h2 a,
+.post h2 a:hover,
+.post h2 a:visited{
+  font-family: 'PalatinoLTStdMedium';
+  color: #534741;
+}
 
 
 /* @forms 
@@ -874,7 +880,7 @@ label{ font-family:'PalatinoLTStdMediumItalic'; float:left;}
   font-family: 'PalatinoLTStdMedium';
   color: #534741;
   border-bottom: solid 1px #4D4D4D;
-  margin-bottom: 12%;
+  margin-bottom: 2%;
   padding-bottom: 7px;
   font-size: 30px;
 	}	
@@ -894,9 +900,13 @@ label{ font-family:'PalatinoLTStdMediumItalic'; float:left;}
 }
 
 #sidebar ul li{
-	padding:10px;
+	padding:5px;
 	list-style:none;
   border-bottom: solid 1px #63949B;
+}
+
+#sidebar ul{
+  margin-bottom: 30px;
 }
 
 
@@ -988,7 +998,7 @@ ul.tweet_list { margin-bottom: 10px !important; }
 }
 
 #rowposts{
-  margin-left: 5%;
+  margin-left: 4%;
   margin-right: 5%;
 }
 
@@ -1024,7 +1034,7 @@ span.right {
  
 /* featured */
 ul.featured {
-	margin: 0 0 30px 0 !important;
+	margin: 0 0 40px 0 !important;
 	overflow: hidden;
 	float: left; }
 
@@ -1052,7 +1062,9 @@ ul.featured {
 .fblock-inn h3,	
 .fblock-inn p{
 	padding:0 0 0 85px !important;
-	margin:0;}
+	margin:0;
+  line-height: 1.5em;
+}
 	
 .fblock-inn h3,
 .fblock_plain h3{
@@ -1075,6 +1087,13 @@ com-post:first-child{ padding:5px 0 20px 0 !important; background:none !importan
 .com_post span{ float:left; margin-right:7px; font-style: normal}
 
 .com_post p{ padding:0 0 20px 55px !important; font-style:italic}
+
+
+.logged-in-as a,
+.logged-in-as a:hover,
+.logged-in-as a:visited{
+  color: #638c92 ;
+}
 
 
 /* @tabs
@@ -2528,24 +2547,35 @@ color: #4e4946 ;
 
 
 .otherpages .previous{
-	position:fixed;
-	left:4%; 
+	position:absolute;
+	left:20%;
+  margin-top: 30%; 
 	background: url(images/left-arrow.png) no-repeat;
 	z-index:999;
 	width:23px;
 	height:38px;
+  opacity: 0.5;
 	}
 					  
 .otherpages .next{
-	position:fixed;
-	left:40%; 
+	position:absolute;
+	left:79%;
+  margin-top: 30%; 
 	background: url(images/right-arrow.png) no-repeat;
 	z-index:999;
 	width:23px;
-	height:38px;}
+	height:38px;
+  opacity: 0.5;
+}
 
 
 .galleryimg {
   margin-bottom: 5px;
 }
 
+
+/****************** @Single ***********************/
+
+#templategeneral {
+  padding-left: 5%;
+}

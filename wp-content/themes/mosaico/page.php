@@ -2,11 +2,11 @@
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		
 <div id="core" class="container">
-	<div class="row">
+	<div class="row" id="templateblog">
     
         <div class="eightcol first">
 
-		<div class="post">
+		<div class="post" id="templategeneral">
         		<h2 class="leading"> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                  <div class="entry">
                  <?php the_content(); ?>
