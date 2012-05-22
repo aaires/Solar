@@ -11,29 +11,30 @@ Template Name: Single
 <div class="row" id="room">
     
     
-      <div class="otherpages twelvecol">
-		<?php 
-		
-		$post_parent = $post->post_parent;
-		
-		// Only shows related posts (same parent)
-		$previous = get_previous_post();
-		if($previous->post_parent == $post_parent && $post_parent!=0)
-		{	$previous_link = 	get_permalink($previous->ID);
-			?><a href="<?php echo $previous_link?>"> <div class="previous  first"></div></a>  <?php 
-		}
-		
-		$next = get_next_post();	
-		if($next->post_parent == $post_parent && $post_parent!=0)
-		{
-			$next_link = 	get_permalink($next->ID);
-			?><a href="<?php echo $next_link;?>"><div class="next  last"></div> </a><?php
-		}
-		?>
-		</div>
     
     
         <div class="sixcol first" id="roomimg">
+
+          <div class="otherpages">
+    <?php 
+    
+    $post_parent = $post->post_parent;
+    
+    // Only shows related posts (same parent)
+    $previous = get_previous_post();
+    if($previous->post_parent == $post_parent && $post_parent!=0)
+    { $previous_link =  get_permalink($previous->ID);
+      ?><a href="<?php echo $previous_link?>"> <div class="previous  first"></div></a>  <?php 
+    }
+    
+    $next = get_next_post();  
+    if($next->post_parent == $post_parent && $post_parent!=0)
+    {
+      $next_link =  get_permalink($next->ID);
+      ?><a href="<?php echo $next_link;?>"><div class="next  last"></div> </a><?php
+    }
+    ?>
+    </div>
 
 <?php the_post_thumbnail('full'); ?>
 

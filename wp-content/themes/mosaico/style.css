@@ -2577,7 +2577,7 @@ color: #4e4946 ;
 
 .otherpages .previous{
 	position:absolute;
-	margin-left:1%;
+	left:20%;
   margin-top: 30%; 
 	background: url(images/left-arrow.png) no-repeat;
 	z-index:999;
@@ -2588,7 +2588,7 @@ color: #4e4946 ;
 					  
 .otherpages .next{
 	position:absolute;
-	margin-left:61%;
+	left:79%;
   margin-top: 30%; 
 	background: url(images/right-arrow.png) no-repeat;
 	z-index:999;
