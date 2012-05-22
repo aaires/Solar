@@ -2497,3 +2497,20 @@ color: #4e4946 ;
   font-size: 120%;
 }
 
+.otherpages .previous{
+	position:fixed;
+	left:4%; 
+	background: url(images/left-arrow.png) no-repeat;
+	z-index:999;
+	width:23px;
+	height:38px;
+	}
+					  
+.otherpages .next{
+	position:fixed;
+	left:40%; 
+	background: url(images/right-arrow.png) no-repeat;
+	z-index:999;
+	width:23px;
+	height:38px;}
+
