@@ -29,7 +29,9 @@ smaller than 650
 *************************************************************************************/
 @media screen and (max-width: 650px) {
 
-	.body3 {background-color: red !important;}
+/*	.body3 {background-color: red !important;}*/
+
+
 
 }
 
@@ -38,7 +40,7 @@ smaller than 560
 *************************************************************************************/
 @media screen and (max-width: 480px) {
 
-	.body3 {background-color: #fff !important;}
+	/*.body3 {background-color: #fff !important;}*/
 
 }
 
@@ -502,7 +504,7 @@ ul.medpost li{ overflow:hidden;margin-bottom:40px}
 ul.medpost li h2, h2.leading{ padding:0 0 15px 0; margin:0 0 10px 0;}
 	
 
-ul.medpost li p{margin:9% 0 10px 0;
+ul.medpost li p{margin:2% 0 10px 0;
 font-size: 120%;
 font-family: 'PalatinoLTStdMedium';
 }
@@ -697,9 +699,7 @@ a.comment-edit-link:hover {
   border: solid 1px #BBB1A3;
 }
 
-input[type=submit] {
-	background-color: #EAE7E3;
-}
+
 #respond {
 	margin:12px 0 0 0;
 	overflow: hidden;
@@ -859,7 +859,9 @@ label{ font-family:'PalatinoLTStdMediumItalic'; float:left;}
 	border: none;
 	cursor: pointer;
 	top: 10px;
-	right: -4px; }
+	right: -4px;
+
+   }
 	
 	
 .searchform input.s {
@@ -897,7 +899,7 @@ label{ font-family:'PalatinoLTStdMediumItalic'; float:left;}
   padding-right: 25px;
 }
 
-#sidebar p {margin:0; padding:0 0 15px 0;}
+#sidebar p {margin:0; padding:0 0 10px 0;}
 
 #sidebar h2 {margin:0 0 15px 0; padding:0 0 10px 0;
   font-family: 'PalatinoLTStdMedium';
@@ -905,7 +907,7 @@ label{ font-family:'PalatinoLTStdMediumItalic'; float:left;}
   border-bottom: solid 1px #4D4D4D;
   margin-bottom: 2%;
   padding-bottom: 7px;
-  font-size: 30px;
+  font-size: 25px;
 	}	
 
 #sidebar h3 {margin:0 0 10px 0; padding:0;
@@ -923,7 +925,7 @@ label{ font-family:'PalatinoLTStdMediumItalic'; float:left;}
 }
 
 #sidebar ul li{
-	padding:5px;
+	padding:3px;
 	list-style:none;
   border-bottom: solid 1px #63949B;
 }
@@ -2571,7 +2573,7 @@ color: #4e4946 ;
 
 .otherpages .previous{
 	position:absolute;
-	left:20%;
+	margin-left:1%;
   margin-top: 30%; 
 	background: url(images/left-arrow.png) no-repeat;
 	z-index:999;
@@ -2582,7 +2584,7 @@ color: #4e4946 ;
 					  
 .otherpages .next{
 	position:absolute;
-	left:79%;
+	margin-left:61%;
   margin-top: 30%; 
 	background: url(images/right-arrow.png) no-repeat;
 	z-index:999;
@@ -2601,4 +2603,9 @@ color: #4e4946 ;
 
 #templategeneral {
   padding-left: 5%;
+}
+
+#templategeneral p{
+  font-size: 120%;
+  font-family: 'PalatinoLTStdMedium';
 }
