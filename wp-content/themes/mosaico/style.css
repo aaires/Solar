@@ -1736,6 +1736,7 @@ z-index:8;
 
 
 
+
 .mosaicitem1{
 width:240px;
 height:120px;
@@ -1957,6 +1958,35 @@ left:720px;
   text-align: center;
 }
 
+/* @Gallery
+*******************************************************/
+
+#mosaicgallery1, 
+#mosaicgallery2,
+#mosaicgallery3{
+  width: 230px;
+}
+
+
+#mosaicgallery1{
+  left: 0;
+}
+
+
+#mosaicgallery2{
+  left: 230px;
+}
+
+#mosaicgallery3{
+  left: 460px;
+}
+
+.galleryimg1{
+  float: left;
+}
+.galleryimg2 {
+  float: left;
+}
 
 /* @announcement
 ********************************************************************************************
