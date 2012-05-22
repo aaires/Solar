@@ -10,6 +10,30 @@ Template Name: Experience
 <div id="core" class="container rooms">
 <div class="row" id="room">
     
+    
+    <div class="otherpages twelvecol">
+		<?php 
+		
+		$post_parent = $post->post_parent;
+		
+		// Only shows related posts (same parent)
+		$previous = get_previous_post();
+		if($previous->post_parent == $post_parent && $post_parent!=0)
+		{	$previous_link = 	get_permalink($previous->ID);
+			?><a href="<?php echo $previous_link?>"> <div class="previous  first"></div></a>  <?php 
+		}
+		
+		$next = get_next_post();	
+		if($next->post_parent == $post_parent && $post_parent!=0)
+		{
+			$next_link = 	get_permalink($next->ID);
+			?><a href="<?php echo $next_link;?>"><div class="next  last"></div> </a><?php
+		}
+		?>
+	</div>
+    
+    
+    
         <div class="sixcol first" id="roomimg">
 
 <?php the_post_thumbnail('full'); ?>
@@ -45,7 +69,7 @@ Template Name: Experience
                     <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/partilha.png"/><?php _e('Share','solar'); ?></a>
                 </div>
                 <div class="like">
-<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.solaregasmoniz.com&amp;send=false&amp;layout=button_count&amp;width=26&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:21px;" allowTransparency="true"></iframe>
+				<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.solaregasmoniz.com&amp;send=false&amp;layout=button_count&amp;width=26&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:21px;" allowTransparency="true"></iframe>
                 </div>
                 </div>
                 <div style="clear: both;"></div>
