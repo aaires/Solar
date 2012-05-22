@@ -1579,7 +1579,6 @@ h2.mosaic-small{
   font-family: 'PalatinoLTStdBold';
 	font-size:16pt;
   color: #534741;
- /* text-align: center;*/
 }
 
 h2.mosaic-small a{
@@ -1734,6 +1733,7 @@ top:0;
 left:0;
 z-index:8;
 }
+
 
 
 
@@ -1958,6 +1958,35 @@ left:720px;
   text-align: center;
 }
 
+/* @Gallery
+*******************************************************/
+
+#mosaicgallery1, 
+#mosaicgallery2,
+#mosaicgallery3{
+  width: 230px;
+}
+
+
+#mosaicgallery1{
+  left: 0;
+}
+
+
+#mosaicgallery2{
+  left: 230px;
+}
+
+#mosaicgallery3{
+  left: 460px;
+}
+
+.galleryimg1{
+  float: left;
+}
+.galleryimg2 {
+  float: left;
+}
 
 /* @announcement
 ********************************************************************************************
@@ -2497,6 +2526,7 @@ color: #4e4946 ;
   font-size: 120%;
 }
 
+
 .otherpages .previous{
 	position:fixed;
 	left:4%; 
@@ -2513,4 +2543,9 @@ color: #4e4946 ;
 	z-index:999;
 	width:23px;
 	height:38px;}
+
+
+.galleryimg {
+  margin-bottom: 5px;
+}
 
