@@ -2583,35 +2583,46 @@ color: #4e4946 ;
 .otherpages .previous{
 	position:absolute;
 	margin-left: 5px;
-  margin-top: 30%; 
+  margin-top: 225px; 
 	background: url(images/left-arrow.png) no-repeat;
 	z-index:999;
 	width:23px;
 	height:38px;
-  opacity: 0.5;
+  opacity: 0.6;
 	}
 					  
 .otherpages .next{
 	position:absolute;
-	margin-left:925px;
-  margin-top: 30%; 
+	margin-left:930px;
+  margin-top: 225px; 
 	background: url(images/right-arrow.png) no-repeat;
 	z-index:999;
 	width:23px;
 	height:38px;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .galleryimg {
   margin-bottom: 5px;
 }
 
+/*////////////////////// @Iphone vertical //////////////////*/
 
- @media screen and (max-width: 480px) {
-  .otherpages .next { margin-left: 245px;}
-  otherpages. next { margin-left: 0;}
+ @media screen and (min-width:200px) and (max-width: 400px) {
+  .otherpages .next { margin-left: 245px;
+                      margin-top:135px ;}
+  .otherpages .previous { margin-left: -10px;
+                          margin-top:135px ;}
  }
 
+/*////////////////////// @Iphone horizontal //////////////////*/
+
+@media screen and (min-width: 420px) and (max-width: 600px) {
+  .otherpages .next { margin-left: 385px;
+                      margin-top:205px ;}
+  .otherpages .previous { margin-left: -10px;
+                          margin-top:205px ;}
+ }
 
 /****************** @Single ***********************/
 
@@ -2622,8 +2633,4 @@ color: #4e4946 ;
 #templategeneral p{
   font-size: 120%;
   font-family: 'PalatinoLTStdMedium';
-}
-
-.otherpages {
-  max-width: 960px;
 }
