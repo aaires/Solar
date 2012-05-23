@@ -2570,10 +2570,15 @@ color: #4e4946 ;
   font-size: 120%;
 }
 
+.otherpages {
+  width: 960px !important;
+  margin: auto;
+}
+
 
 .otherpages .previous{
 	position:absolute;
-	left:20%;
+	margin-left: 5px;
   margin-top: 30%; 
 	background: url(images/left-arrow.png) no-repeat;
 	z-index:999;
@@ -2584,7 +2589,7 @@ color: #4e4946 ;
 					  
 .otherpages .next{
 	position:absolute;
-	left:79%;
+	margin-left:925px;
   margin-top: 30%; 
 	background: url(images/right-arrow.png) no-repeat;
 	z-index:999;
@@ -2593,10 +2598,15 @@ color: #4e4946 ;
   opacity: 0.5;
 }
 
-
 .galleryimg {
   margin-bottom: 5px;
 }
+
+
+ @media screen and (max-width: 480px) {
+  .otherpages .next { margin-left: 245px;}
+  otherpages. next { margin-left: 0;}
+ }
 
 
 /****************** @Single ***********************/
@@ -2608,4 +2618,8 @@ color: #4e4946 ;
 #templategeneral p{
   font-size: 120%;
   font-family: 'PalatinoLTStdMedium';
+}
+
+.otherpages {
+  max-width: 960px;
 }

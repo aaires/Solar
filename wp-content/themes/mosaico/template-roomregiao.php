@@ -15,7 +15,7 @@ Template Name: Single
     
         <div class="sixcol first" id="roomimg">
 
-          <div class="otherpages">
+          <div class="twelvecol otherpages" id="setas">
     <?php 
     
     $post_parent = $post->post_parent;
