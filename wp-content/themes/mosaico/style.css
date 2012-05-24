@@ -2261,8 +2261,7 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 ********************************************************************************************
 ********************************************************************************************/
 #postroom {
-  height: 300px;
-  max-height: 300px;
+  max-height: 495px; /* was 300  now set to the image size on the left*/
   overflow: auto;
 }
 
@@ -2521,15 +2520,15 @@ color: #4e4946 ;
   padding-left: 4.5%;
   color: white;
   width: 101%;
-  margin-top: 3.3%;
+  /*margin-top: 14.4%;*/
+  margin-top:1.9%;
   padding-top: 3px;
   padding-bottom: 3px;
   font-size: 120%;
 }
 
 #postexperience {
-  height:195px;
-  max-height: 195px;
+  max-height: 272px; /*246*/
   overflow: auto;
 }
 
@@ -2633,4 +2632,23 @@ color: #4e4946 ;
 #templategeneral p{
   font-size: 120%;
   font-family: 'PalatinoLTStdMedium';
+}
+
+
+
+
+
+/****************** @Share ***********************/
+
+.sharing li a{
+	padding: 0px 0 0 25px !important;}
+	
+#sharing_email input[type="text"] {
+width: 50% !important;}
+
+
+.sharing{width:70%;}
+
+#sharebutton{
+	border:none; overflow:hidden; width:55px; height:21px;
 }
