@@ -5,7 +5,7 @@ if ( ! function_exists( 'themnific_add_javascript' ) ) {
 	function themnific_add_javascript() {
 
 		// Load Common scripts	
-		wp_enqueue_script('jquery-1.7.1.min', get_stylesheet_directory_uri() .'/js/jquery-1.7.1.min.js');
+		//wp_enqueue_script('jquery-1.7.1.min', get_stylesheet_directory_uri() .'/js/jquery-1.7.1.min.js');
 		wp_enqueue_script( 'superfish', get_template_directory_uri().'/js/superfish.js');
 		wp_enqueue_script( 'jquery.hoverIntent.minified', get_template_directory_uri().'/js/jquery.hoverIntent.minified.js');
 		wp_enqueue_script( 'css3-mediaqueries', get_template_directory_uri().'/js/css3-mediaqueries.js');

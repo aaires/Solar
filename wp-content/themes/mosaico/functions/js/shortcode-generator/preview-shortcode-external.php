@@ -15,8 +15,8 @@ $tmnf_shortcode_css = get_template_directory_uri() . '/functions/css/shortcodes.
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head profile="http://gmpg.org/xfn/11">
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" ></script>
+<!-- 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" ></script>  -->
 <link rel="stylesheet" href="<?php echo $tmnf_theme_css; ?>" media="all" />
 <link rel="stylesheet" href="<?php echo $tmnf_shortcode_css; ?>" media="all" />
 <style>

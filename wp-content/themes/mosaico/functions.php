@@ -257,18 +257,239 @@ function mosaico_enqueue_scripts() {
 		wp_deregister_script('jquery');//deregister current jquery
 		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', false, '1.7.1', false);//load jquery from google api, and place in footer
 		wp_enqueue_script('jquery');
-		
+		wp_register_script( 'nivo', get_template_directory_uri() . '/js/jquery.nivo.slider.pack.js', 'jquery' );
+		// Enqueue superfish script
+		wp_enqueue_script( 'nivo' );
 		
 //		wp_register_script( 'conference', get_template_directory_uri() . '/js/mosaico.js', 'jquery' );
 		// Enqueue nivo slicer script
 		wp_enqueue_script( 'conference',  get_template_directory_uri() . '/js/mosaico.js', 'jquery','1.0',true);
 
-	
+		
 		
 	}
 }
 // Enqueue at proper hook
 add_action( 'wp_enqueue_scripts', 'mosaico_enqueue_scripts' );
+
+
+
+
+
+
+/******************************* Nivo Slider ***************************/
+/*
+ ===============================================================
+Custom Post Type For Slider
+===============================================================
+*/
+
+add_action('init', 'create_slider_post_type');
+
+function create_slider_post_type() {
+	$args = array(
+			'label' => __('Slider'),
+			'singular_label' => __('Slide'),
+			'public' => true,
+			'show_ui' => true,
+			'capability_type' => 'post',
+			'hierarchical' => false,
+			'rewrite' => true,
+			'labels' => array(
+					'name' => __( 'Slider' ),
+					'singular_name' => __( 'Slide' ),
+					'add_new' => __( 'Add New' ),
+					'add_new_item' => __( 'Add New Slide' ),
+					'edit' => __( 'Edit' ),
+					'edit_item' => __( 'Edit Slide' ),
+					'new_item' => __( 'New Slide' ),
+					'view' => __( 'View Slide' ),
+					'view_item' => __( 'View Slide' ),
+					'search_items' => __( 'Search Slides' ),
+					'not_found' => __( 'No slides found' ),
+					'not_found_in_trash' => __( 'No slides found in Trash' ),
+					'parent' => __( 'Parent Slide' ),
+			),
+			'supports' => array('title', 'thumbnail')
+	);
+
+	register_post_type( 'slide' , $args );
+
+
+
+	/*
+	 ===============================================================
+	Options For Slider
+	===============================================================
+	*/
+
+	add_action("admin_init", "admin_init");
+	add_action('save_post', 'save_slide_meta');
+
+	function admin_init(){
+		add_meta_box("slider-meta", "Slider Options", "meta_options", "slide", "normal", "low");
+	}
+
+	function meta_options(){
+		global $post;
+		$custom = get_post_custom($post->ID);
+		$text = $custom["text"][0];
+		$link = $custom["link"][0];
+		?>
+<p>Set a featured image for this slide using the built-in WordPress featured image feature which is normally located on the right hand side of this page.  </p><p>Then, enter a url (beginning with "http://") of a page, post, product, category or even an off-site link using the field below.</p><p>You can also add a caption or message that will slide up from the bottom of each slide.</p><br />
+<label style="width:80px;float:left;display:block;font-weight:bold;padding:5px;">Link URL:</label><input style="width:400px;border:1px solid #ccc;" name="link" value="<?php echo $link; ?>" /><br />
+<label style="width:80px;float:left;display:block;font-weight:bold;padding:5px;">Caption:</label><input style="width:400px;border:1px solid #ccc;" name="text" value="<?php echo $text; ?>" />
+<?php
+}
+
+function save_slide_meta(){
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
+	return;
+	
+	global $post;
+	update_post_meta($post->ID, "text", $_POST["text"]);
+	update_post_meta($post->ID, "link", $_POST["link"]);
+}
+
+/*
+ * Resize images dynamically using wp built in functions
+* Victor Teixeira
+*
+* php 5.2+
+*
+* Exemplo de uso:
+*
+* <?php
+* $thumb = get_post_thumbnail_id();
+* $image = vt_resize( $thumb, '', 140, 110, true );
+* ?>
+* <img src="<?php echo $image[url]; ?>" width="<?php echo $image[width]; ?>" height="<?php echo $image[height]; ?>" />
+*
+* @param int $attach_id
+* @param string $img_url
+* @param int $width
+* @param int $height
+* @param bool $crop
+* @return array
+*/
+function vt_resize( $attach_id = null, $img_url = null, $width, $height, $crop = false ) {
+
+	// this is an attachment, so we have the ID
+	if ( $attach_id ) {
+
+		$image_src = wp_get_attachment_image_src( $attach_id, 'full' );
+		$file_path = get_attached_file( $attach_id );
+
+		// this is not an attachment, let's use the image url
+	} else if ( $img_url ) {
+
+		if ( is_multisite() ) /* CHECK IF MULTISITE IS ENABLED */ {
+
+
+
+			$file_path = parse_url( $img_url );
+			global $blog_id;
+			$file_path = $_SERVER['DOCUMENT_ROOT'] .'/wp-content/blogs.dir/' . $blog_id . $file_path['path'];
+
+			//$file_path = ltrim( $file_path['path'], '/' );
+			//$file_path = rtrim( ABSPATH, '/' ).$file_path['path'];
+
+			$orig_size = @getimagesize( $file_path );
+
+			$image_src[0] = $img_url;
+			$image_src[1] = $orig_size[0];
+			$image_src[2] = $orig_size[1];
+		} /* IF MULTISITE IS NOT ENABLED */
+
+		else {
+			$file_path = parse_url( $img_url );
+			$file_path = $_SERVER['DOCUMENT_ROOT'] . $file_path['path'];
+
+			//$file_path = ltrim( $file_path['path'], '/' );
+			//$file_path = rtrim( ABSPATH, '/' ).$file_path['path'];
+
+			$orig_size = @getimagesize( $file_path );
+
+			$image_src[0] = $img_url;
+			$image_src[1] = $orig_size[0];
+			$image_src[2] = $orig_size[1];
+		} //END OF MULITSITE CHECK
+	}
+
+	$file_info = pathinfo( $file_path );
+	$extension = '.'. $file_info['extension'];
+
+	// the image path without the extension
+	$no_ext_path = $file_info['dirname'].'/'.$file_info['filename'];
+
+	$cropped_img_path = $no_ext_path.'-'.$width.'x'.$height.$extension;
+
+	// checking if the file size is larger than the target size
+	// if it is smaller or the same size, stop right here and return
+	if ( $image_src[1] > $width || $image_src[2] > $height ) {
+
+		// the file is larger, check if the resized version already exists (for $crop = true but will also work for $crop = false if the sizes match)
+		if ( file_exists( $cropped_img_path ) ) {
+
+			$cropped_img_url = str_replace( basename( $image_src[0] ), basename( $cropped_img_path ), $image_src[0] );
+
+			$vt_image = array (
+					'url' => $cropped_img_url,
+					'width' => $width,
+					'height' => $height
+			);
+
+			return $vt_image;
+		}
+
+		// $crop = false
+		if ( $crop == false ) {
+
+			// calculate the size proportionaly
+			$proportional_size = wp_constrain_dimensions( $image_src[1], $image_src[2], $width, $height );
+			$resized_img_path = $no_ext_path.'-'.$proportional_size[0].'x'.$proportional_size[1].$extension;
+
+			// checking if the file already exists
+			if ( file_exists( $resized_img_path ) ) {
+
+				$resized_img_url = str_replace( basename( $image_src[0] ), basename( $resized_img_path ), $image_src[0] );
+
+				$vt_image = array (
+						'url' => $resized_img_url,
+						'width' => $proportional_size[0],
+						'height' => $proportional_size[1]
+				);
+
+				return $vt_image;
+			}
+		}
+
+		// no cache files - let's finally resize it
+		$new_img_path = image_resize( $file_path, $width, $height, $crop );
+		$new_img_size = @getimagesize( $new_img_path );
+		$new_img = str_replace( basename( $image_src[0] ), basename( $new_img_path ), $image_src[0] );
+
+		// resized output
+		$vt_image = array (
+				'url' => $new_img,
+				'width' => $new_img_size[0],
+				'height' => $new_img_size[1]
+		);
+
+		return $vt_image;
+	}
+
+	// default output - without resizing
+	$vt_image = array (
+			'url' => $image_src[0],
+			'width' => $image_src[1],
+			'height' => $image_src[2]
+	);
+
+	return $vt_image;
+}
+
+} //END OF CHECK FOR CUSTOM POST TYPE
 
 
 ?>

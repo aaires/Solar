@@ -35,10 +35,13 @@ Template Name: Location
             <h2 class="locationtitle"><?php _e('Location','solar'); ?></h2>
             <div id="locationcontent">
             <?php the_content(); ?>
-        <div class="locationsubtitle">
+       
+       <!-- This can go in the content -->
+      <!--   <div class="locationsubtitle">
             <h6><?php  $coordenadas = get_post_meta($post->ID,'gps',true);
                 echo $coordenadas; ?></h6>
         </div>
+         -->
     <div style="clear: both;"></div>
                 <div class="locationform">
                 <h2 class="locationformtitle"><?php _e('By road','solar'); ?></h2>
@@ -108,18 +111,8 @@ Template Name: Location
 
             </div>
             </div>
-            <div style="clear: both;"></div>
-             <div id="sharingoptionslocation">
-                <div class="send">
-                    <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/envia.png"/><?php _e('Send to a friend','solar'); ?></a>
-                </div>
-                <div class="share">
-                    <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/partilha.png"/><?php _e('Share','solar'); ?></a>
-                </div>
-                <div class="like">
-<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.solaregasmoniz.com&amp;send=false&amp;layout=button_count&amp;width=26&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:21px;" allowTransparency="true"></iframe>
-                </div>
-                </div>
+            
+            
              </div>
         </div>
 
