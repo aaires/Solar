@@ -465,7 +465,7 @@ h4.leading{
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
      #navigation .nav li ul {
         width: 200px;
 
