@@ -429,6 +429,14 @@ h4.leading{
   color: #638B92 !important;
   z-index: 999;
   }
+
+
+@media screen and (max-width: 400px) {
+      .nav li ul {
+        line-height: 170%;
+      }
+}
+
 .nav li:hover, .nav li.hover {
 
 }
@@ -449,17 +457,36 @@ h4.leading{
 .nav li li li li:hover ul,
 .nav li li li li.sfhover ul {
   left: auto;
+
 }
 #navigation .nav li ul {
   position: absolute;
   width: 115px;
+
 }
+
+@media screen and (max-width: 600px) {
+     #navigation .nav li ul {
+        width: 200px;
+
+      }
+}
+
+#navigation .nav li ul li {
+  padding-left: 0 !important;
+}
+
+
 #navigation .nav li ul li a {
 }
 #navigation .nav li ul li a:hover {
   text-decoration: none;
   color: #303030 ;
 }
+
+#navigation .nav li ul li a:hover {
+        background-color: #EAE7E3;
+      }
 
 .sub-menu li{
   clear: both;
@@ -1275,7 +1302,7 @@ ul#serinfo {
 #legal, #legal a, #legal a:hover, #legal a:visited{
   font-family: 'PalatinoLTStdMedium';
   color: #837165;
-  font-size: 13px;
+  font-size: 11px;
 }
 
 #web, #web a, #web a:hover, #web a:visited{
@@ -2573,6 +2600,10 @@ color: #4e4946 ;
   font-size: 120%;
 }
 
+.relatedtitle1 a, .relatedtitle2 a{
+  padding-left: 7px;
+}
+
 .otherpages {
   width: 960px !important;
   margin: auto;
@@ -2620,6 +2651,57 @@ color: #4e4946 ;
   .otherpages .next { margin-left: 385px;
                       margin-top:205px ;}
   .otherpages .previous { margin-left: -10px;
+                          margin-top:205px ;}
+ }
+
+
+
+/*///////////////////////////////////////////////@Experience/////////////////////////////////*/
+
+.otherpagesexperience {
+  width: 960px !important;
+  margin: auto;
+}
+
+
+.otherpagesexperience .previous{
+  position:absolute;
+  margin-left: 5px;
+  margin-top: 225px; 
+  background: url(images/left-arrow.png) no-repeat;
+  z-index:999;
+  width:23px;
+  height:38px;
+  opacity: 0.6;
+  }
+            
+.otherpagesexperience .next{
+  position:absolute;
+  margin-left:930px;
+  margin-top: 225px; 
+  background: url(images/right-arrow.png) no-repeat;
+  z-index:999;
+  width:23px;
+  height:38px;
+  opacity: 0.6;
+}
+
+
+/*////////////////////// @Iphone vertical //////////////////*/
+
+ @media screen and (min-width:200px) and (max-width: 400px) {
+  .otherpagesexperience .next { margin-left: 265px;
+                      margin-top:135px ;}
+  .otherpagesexperience .previous { margin-left: 5px;
+                          margin-top:135px ;}
+ }
+
+/*////////////////////// @Iphone horizontal //////////////////*/
+
+@media screen and (min-width: 420px) and (max-width: 600px) {
+  .otherpagesexperience .next { margin-left: 405px;
+                      margin-top:205px ;}
+  .otherpagesexperience .previous { margin-left: 10px;
                           margin-top:205px ;}
  }
 
