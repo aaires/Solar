@@ -11,7 +11,7 @@ Template Name: Experience
 <div class="row" id="room">
     
     
-    <div class="otherpages twelvecol">
+    <div class="otherpagesexperience twelvecol">
 		<?php 
 		
 		$post_parent = $post->post_parent;
