@@ -2910,4 +2910,7 @@ margin-left: -40px;
 	
 }
 
+#lang_sel {
+	width: 150px;
+}
 /* for IE  #slider img, #slider a, #slider a img, #slider {height:360px; width:960px;} */
