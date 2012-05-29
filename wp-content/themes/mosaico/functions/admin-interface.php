@@ -691,7 +691,7 @@ function themnific_ajax_callback() {
 		if($save_type == 'framework' ){
 			$options = get_option('themnific_template');
 		}
-		print_r($options);
+		
 		foreach($options as $option){
 			
 			if(isset($option['id'])){ 
