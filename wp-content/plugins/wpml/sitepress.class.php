@@ -481,7 +481,7 @@ class SitePress{
             
         } 
         
-        add_action('wp_footer', array($this, 'display_wpml_footer'),20);
+      //  add_action('wp_footer', array($this, 'display_wpml_footer'),20);
                 
         if(defined('XMLRPC_REQUEST') && XMLRPC_REQUEST){
             add_action('xmlrpc_call', array($this, 'xmlrpc_call_actions'));

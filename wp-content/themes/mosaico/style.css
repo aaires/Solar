@@ -2288,7 +2288,7 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 ********************************************************************************************
 ********************************************************************************************/
 #postroom {
-  max-height: 495px; /* was 300  now set to the image size on the left*/
+  max-height: 400px; /* was 300  now set to the image size on the left*/
   overflow: auto;
 }
 
