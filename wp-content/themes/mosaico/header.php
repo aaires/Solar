@@ -85,6 +85,7 @@
                 <div class="fourcol" id="socialicons"> 
             
                 <?php get_template_part('/includes/uni-social');?>
+                <?php do_action('icl_language_selector'); ?>
                 
                 </div>
 
