@@ -2917,3 +2917,6 @@ margin-left: -40px;
 	width: 150px;
 }
 /* for IE  #slider img, #slider a, #slider a img, #slider {height:360px; width:960px;} */
+
+
+#single-frame .nivo-caption{display:none !important;}

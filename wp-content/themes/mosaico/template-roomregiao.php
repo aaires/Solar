@@ -41,7 +41,71 @@ Template Name: Single
     ?>
     </div>
 
-<?php the_post_thumbnail('full'); ?>
+    <?php 
+    
+    $attachments = get_children( array('post_parent' => $post->ID, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID') );
+    
+  //  print_r($attachments);
+    
+ 	 $tid =  get_post_thumbnail_id();
+    
+    ?>
+    
+	
+
+	
+	
+	 <div id="single-frame" style="width:480px;height:495px;">
+		<div id="slider" class="nivoSlider">
+		<a href="" title="">
+			<?php the_post_thumbnail('full'); ?>	
+		</a>
+			
+			<?php foreach ($attachments as $attid=> $image)
+				{
+					if($tid == $attid)
+						continue;// do nothing we already have this
+				?>
+						<img width="480" height="495" src="<?php echo $image->guid?>" class="attachment-full wp-post-image" alt="<?php echo $image->post_title;?>" title="<?php echo $image->post_title;?>">
+					<?php 
+				}?>
+						
+			
+			</div><!-- /#slider -->
+	</div>
+	
+	<script type="text/javascript">
+
+
+		jQuery(document).ready(function() { console.log(jQuery('#slider'));
+		jQuery('#slider').nivoSlider({
+			effect:'fade', //Specify sets like: 'fold,fade,sliceDown,sliceUpDown'
+			animSpeed:500,
+			pauseTime:3000,
+			startSlide:0, //Set starting Slide (0 index)
+			directionNav:false, //Next & Prev
+			directionNavHide:false, //Only show on hover
+			controlNav:false, //1,2,3...
+			controlNavThumbs:false, //Use thumbnails for Control Nav
+	      	controlNavThumbsFromRel:false, //Use image rel for thumbs
+			controlNavThumbsSearch: 'check.jpg', //Replace this with...
+			controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
+			keyboardNav:false, //Use left & right arrows
+			pauseOnHover:true, //Stop animation while hovering
+			manualAdvance:false, //Force manual transitions
+			captionOpacity:0.8, //Universal caption opacity
+			
+			beforeChange: function(){},
+			afterChange: function(){},
+			slideshowEnd: function(){} //Triggers after all slides have been shown
+		});
+		});
+		</script>
+	
+	
+	
+	
+
 
 	<?php endwhile; else: ?>
 
