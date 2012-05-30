@@ -458,6 +458,8 @@ class ICL_Pro_Translation{
         $ret = false;
         $iclq = new ICanLocalizeQuery($sitepress_settings['site_id'], $sitepress_settings['access_key']);       
         $post_type = $wpdb->get_var($wpdb->prepare("SELECT p.post_type FROM {$wpdb->posts} p JOIN {$wpdb->prefix}icl_content_status c ON p.ID = c.nid WHERE c.rid=%d", $request_id));
+
+        
         $trid = $wpdb->get_var($wpdb->prepare("
             SELECT trid 
             FROM {$wpdb->prefix}icl_translations t 

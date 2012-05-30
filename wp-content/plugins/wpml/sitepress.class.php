@@ -2561,7 +2561,7 @@ class SitePress{
                         AND t.element_type IN ('".join("','", $ptypes)."') {$cond} JOIN {$wpdb->prefix}icl_languages l ON t.language_code=l.code AND l.active=1";                
             }            
         }elseif($post_type){
-            if($this->is_translated_post_type($post_type)){
+            if($this->is_translated_post_type($post_type)){ 
                 $join .= " {$ljoin} JOIN {$wpdb->prefix}icl_translations t ON {$wpdb->posts}.ID = t.element_id 
                         AND t.element_type = 'post_{$post_type}' {$cond} JOIN {$wpdb->prefix}icl_languages l ON t.language_code=l.code AND l.active=1";                
             }elseif($post_type == 'any'){
@@ -3972,8 +3972,12 @@ class SitePress{
     
     // adiacent posts links
     function get_adiacent_post_join($join){
-        global $wpdb;
-        $post_type = get_query_var('post_type');
+        global $wpdb; global $wp_query;
+        
+        global $post;
+        $post_type = $post->post_type;
+        if(!$post_type)
+      	  $post_type = get_query_var('post_type');
         if(!$post_type) $post_type = 'post';
         $join .= " JOIN {$wpdb->prefix}icl_translations t ON t.element_id = p.ID AND t.element_type = 'post_{$post_type}'";        
         return $join;

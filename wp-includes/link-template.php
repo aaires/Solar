@@ -1104,7 +1104,7 @@ function get_adjacent_post( $in_same_cat = false, $excluded_categories = '', $pr
 		return null;
 
 	$current_post_date = $post->post_date;
-
+	
 	$join = '';
 	$posts_in_ex_cats_sql = '';
 	if ( $in_same_cat || ! empty( $excluded_categories ) ) {
@@ -1149,6 +1149,9 @@ function get_adjacent_post( $in_same_cat = false, $excluded_categories = '', $pr
 	$sort  = apply_filters( "get_{$adjacent}_post_sort", "ORDER BY p.post_date $order LIMIT 1" );
 
 	$query = "SELECT p.* FROM $wpdb->posts AS p $join $where $sort";
+	
+
+	
 	$query_key = 'adjacent_post_' . md5($query);
 	$result = wp_cache_get($query_key, 'counts');
 	if ( false !== $result )

@@ -19,15 +19,20 @@ Template Name: Single
     <?php 
     
     $post_parent = $post->post_parent;
-    
+
     // Only shows related posts (same parent)
     $previous = get_previous_post();
+    
+    
     if($previous->post_parent == $post_parent && $post_parent!=0)
-    { $previous_link =  get_permalink($previous->ID);
+    {
+    	$previous_link =  get_permalink($previous->ID);
       ?><a href="<?php echo $previous_link?>"> <div class="previous  first"></div></a>  <?php 
     }
     
     $next = get_next_post();  
+    
+    
     if($next->post_parent == $post_parent && $post_parent!=0)
     {
       $next_link =  get_permalink($next->ID);
