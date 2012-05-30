@@ -2608,6 +2608,19 @@ color: #4e4946 ;
 }
 
 
+
+.nivo-prevNav{
+	background: url(images/left-arrow.png) no-repeat;
+	height:40px;
+	color:transparent;
+	left:2% !important;
+}
+.nivo-nextNav{
+	background: url(images/right-arrow.png) no-repeat; height:40px;
+	color:transparent;
+	right:2% !important;
+}
+
 .otherpages .previous{
 	position:absolute;
 	margin-left: 5px;
@@ -2790,15 +2803,19 @@ padding: 0 0 0px 0 !important;
 	position:absolute;
 	left:0px;
 	bottom:0px;
-	background:transparent;
+	background:#666;
 	color:#fff;
-	opacity:0.8; /* Overridden by captionOpacity setting */
+	opacity:0.4; /* Overridden by captionOpacity setting */
 	width:100%;
 	z-index:8;
 }
 .nivo-caption p {
 	padding:5px;
 	margin:0;
+	font-size:35px;
+	line-height:45px;
+	position:relative;
+	left:2%;
 }
 .nivo-caption a {
 	display:inline !important;
@@ -2815,21 +2832,25 @@ padding: 0 0 0px 0 !important;
 }
 .nivo-prevNav {
 	left:0px;
+	opacity:0.7;
 }
 .nivo-nextNav {
 	right:0px;
+	opacity:0.7;
 }
 /* Control nav styles (e.g. 1,2,3...) */
  .nivo-controlNav a {
 	display:block;
-	width:100px;
+	width:92px;
 	height:70px;
 	background:url(images/selected.png) no-repeat;
 /*	text-indent:-9999px;*/
 	border:0;
-	margin-right:3px;
+	margin-right:4px;
 	float:left;
 }
+
+.nivo-controlNav .active img {border:1px solid #fff;}
 
 .nivo-controlNav a:hover {cursor:pointer;}
 
@@ -2875,7 +2896,7 @@ margin-left: -40px;
 	position:relative;
 	top:500px;
 	
-	
+	left:2px;
 }
 #slider .nivo-controlNav img {
 	display:inline; /* Unhide the thumbnails */
@@ -2889,4 +2910,7 @@ margin-left: -40px;
 	
 }
 
+#lang_sel {
+	width: 150px;
+}
 /* for IE  #slider img, #slider a, #slider a img, #slider {height:360px; width:960px;} */

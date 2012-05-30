@@ -13,7 +13,7 @@ Template Name: Gallery
         <div id="slider-frame">
 		<div id="slider" class="nivoSlider">
 			<?php //BEGIN Slider LOOP
-			$loop = new WP_Query( array( 'post_type' => 'slide' ) );
+			$loop = new WP_Query( array( 'post_type' => 'slide', 'posts_per_page' => '10' ) );
 			while ( $loop->have_posts() ) : $loop->the_post();
 			
 			
@@ -49,7 +49,7 @@ Template Name: Gallery
 			animSpeed:500,
 			pauseTime:6000,
 			startSlide:0, //Set starting Slide (0 index)
-			directionNav:false, //Next & Prev
+			directionNav:true, //Next & Prev
 			directionNavHide:false, //Only show on hover
 			controlNav:true, //1,2,3...
 			controlNavThumbs:true, //Use thumbnails for Control Nav
