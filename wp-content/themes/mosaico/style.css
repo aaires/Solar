@@ -530,7 +530,7 @@ padding:10px; /* variable width */
 ********************************************************************************************
 ********************************************************************************************/
 
-ul.medpost li{ overflow:hidden;margin-bottom:40px}
+ul.medpost li{ overflow:hidden;}
 
 ul.medpost li h2, h2.leading{ padding:0 0 15px 0; margin:0 0 10px 0;}
 	
@@ -552,7 +552,7 @@ ul.medpost li .meta{
   }
 
 
-ul.medpost li img{max-width: 98%; display: block; float:left; margin:20px 40px 20px 2px;}
+ul.medpost li img{max-width: 98%; display: block; float:left; margin:20px 30px 20px 2px;}
 
 
 .entry p{ margin:0 0 15px 0}
@@ -2621,6 +2621,8 @@ color: #4e4946 ;
 	right:2% !important;
 }
 
+
+
 .otherpages .previous{
 	position:absolute;
 	margin-left: 5px;
@@ -2715,6 +2717,7 @@ color: #4e4946 ;
   .otherpagesexperience .previous { margin-left: 10px;
                           margin-top:205px ;}
  }
+
 
 /****************** @Single ***********************/
 
