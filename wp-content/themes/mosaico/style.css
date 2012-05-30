@@ -28,28 +28,6 @@ background-color: #638B92 !important;
 
 
 
-/************************************************************************************
-smaller than 650
-*************************************************************************************/
-@media screen and (max-width: 650px) {
-
-/*	.body3 {background-color: red !important;}*/
-
-
-
-}
-
-/************************************************************************************
-smaller than 560
-*************************************************************************************/
-@media screen and (max-width: 480px) {
-
-	/*.body3 {background-color: #fff !important;}*/
-
-}
-
-
-
 
 
 a,a:hover{ text-decoration:none; }
@@ -306,7 +284,7 @@ h4.leading{
 ********************************************************************************************/
 
 
-#core .row{}
+#core .row{ background: #CCC5BA;}
 
 
 #sidebar {
@@ -1998,7 +1976,10 @@ top:240px;
 left:720px;
 }
 
+/*
 .mosaicitembottom41{
+	max-width: 240px !important;
+max-height: 127px !important;
 	width:240px;
 	height:129px;
 	top:0px;
@@ -2031,7 +2012,7 @@ left:720px;
   font-size: 13px;
   color: white;
   text-align: center;
-}
+}*/
 
 /* @Gallery
 *******************************************************/
@@ -2312,19 +2293,18 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 }
 
 #roompost {
-  margin-left: 1.9% ;
-  min-height: 474px;
-  background: #CCC5BA;
-  padding-right: 2.2%;
-  padding-top: 2%;
+ /* margin-left: 1.9% ;*/
+  min-height: 495px;
+ /* background: #CCC5BA;*/
+/*  padding-right: 2.2%;*/
+/*  padding-top: 2%;*/
 }
 
-#room {
-  font-family: 'PalatinoLTStdMedium';
-}
+
 .roomcontent {
-  margin-right: 2.5%;
-  margin-left: 4.5%;
+/*  margin-right: 2.5%;
+  margin-left: 4.5%;*/
+    font-family: 'PalatinoLTStdMedium';
 }
 
 .roomcontent h2, .roomcontent h2 a:link, .roomcontent h2:hover, .roomcontent h2 a:visited{
@@ -2340,7 +2320,7 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 }
 
 #roomimg img{
-  max-width: 104% !important;
+ /* max-width: 104%*/ !important;
 }
 
 
@@ -2602,8 +2582,10 @@ color: #4e4946 ;
   padding-left: 7px;
 }
 
-.otherpages {
-  width: 960px !important;
+.navigation {
+/*	width:100% !important;
+	max-width:960px !important;	*/
+ /* width: 960px !important;*/
   margin: auto;
 }
 
@@ -2623,7 +2605,7 @@ color: #4e4946 ;
 
 
 
-.otherpages .previous{
+.navigation .previous{
 	position:absolute;
 	margin-left: 5px;
   margin-top: 225px; 
@@ -2634,46 +2616,74 @@ color: #4e4946 ;
   opacity: 0.6;
 	}
 					  
-.otherpages .next{
+.navigation .next{
 	position:absolute;
 	margin-left:930px;
-  margin-top: 225px; 
+	margin-top: 225px; 
 	background: url(images/right-arrow.png) no-repeat;
 	z-index:999;
 	width:23px;
 	height:38px;
-  opacity: 0.6;
+ 	opacity: 0.6;
 }
 
 .galleryimg {
   margin-bottom: 5px;
 }
 
-/*////////////////////// @Iphone vertical //////////////////*/
 
- @media screen and (min-width:200px) and (max-width: 400px) {
-  .otherpages .next { margin-left: 245px;
-                      margin-top:135px ;}
-  .otherpages .previous { margin-left: -10px;
-                          margin-top:135px ;}
+/*////////////////////// @IPad vertical //////////////////*/
+
+ @media screen and (max-width: 768px) {
+  .navigation .next { 
+  						margin-left: 700px;
+                     	margin-top:135px ;}
+ 
+ .navigation .previous { 
+                           margin-top:135px ;
+                        }
+                        
+#core .row{ background: transparent;}
+
+.roomcontent {background: #CCC5BA; padding:20px;}
+                        
  }
+
+
+
 
 /*////////////////////// @Iphone horizontal //////////////////*/
 
-@media screen and (min-width: 420px) and (max-width: 600px) {
-  .otherpages .next { margin-left: 385px;
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .navigation .next { margin-left: 385px;
                       margin-top:205px ;}
-  .otherpages .previous { margin-left: -10px;
+  .navigation .previous { margin-left: -10px;
                           margin-top:205px ;}
  }
 
 
+/*////////////////////// @Iphone vertical //////////////////*/
+
+ @media screen and (min-width:200px) and (max-width: 400px) {
+  .navigation .next { margin-left: 245px;
+                      margin-top:135px ;}
+  .navigation .previous { margin-left: -10px;
+                          margin-top:135px ;}
+ }
+
+
+
+
 
 /*///////////////////////////////////////////////@Experience/////////////////////////////////*/
-
-.otherpagesexperience {
-  width: 960px !important;
-  margin: auto;
+/*
+.otherpagesexperience {*/
+/*  width: 960px !important;*/
+/*  margin: auto;
+  
+  
+	width:100% !important;
+	max-width:960px !important;
 }
 
 
@@ -2697,27 +2707,27 @@ color: #4e4946 ;
   width:23px;
   height:38px;
   opacity: 0.6;
-}
+}*/
 
 
 /*////////////////////// @Iphone vertical //////////////////*/
-
+/*
  @media screen and (min-width:200px) and (max-width: 400px) {
   .otherpagesexperience .next { margin-left: 265px;
                       margin-top:135px ;}
   .otherpagesexperience .previous { margin-left: 5px;
                           margin-top:135px ;}
- }
+ }*/
 
 /*////////////////////// @Iphone horizontal //////////////////*/
-
+/*
 @media screen and (min-width: 420px) and (max-width: 600px) {
   .otherpagesexperience .next { margin-left: 405px;
                       margin-top:205px ;}
   .otherpagesexperience .previous { margin-left: 10px;
                           margin-top:205px ;}
  }
-
+*/
 
 /****************** @Single ***********************/
 
@@ -2873,9 +2883,10 @@ margin-left: -40px;
 
 /* Slider */
 
-#slider-frame {width:960px; }
+#slider-frame {width:100%;
+max-width:960px;}
 
-#slider {width:960px; margin:0px 0px; clear:both;}
+#slider {margin:0px 0px; clear:both;}
 #slider img {
     position:absolute;
     top:0px;
@@ -2920,3 +2931,5 @@ margin-left: -40px;
 
 
 #single-frame .nivo-caption{display:none !important;}
+/*
+#single-frame{width:329px;height:326px;}*/

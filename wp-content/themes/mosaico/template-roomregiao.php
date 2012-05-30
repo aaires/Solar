@@ -8,14 +8,9 @@ Template Name: Single
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		
 <div id="core" class="container rooms">
-<div class="row" id="room">
-    
-    
-    
-    
-        <div class="sixcol first" id="roomimg">
+<div class="row">
 
-          <div class="twelvecol otherpages" id="setas">
+    <div class="twelvecol navigation">
     <?php 
     
     $post_parent = $post->post_parent;
@@ -39,46 +34,41 @@ Template Name: Single
       ?><a href="<?php echo $next_link;?>"><div class="next  last"></div> </a><?php
     }
     ?>
-    </div>
+    </div> <!-- #navigation -->
+</div>
 
-    <?php 
-    
-    $attachments = get_children( array('post_parent' => $post->ID, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID') );
-    
-  //  print_r($attachments);
-    
- 	 $tid =  get_post_thumbnail_id();
-    
-    ?>
-    
-	
 
+<div class="row">    
+<!-- 	<div class="sixcol first" id="roomimg">  -->
+    <div class="sixcol first">
 	
-	
-	 <div id="single-frame" style="width:480px;height:495px;">
-		<div id="slider" class="nivoSlider">
+	 <div id="single-frame" >
+		<div id="slider2" class="nivoSlider">
 		<a href="" title="">
-			<?php the_post_thumbnail('full'); ?>	
+			<?php 
+			$attachments = get_children( array('post_parent' => $post->ID, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID') );
+			$tid =  get_post_thumbnail_id();
+			
+			
+			the_post_thumbnail('full'); 
+			
+			?>	
 		</a>
 			
-			<?php foreach ($attachments as $attid=> $image)
-				{
-					if($tid == $attid)
-						continue;// do nothing we already have this
-				?>
-						<img width="480" height="495" src="<?php echo $image->guid?>" class="attachment-full wp-post-image" alt="<?php echo $image->post_title;?>" title="<?php echo $image->post_title;?>">
-					<?php 
-				}?>
-						
-			
+		<?php foreach ($attachments as $attid=> $image)
+			{
+				if($tid == $attid)
+					continue;// do nothing we already have this
+			?>
+					<img width="" height="" src="<?php echo $image->guid?>" class="attachment-full wp-post-image" alt="<?php echo $image->post_title;?>" title="<?php echo $image->post_title;?>">
+				<?php 
+			}?>
 			</div><!-- /#slider -->
-	</div>
+	</div> <!-- #single-frame -->
 	
 	<script type="text/javascript">
-
-
 		jQuery(document).ready(function() { console.log(jQuery('#slider'));
-		jQuery('#slider').nivoSlider({
+		jQuery('#slider2').nivoSlider({
 			effect:'fade', //Specify sets like: 'fold,fade,sliceDown,sliceUpDown'
 			animSpeed:500,
 			pauseTime:3000,
@@ -100,11 +90,27 @@ Template Name: Single
 			slideshowEnd: function(){} //Triggers after all slides have been shown
 		});
 		});
-		</script>
+	</script>
 	
+	 </div><!-- end sixcol first-->
 	
-	
-	
+	   <div class="sixcol last" id="roompost">
+         
+         
+	 <div class="roomcontent">
+	   
+         
+
+               <h2 class="leading"> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <div class="entry" id="postroom">
+                 <?php the_content(); ?>
+                    <?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:','themnific') . '</span>', 'after' => '</div>' ) ); ?>
+                    <?php the_tags( '<p>' . __( 'Tags: ','themnific') . '', ', ', '</p>'); ?>
+               
+              </div> <!-- #postroom -->
+          </div> <!-- .roomcontent -->
+             
+  </div> <!-- .sixcol last -->	
 
 
 	<?php endwhile; else: ?>
@@ -113,36 +119,19 @@ Template Name: Single
 
 	<?php endif; ?>
 
-                <div style="clear: both;"></div>
-
-        </div><!-- end #core .eightcol-->
-
-    
-    
-    
-        <div class="sixcol last" id="roompost">
-            <div class="roomcontent">
-
-                <h2 class="leading"> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                 <div class="entry" id="postroom">
-                 <?php the_content(); ?>
-                    <?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:','themnific') . '</span>', 'after' => '</div>' ) ); ?>
-                    <?php the_tags( '<p>' . __( 'Tags: ','themnific') . '', ', ', '</p>'); ?>
-               
-                </div>
-            </div>
-             
-             </div>
-        </div>
+       <div style="clear: both;"></div>
+  
+  </div> <!-- #row -->
 
 
 
-</div><!--end #core .row-->
-
-    
-   <div style="clear: both;"></div> 
 </div><!--end #core-->
+
+   
+  <div style="clear: both;"></div> 
+
 <div class="row">
-<?php get_template_part('/includes/sliders/mosaico8bottom' );; ?> 
+	<?php get_template_part('/includes/sliders/mosaico8bottom' ); ?> 
 </div>
+
 <?php get_footer(); ?>

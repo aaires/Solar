@@ -10,7 +10,7 @@
 	
 	
 	 <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight'); ?>
-    <div class="mosaicitembottom41" style="background-image:url(<?php echo $image[0]; ?>);">
+    <div class="mosaicitem41" style="background-image:url(<?php echo $image[0]; ?>);">
         <a href="<?php the_permalink(); ?>">
        
         <?php $image_url =  get_post_meta($post->ID, 'special-offer',true); ?>
@@ -28,7 +28,7 @@
 
 
 	
-    <div class="mosaicitembottom42  idnewsletter newslayout" id="newsletter" >
+    <div class="mosaicitem42  idnewsletter newslayout" id="newsletter" >
         <div class="inpost2">
             <div class="newsletter">
             <?php _e('Newsletter','solar'); ?>
@@ -57,7 +57,7 @@
 	
 	<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight'); ?>
 	
-    <div class="mosaicitembottom43" style="background-image:url(<?php echo $image[0]; ?>);">
+    <div class="mosaicitem43" style="background-image:url(<?php echo $image[0]; ?>);">
         <a href="<?php the_permalink(); ?>">
          <?php $image_url =  get_post_meta($post->ID, 'new-offer',true); ?>
     	<!-- visible image on load -->	
