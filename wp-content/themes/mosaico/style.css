@@ -2496,19 +2496,8 @@ color: #4e4946 ;
   font-family: 'PalatinoLTStdBold';
   font-size: 130%;
   padding: 4px;
+  -webkit-appearance: none;
 } 
-
-#howlocation input[type="submit"] {
-  float: left;
-  width: 33%;
-  cursor: pointer;
-  margin-bottom: 1%;
-  background-color: #638c92;
-  color: white;
-  font-family: 'PalatinoLTStdBold';
-  font-size: 130%;
-  padding: 4px;
-}
 
 .locationairport{
   cursor: pointer;
