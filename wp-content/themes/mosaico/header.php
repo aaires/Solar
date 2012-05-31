@@ -69,7 +69,7 @@
                
             <!--    <div class="contentor"> -->
                 
-                <div class="eightcol first">
+                <div class="sevencol first">
                 <a href="<?php echo home_url(); ?>/">
                 
 					<?php if(get_option('themnific_logo')) { ?>
@@ -82,10 +82,11 @@
 
                 </div>
 
-                <div class="fourcol" id="socialicons"> 
+                <div class="fivecol" id="socialicons"> 
             
+              <?php do_action('icl_language_selector'); ?>
                 <?php get_template_part('/includes/uni-social');?>
-                <?php do_action('icl_language_selector'); ?>
+              
                 
                 </div>
 

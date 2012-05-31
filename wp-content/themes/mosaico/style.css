@@ -1505,6 +1505,7 @@ ul.social-menu {
 	display: inline;
 	position: relative;
 	overflow: hidden;
+  	right:10px;
    }
 	
 	#sidebar>ul.social-menu {
@@ -2999,6 +3000,7 @@ max-width:960px;}
 
 #lang_sel {
 	width: 150px;
+	position:relative; float:right; top:3px;
 }
 /* for IE  #slider img, #slider a, #slider a img, #slider {height:360px; width:960px;} */
 
@@ -3006,3 +3008,5 @@ max-width:960px;}
 #single-frame .nivo-caption{display:none !important;}
 /*
 #single-frame{width:329px;height:326px;}*/
+
+
