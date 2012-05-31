@@ -1413,6 +1413,7 @@ max-height: 127px !important;
   right: 0px;
   bottom: 8px;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 	
