@@ -307,6 +307,16 @@ h4.leading{
   letter-spacing: -0.1em;
   line-height: 160%;
   }
+  
+  @media screen and (max-width: 799px) {
+      #navigation {
+        letter-spacing: -0.3em;
+        
+      }
+}
+  
+  
+  
   #navigation .nav li a {
   }
   #navigation .nav li:first-child a {
