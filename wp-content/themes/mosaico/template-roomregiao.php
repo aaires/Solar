@@ -129,8 +129,8 @@ Template Name: Single
 
    
   <div style="clear: both;"></div> 
-
-<div class="row">
+  
+<div class="row container">
 	<?php get_template_part('/includes/sliders/mosaico8bottom' ); ?> 
 </div>
 
