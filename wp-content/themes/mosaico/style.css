@@ -309,7 +309,7 @@ h4.leading{
   }
   
   @media screen and (max-width: 799px) {
-      #navigation {
+      #navigation {background:red !important;
         letter-spacing: -0.3em;
         
       }
@@ -557,7 +557,7 @@ ul.medpost li img{max-width: 98%; display: block; float:left; margin:20px 30px 2
 }
 
 #core {
-  padding-top: 10px !important;
+ /* padding-top: 10px !important;*/
 }
 
 #post{
