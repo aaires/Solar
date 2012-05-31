@@ -35,13 +35,14 @@ Template Name: Experience
 </div><!-- .row -->    
     
 <div class="row">     
-	<div class="sixcol first" >
+	<div class="sixcolwide first" >
 
 	<?php the_post_thumbnail('full'); ?>
 	</div> <!-- .sixcol -->
 
     
-	<div class="sixcol last" id="relatedpost">
+<!-- 	<div class="sixcolwide last" id="relatedpost"> -->
+	<div class="sixcolwide last">
          <div class="roomcontent">
 
                 <h2 class="leading"> <a href="<?php  the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -50,9 +51,9 @@ Template Name: Experience
                     <?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:','themnific') . '</span>', 'after' => '</div>' ) ); ?>
                     <?php the_tags( '<p>' . __( 'Tags: ','themnific') . '', ', ', '</p>'); ?>
                 </div> <!-- #postexperience -->
-          </div> <!-- roomcontent -->
+        
              
-           <div style="clear: both;"></div>
+           
                 
                 
           <?php 
@@ -87,9 +88,9 @@ Template Name: Experience
 			?>
                 
 
-           <div class="relatedpost">
+         	<div class="related">
               <div class="relatedheader"><?php _e('Other activities you may like:','solar'); ?></div>
-              <div class="relatedtopics">
+             
                     <div class="relatedtopic1"> 
                         <a href="<?php echo get_permalink($related1->ID);?>" class="relatedimg1"><?php echo get_the_post_thumbnail( $related1->ID, array(117,117), $attr ); ?></a>
                         <div class="relatedtitle1"> 
@@ -100,9 +101,13 @@ Template Name: Experience
                         <div class="relatedtitle2">
                         <p><a href="<?php echo get_permalink($related2->ID);?>"><?php echo get_the_title($related2->ID); ?></a></p></div>
                     </div><!-- relatedtopic2 -->
-               </div> <!-- .relatedtopics -->
+              
 
-            </div><!-- relatedpost -->
+        
+            
+            
+              </div> <!-- roomcontent -->
+            
        </div> <!-- .sixcol last -->
        
        
@@ -115,12 +120,12 @@ Template Name: Experience
      <div style="clear: both;"></div>
        
        
-  </div> <!-- row -->
+  </div> <!-- sixcolwide -->
 
 
 
-</div><!--end #core -->
-
+</div><!--end row -->
+</div><!-- #core	 -->
     
 <div style="clear: both;"></div> 
 

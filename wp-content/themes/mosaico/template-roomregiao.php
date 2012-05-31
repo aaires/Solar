@@ -40,11 +40,11 @@ Template Name: Single
 
 <div class="row">    
 <!-- 	<div class="sixcol first" id="roomimg">  -->
-    <div class="sixcol first">
+    <div class="sixcolwide first">
 	
 	 <div id="single-frame" >
 		<div id="slider2" class="nivoSlider">
-		<a href="" title="">
+		<a href="" title="" class="sixcolwide">
 			<?php 
 			$attachments = get_children( array('post_parent' => $post->ID, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID') );
 			$tid =  get_post_thumbnail_id();
@@ -94,7 +94,7 @@ Template Name: Single
 	
 	 </div><!-- end sixcol first-->
 	
-	   <div class="sixcol last" id="roompost">
+	   <div class="sixcolwide last" id="roompost">
          
          
 	 <div class="roomcontent">

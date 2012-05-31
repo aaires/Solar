@@ -237,6 +237,8 @@ h2{
 h2.leading{
 	margin:0 0 10px 0;
 	padding:0;
+	padding-top: 20px;
+	padding-left: 20px;
 	}
 	
 h3{
@@ -305,6 +307,16 @@ h4.leading{
   letter-spacing: -0.1em;
   line-height: 160%;
   }
+  
+  @media screen and (max-width: 799px) {
+      #navigation {
+        letter-spacing: -0.3em;
+        
+      }
+}
+  
+  
+  
   #navigation .nav li a {
   }
   #navigation .nav li:first-child a {
@@ -510,7 +522,7 @@ padding:10px; /* variable width */
 
 ul.medpost li{ overflow:hidden;}
 
-ul.medpost li h2, h2.leading{ padding:0 0 15px 0; margin:0 0 10px 0;}
+ul.medpost li h2, h2.leading{ /*padding:0 0 15px 0;*/ margin:0 0 10px 0;}
 	
 
 ul.medpost li p{margin:2% 0 10px 0;
@@ -1503,6 +1515,7 @@ ul.social-menu {
 	display: inline;
 	position: relative;
 	overflow: hidden;
+  	right:10px;
    }
 	
 	#sidebar>ul.social-menu {
@@ -2271,18 +2284,26 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 #postroom {
   max-height: 400px; /* was 300  now set to the image size on the left*/
   overflow: auto;
+  padding-left:20px;
+  padding-right:20px;
 }
 
-#postroom::-webkit-scrollbar {
+#postexperience {
+  max-height: 272px;
+  overflow: auto;
+  padding:20px;
+}
+
+#postroom::-webkit-scrollbar, #postexperience::-webkit-scrollbar {
     width: 12px;
 }
 
-#postroom::-webkit-scrollbar-track {
+#postroom::-webkit-scrollbar-track, #postexperience::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
     border-radius: 10px;
 }
 
-#postroom::-webkit-scrollbar-thumb {
+#postroom::-webkit-scrollbar-thumb, #postexperience::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
 }
@@ -2299,6 +2320,29 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 }
 
 
+
+/*#postexperience {
+  max-height: 272px;
+  overflow: auto;
+  padding:20px;
+}
+
+
+#postexperience::-webkit-scrollbar {
+    width: 12px;
+}
+
+#postexperience::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+#postexperience::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
+}*/
+
+
 .rooms{
   padding-bottom: 5px !important;
 }
@@ -2313,12 +2357,15 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 
 
 .roomcontent {
+	position:relative;
+	height:495px;
+	max-height:495px;
 /*  margin-right: 2.5%;
   margin-left: 4.5%;*/
     font-family: 'PalatinoLTStdMedium';
 }
 
-.roomcontent h2, .roomcontent h2 a:link, .roomcontent h2:hover, .roomcontent h2 a:visited{
+.h2, .roomcontent h2 a:link, .roomcontent h2:hover, .roomcontent h2 a:visited{
   font-family: 'PalatinoLTStdMedium';
   color: #534741 ;
 }
@@ -2516,11 +2563,17 @@ color: #4e4946 ;
 ************************************/
 
 #relatedpost {
-  margin-left: 1.9% ;
-  min-height: 474px;
-  background: #CCC5BA;
-  padding-right: 2.2%;
-  padding-top: 2%;
+/*  margin-left: 1.9% ;*/
+ /* min-height: 474px;
+  background: #CCC5BA;*/
+/*  padding-right: 2.2%;
+  padding-top: 2%;*/
+}
+
+.related{
+	position:absolute;
+	bottom:0px;
+	width:480px;
 }
 
 #sharingoptionsrelated{
@@ -2534,19 +2587,20 @@ color: #4e4946 ;
 
 .relatedheader {
   background-color: #808075 ;
-  padding-left: 4.5%;
+  padding-left: 20px;
   color: white;
-  width: 101%;
+ /* width: 101%;*/
   /*margin-top: 14.4%;*/
-  margin-top:4.1%;
+/*  margin-top:4.1%;*/
   padding-top: 3px;
   padding-bottom: 3px;
   font-size: 120%;
 }
-
+/*
 #postexperience {
-  max-height: 272px; /*246*/
+  max-height: 272px; 
   overflow: auto;
+  padding:20px;
 }
 
 
@@ -2563,6 +2617,13 @@ color: #4e4946 ;
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
 }
+
+*/
+
+
+
+
+
 
 
 .relatedtopic1{
@@ -2585,9 +2646,9 @@ color: #4e4946 ;
 }
 
 .relatedtitle1, .relatedtitle2 {
-  line-height: 150%;
+  /*line-height: 150%;
   margin-top: 5%;
-  font-size: 120%;
+  font-size: 120%;*/
 }
 
 .relatedtitle1 a, .relatedtitle2 a{
@@ -2938,6 +2999,7 @@ max-width:960px;}
 
 #lang_sel {
 	width: 150px;
+	position:relative; float:right; top:3px;
 }
 /* for IE  #slider img, #slider a, #slider a img, #slider {height:360px; width:960px;} */
 
@@ -2945,3 +3007,5 @@ max-width:960px;}
 #single-frame .nivo-caption{display:none !important;}
 /*
 #single-frame{width:329px;height:326px;}*/
+
+
