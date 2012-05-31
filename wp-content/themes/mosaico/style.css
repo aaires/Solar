@@ -309,7 +309,7 @@ h4.leading{
   }
   
   @media screen and (max-width: 799px) {
-      #navigation {background:red !important;
+      #navigation {
         letter-spacing: -0.3em;
         
       }
@@ -2707,7 +2707,7 @@ color: #4e4946 ;
 
 /*////////////////////// @IPad vertical //////////////////*/
 
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 769px) {
   .navigation .next { 
   						margin-left: 700px;
                      	margin-top:135px ;}
