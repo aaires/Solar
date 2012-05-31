@@ -3013,7 +3013,7 @@ max-width:960px;}
 /* Language Selector */
 
 #lang_sel {
-  width: 80px;
+  width: 100px;
   position:relative; float:right; top:3px;
 }
 
