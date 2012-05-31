@@ -9,9 +9,9 @@ if ( ! function_exists( 'themnific_wp_head' ) ) {
 		do_action( 'themnific_wp_head_before' );
 
 		// Favicon
-		if(get_option('themnific_custom_favicon') != '') {
+		//if(get_option('themnific_custom_favicon') != '') {
 	        echo '<link rel="shortcut icon" href="'.  get_option('themnific_custom_favicon')  .'"/>'."\n";
-	    }   
+	   // }   
 
 		// Output shortcodes stylesheet
 		if ( function_exists( 'tmnf_shortcode_stylesheet' ) )
