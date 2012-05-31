@@ -321,6 +321,10 @@ img {
 	padding-left: 20px;
 	padding-right: 20px;
 	}
+	
+.row .sixcolwide{
+	width: 100% !important;
+}
 
 #sidebar {
 	background:none;

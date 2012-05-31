@@ -2718,7 +2718,11 @@ color: #4e4946 ;
                         
 #core .row{ background: transparent;}
 
-.roomcontent {background: #CCC5BA; padding:20px;}
+.roomcontent {background: #CCC5BA;
+
+	/*padding:20px;*/
+
+}
                         
  }
 
