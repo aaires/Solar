@@ -1,4 +1,4 @@
-<div id="mosaic" style="height:129px; overflow:hidden">
+<div id="mosaic" class="" style="height:129px; overflow:hidden">
     
     
 <?php 

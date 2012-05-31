@@ -557,7 +557,7 @@ ul.medpost li img{max-width: 98%; display: block; float:left; margin:20px 30px 2
 }
 
 #core {
-  padding-top: 10px !important;
+ /* padding-top: 10px !important;*/
 }
 
 #post{
@@ -2707,7 +2707,7 @@ color: #4e4946 ;
 
 /*////////////////////// @IPad vertical //////////////////*/
 
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 769px) {
   .navigation .next { 
   						margin-left: 700px;
                      	margin-top:135px ;}
@@ -2718,7 +2718,11 @@ color: #4e4946 ;
                         
 #core .row{ background: transparent;}
 
-.roomcontent {background: #CCC5BA; padding:20px;}
+.roomcontent {background: #CCC5BA;
+
+	/*padding:20px;*/
+
+}
                         
  }
 
