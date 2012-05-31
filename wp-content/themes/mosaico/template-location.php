@@ -60,7 +60,7 @@ Template Name: Location
                 
                 <input type="text" id="adress" placeholder="<?php _e('Street Name','solar'); ?>" name="sstreet"  onfocus="if (moradav ==false) {moradav =true;}; if (document.link2googlemap.sstreet.value == 'Street') document.link2googlemap.sstreet.value = '';"/>
                 <input type="text" id="postal" placeholder="<?php _e('Zip Code...','solar'); ?>" name="szip" onfocus="if (cpostalv ==false) {cpostalv =true;};if (document.link2googlemap.szip.value == 'ZIP') document.link2googlemap.szip.value = '';" />
-                <input type="text" id="city" placeholder="<?php _e('City...','solar'); ?>" name="scity" value="Cidade..." size="16" onfocus="if (cidadev ==false) {cidadev =true;};if (document.link2googlemap.scity.value == 'City') document.link2googlemap.scity.value = '';" />
+                <input type="text" id="city" placeholder="<?php _e('City...','solar'); ?>" name="scity" size="16" onfocus="if (cidadev ==false) {cidadev =true;};if (document.link2googlemap.scity.value == 'City') document.link2googlemap.scity.value = '';" />
                 <input id="howlocation" class="submit" type="submit" value="<?php _e('See Route','solar'); ?>">
 			</form>
 
