@@ -2478,6 +2478,36 @@ ul.post-meta li span{
   overflow: auto;
 }
 
+
+/*////////////////////// @Iphone horizontal //////////////////*/
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    #locationpost {
+      height: 700px;
+      width: 420px;
+    }
+    #locationcontent{
+      max-height: 700px;
+    }
+ }
+
+
+/*////////////////////// @Iphone vertical //////////////////*/
+
+ @media screen and (min-width:200px) and (max-width: 400px) {
+    #locationpost {
+      height: 800px;
+      width: 289px;
+    }
+    #locationcontent{
+      max-height: 800px;
+    }
+ }
+
+
+
+
+
 #locationcontent::-webkit-scrollbar {
     width: 12px;
 }
@@ -2527,6 +2557,23 @@ background-color: #EAE7E3;
 color: #4e4946 ;
 }
 
+/*////////////////////// @Iphone horizontal //////////////////*/
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    .locationform input{
+      width: 60%;
+    }
+ }
+
+
+/*////////////////////// @Iphone vertical //////////////////*/
+
+ @media screen and (min-width:200px) and (max-width: 400px) {
+    .locationform input{
+      width: 80%;
+    }
+ }
+
 ::-webkit-input-placeholder{
   color: #4e4946;
 }
@@ -2546,6 +2593,25 @@ color: #4e4946 ;
   padding: 4px;
   -webkit-appearance: none;
 } 
+
+/*////////////////////// @Iphone horizontal //////////////////*/
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    #howlocation{}
+ }
+
+
+/*////////////////////// @Iphone vertical //////////////////*/
+
+ @media screen and (min-width:200px) and (max-width: 400px) {
+    #howlocation{
+      width: 50%;
+      margin-top: 8px;
+      float: right;
+      margin-right: 15%;
+      font-size: 120%;
+    }
+ }
 
 .locationairport{
   cursor: pointer;
