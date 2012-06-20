@@ -3093,11 +3093,19 @@ max-width:960px;}
   font-family: 'PalatinoLTStdMedium';
 }
 
+
+
 #lang_sel a, #lang_sel a:visited {
   border: none;
   font-family: 'PalatinoLTStdMedium';
   font-size: 108%;
 }
+
+#lang_sel a:hover {
+  color: #b9b2a0  !important;
+}
+
+
 
 #lang_sel ul ul a, #lang_sel ul ul a:visited{
   line-height: 100%;
