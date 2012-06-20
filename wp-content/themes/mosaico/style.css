@@ -27,7 +27,9 @@ background-color: #638B92 !important;
 }
 
 
-
+#logotipo .sevencol img {
+  max-width: 104%;
+}
 
 
 a,a:hover{ text-decoration:none; }
