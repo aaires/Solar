@@ -4,7 +4,7 @@
 	// Get all children
 	global $post;
 	
-	$my_query = new WP_Query('post_type=page&post_parent='.$post->ID.'&showposts=8'.'&order=ASC' );
+	$my_query = new WP_Query('post_type=page&post_parent='.$post->ID.'&showposts=8'.'&order=ASC'.'&orderby=menu_order');
 	$i = 1;
 	while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $post->ID; 
 	
