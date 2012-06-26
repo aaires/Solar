@@ -2455,9 +2455,15 @@ ul.post-meta li span{
   display: none !important;
 }
 
+#map {}
+
+#room{
+  background: transparent !important;
+}
 
 #map iframe{
   max-width: 105% !important;
+  max-height: 100% !important;
 }
 
 /* @location
@@ -2466,7 +2472,7 @@ ul.post-meta li span{
 
 #locationpost {
   margin-left: 1.9% ;
-  height: 483px;
+  height: 474px;
   background: #CCC5BA;
   padding-right: 2%;
   padding-top: 1%;
@@ -2503,7 +2509,7 @@ ul.post-meta li span{
 
 #locationcontent {
 	margin-left:4.5%;
-  max-height: 410px;
+  max-height: 400px;
   overflow: auto;
 }
 
