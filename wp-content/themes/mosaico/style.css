@@ -2457,7 +2457,7 @@ ul.post-meta li span{
 
 
 #map iframe{
-  max-width: 104% !important;
+  max-width: 105% !important;
 }
 
 /* @location
@@ -2503,7 +2503,7 @@ ul.post-meta li span{
 
 #locationcontent {
 	margin-left:4.5%;
-  max-height: 495px;
+  max-height: 410px;
   overflow: auto;
 }
 
