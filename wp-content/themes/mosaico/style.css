@@ -316,6 +316,15 @@ h4.leading{
         
       }
 }
+
+@media screen and (max-width: 450px) {
+  #navigation{
+    letter-spacing: -0.1em;
+  }
+#navigation .nav li ul li a {
+    text-align:center;
+  }
+}
   
   
   
@@ -341,6 +350,14 @@ h4.leading{
 	  text-align:left;
     color: #638B92;
   }
+
+  @media screen and (max-width: 450px) {
+#navigation .nav li ul li a {
+    text-align:center;
+  }
+}
+
+
   }
   #navigation .nav li ul li a:hover {
     background: none;
@@ -1302,7 +1319,8 @@ ul#serinfo {
 #legal, #legal a, #legal a:hover, #legal a:visited{
   font-family: 'PalatinoLTStdMedium';
   color: #837165;
-  font-size: 11px;
+  font-size: 90%;
+  line-height: 1.5em;
 }
 
 #web, #web a, #web a:hover, #web a:visited{
@@ -2297,6 +2315,7 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
   overflow: auto;
   padding-left:20px;
   padding-right:20px;
+  margin-right: 10px;
 }
 
 #postexperience {
