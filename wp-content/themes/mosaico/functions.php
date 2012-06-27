@@ -257,6 +257,13 @@ function mosaico_enqueue_scripts() {
 		wp_deregister_script('jquery');//deregister current jquery
 		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', false, '1.7.1', false);//load jquery from google api, and place in footer
 		wp_enqueue_script('jquery');
+		
+		wp_register_style( 'jquery-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/smoothness/jquery-ui.css', true);
+		wp_enqueue_style('jquery-style');
+		
+		wp_enqueue_script('jquery-ui');
+		wp_enqueue_script('jquery-ui-datepicker');
+		
 		wp_register_script( 'nivo', get_template_directory_uri() . '/js/jquery.nivo.slider.pack.js', 'jquery' );
 		// Enqueue superfish script
 		wp_enqueue_script( 'nivo' );
@@ -273,9 +280,12 @@ function mosaico_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'mosaico_enqueue_scripts' );
 
 
+function mosaico_print_styles()
+{
+	wp_enqueue_style('jquery-ui');
+}
 
-
-
+add_action( 'wp_print_scripts', 'mosaico_print_styles' );
 
 /******************************* Nivo Slider ***************************/
 /*

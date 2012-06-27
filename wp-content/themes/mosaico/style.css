@@ -3149,3 +3149,16 @@ max-width:960px;}
 #lang_sel ul ul{
 	top:24px;
 }
+
+.bookform
+{
+	font-size: 10px;
+	padding:0px;
+	margin:0px;
+	float:none;	
+}
+
+#view_check_in_date, #view_check_out_date
+{
+	width: 60px;
+}

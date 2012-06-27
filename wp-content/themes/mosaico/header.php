@@ -39,8 +39,22 @@
     <link href='http://fonts.googleapis.com/css?family=Marvel:400,700|Gudea:400,700,400italic|Bitter:400,700,400italic|Passion+One:400,700|Jockey+One|Quicksand:400,300,700|Terminal+Dosis:400,800,300,600|Sansita+One|Changa+One|Paytone+One|Dorsa|Rochester|Bigshot+One|Open+Sans:800,700|Merienda+One|Six+Caps|Bevan|Oswald|Vidaloka|Droid+Sans|Josefin+Sans|Dancing+Script:400,700|Abel|Rokkitt|Droid+Serif' rel='stylesheet' type='text/css'/>
     <?php } ?>
 
+    
+   	<!-- html5.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+		
+	<!-- css3-mediaqueries.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+    
+    
+<?php wp_head(); ?>
+<?php themnific_head(); ?>
 
-    <!--- for placeholders -->
+<!--- for placeholders -->
     <script>
 // This adds 'placeholder' to the items listed in the jQuery .support object. 
 jQuery(function() {
@@ -69,22 +83,7 @@ $(function() {
    }
 });
 </script>
-
-    <!-- end of placeholders -->
-    
-   	<!-- html5.js for IE less than 9 -->
-	<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-		
-	<!-- css3-mediaqueries.js for IE less than 9 -->
-	<!--[if lt IE 9]>
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-	<![endif]-->
-    
-    
-<?php wp_head(); ?>
-<?php themnific_head(); ?>
+<!-- end of placeholders -->
 
 </head>
 
