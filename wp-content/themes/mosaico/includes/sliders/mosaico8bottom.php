@@ -83,7 +83,7 @@
             <div class="reserva"><?php _e('Book now','solar'); ?>
             
             <br/>
-            	<div class="bookoption bege"><label class="bookform bege">CHECK IN:</label></br>
+            	<div class="bookoption bege"><label class="bookform bege">CHECK IN:</label>
             	<input class="bookform cinza" id="view_check_in_date" maxlength="10" name="view_check_in_date" type="text"></div>
             	
             	

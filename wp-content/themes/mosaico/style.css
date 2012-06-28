@@ -3170,12 +3170,14 @@ max-width:960px;}
 
 .reserva select{
   padding: 5px;
+  padding-right: 15px;
   background: #BBB1A3;
   border: solid 2px #888075;
 }
 
 #number_adults, #number_children {
-  padding: 1px 4px 1px 4px;
+  padding: 1px 10px 1px 4px;
+  -webkit-border-radius: 0;
 }
 
 #view_check_in_date, #view_check_out_date
