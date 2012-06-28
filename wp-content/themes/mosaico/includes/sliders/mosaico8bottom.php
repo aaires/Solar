@@ -83,12 +83,12 @@
             <div class="reserva"><?php _e('Book now','solar'); ?>
             
             <br/>
-            	<label class="bookform">CHECK IN</label>
-            	<input class="bookform" id="view_check_in_date" maxlength="10" name="view_check_in_date" type="text">
+            	<div class="bookoption bege"><label class="bookform bege">CHECK IN:</label></br>
+            	<input class="bookform cinza" id="view_check_in_date" maxlength="10" name="view_check_in_date" type="text"></div>
             	
             	
-            	<label class="bookform">ADULTS</label>
-            	<select id="number_adults" name="number_adults" class="bookform">
+            	<label class="bookform bege">ADULTS</label>
+            	<select id="number_adults" name="number_adults" class="bookform cinza">
 						<option value="0">0</option>
 						<option value="1" selected="selected">1</option>
 						<option value="2">2</option>
@@ -102,8 +102,8 @@
 						<option value="10">10</option>
 					</select>
 					<br/>
-            	<label class="bookform">CHILDREN (06-12)*</label>
-            	<select id="number_children" name="number_children" class="bookform">
+            	<label class="bookform bege">CHILDREN (06-12)*</label>
+            	<select id="number_children" name="number_children" class="bookform cinza">
 						<option value="0">0</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -111,8 +111,8 @@
 						<option value="4">4</option>
 					</select>
 					<br/>
-            	<label class="bookform">CHECK OUT</label>
-            	<input class="bookform" id="view_check_out_date" maxlength="10" name="view_check_out_date" type="text">
+            	<label class="bookform bege">CHECK OUT:</label>
+            	<input class="bookform cinza" id="view_check_out_date" maxlength="10" name="view_check_out_date" type="text">
             	<br/>
             	
                 <input class="search" type="submit" value="<?php _e('Search','solar'); ?>">

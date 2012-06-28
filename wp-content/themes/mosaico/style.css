@@ -3152,13 +3152,35 @@ max-width:960px;}
 
 .bookform
 {
-	font-size: 10px;
+	font-size: 14px;
 	padding:0px;
 	margin:0px;
-	float:none;	
+	float:none;
+  font-family:'RockwellStdCondensed';
+  -webkit-appearance: none;	
+}
+
+.cinza{
+  color: #4D4D4D;
+}
+
+.bege {
+  color: #BBB1A3;
+}
+
+.reserva select{
+  padding: 5px;
+  background: #BBB1A3;
+  border: solid 2px #888075;
+}
+
+#number_adults, #number_children {
+  padding: 1px 4px 1px 4px;
 }
 
 #view_check_in_date, #view_check_out_date
 {
-	width: 60px;
+	width: 30%;
+  background: #BBB1A3;
+  border: solid 2px #888075;
 }
