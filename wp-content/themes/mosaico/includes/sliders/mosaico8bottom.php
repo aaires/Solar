@@ -80,15 +80,13 @@
     <div class="mosaicitem44" id="reserva">
         <div class="inpost2">
             <form action="https://www.thebookingbutton.co.uk/properties/SOLARDIRECT" method="get">
-            <div class="reserva"><?php _e('Book now','solar'); ?>
-            
-            <br/>
-            	<div class="bookoption bege"><label class="bookform bege">CHECK IN:</label>
-            	<input class="bookform cinza" id="view_check_in_date" maxlength="10" name="view_check_in_date" type="text"></div>
+            <div class="reserva"><div class="booktitle"><?php _e('Book now','solar'); ?></div>
+            	<div id="checkin" class="bookoption left"><label class="bookform bege">CHECK IN:</label>
+            	<div class="box clear"><input class="bookform cinza" id="view_check_in_date" maxlength="10" name="view_check_in_date" type="text"></div></div>
             	
             	
-            	<label class="bookform bege">ADULTS</label>
-            	<select id="number_adults" name="number_adults" class="bookform cinza">
+            	<div class="bookoption left"><label class="bookform bege">ADULTS</label>
+            	<div class="box clear"><select id="number_adults" name="number_adults" class="bookform cinza">
 						<option value="0">0</option>
 						<option value="1" selected="selected">1</option>
 						<option value="2">2</option>
@@ -100,20 +98,20 @@
 						<option value="8">8</option>
 						<option value="9">9</option>
 						<option value="10">10</option>
-					</select>
-					<br/>
-            	<label class="bookform bege">CHILDREN (06-12)*</label>
-            	<select id="number_children" name="number_children" class="bookform cinza">
+					</select></div></div>
+                    <!-- <br/> -->            	
+                <div class="bookoption left"><label class="bookform bege">CHILDREN</label>
+            	<div class="box clear"><select id="number_children" name="number_children" class="bookform cinza">
 						<option value="0">0</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
-					</select>
-					<br/>
-            	<label class="bookform bege">CHECK OUT:</label>
-            	<input class="bookform cinza" id="view_check_out_date" maxlength="10" name="view_check_out_date" type="text">
-            	<br/>
+					</select></div></div>
+					<!-- <br/> -->
+            	<div class="bookoption clear"><label class="bookform bege">CHECK OUT:</label>
+            	<div class="box clear"><input class="bookform cinza" id="view_check_out_date" maxlength="10" name="view_check_out_date" type="text"></div></div>
+            	<!-- <br/> -->
             	
                 <input class="search" type="submit" value="<?php _e('Search','solar'); ?>">
             </div>

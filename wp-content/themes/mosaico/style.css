@@ -3152,12 +3152,32 @@ max-width:960px;}
 
 .bookform
 {
-	font-size: 14px;
-	padding:0px;
+	font-size: 13px;
 	margin:0px;
 	float:none;
   font-family:'RockwellStdCondensed';
   -webkit-appearance: none;	
+  line-height: 90%;
+}
+
+.box input {
+  padding:2px 0 1px 3px;
+}
+
+.bookoption {
+  margin-right: 4%;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.clear {
+  clear: both;
 }
 
 .cinza{
@@ -3168,6 +3188,17 @@ max-width:960px;}
   color: #BBB1A3;
 }
 
+.box {
+
+}
+
+#checkin{
+  width: 45%;
+}
+.booktitle {
+  margin-bottom: 1.5%;
+}
+
 .reserva select{
   padding: 5px;
   padding-right: 15px;
@@ -3176,13 +3207,22 @@ max-width:960px;}
 }
 
 #number_adults, #number_children {
-  padding: 1px 10px 1px 4px;
+  padding: 1px 10px 3px 4px;
   -webkit-border-radius: 0;
 }
 
-#view_check_in_date, #view_check_out_date
+ #view_check_out_date
 {
-	width: 30%;
+	width: 35%;
   background: #BBB1A3;
   border: solid 2px #888075;
 }
+
+#view_check_in_date
+{
+  width: 75%;
+  background: #BBB1A3;
+  border: solid 2px #888075;
+}
+
+
