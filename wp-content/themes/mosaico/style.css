@@ -578,7 +578,7 @@ ul.medpost li img{max-width: 98%; display: block; float:left; margin:20px 30px 2
 .post>iframe,ul.medpost li>iframe{ width:98%; margin:15px 0 0 0}
 
 #intblog {
-  background-color: #EAE7E3;
+  background-color: #CCC5BA !important;
   padding-top: 20px !important;
   padding-bottom: 20px !important;
 }
@@ -601,6 +601,7 @@ border: none;
   border-bottom: solid 1px #4D4D4D;
   margin-bottom: 0;
   padding-bottom: 7px;
+  padding-left: 0
 }
 
 #post h2 a, #post h2 a:hover, #post h2 a:visited{
@@ -1070,6 +1071,12 @@ ul.tweet_list { margin-bottom: 10px !important; }
   padding-bottom: 20px !important;
 }
 
+/*////////////////////// @Iphone horizontal and Ipad Vertical//////////////////*/
+
+@media screen and (min-width: 10px) and (max-width: 800px) {
+    #templateblog {background: #CCC5BA !important;}
+ }
+
 #rowposts{
   margin-left: 4%;
   margin-right: 5%;
@@ -1518,9 +1525,9 @@ max-height: 127px !important;
   border: solid 2px #888075;
 }
 
-/*////////////////////// @Iphone horizontal //////////////////*/
+/*////////////////////// @Iphone horizontal and Ipad Vertical//////////////////*/
 
-@media screen and (min-width: 401px) and (max-width: 600px) {
+@media screen and (min-width: 401px) and (max-width: 800px) {
     .reserva{margin: 3.5% 0 1% 8%;}
     .booktitle{font-size:80%;}
     .bookform{margin:0; padding:0;font-size: 12px;}
@@ -1631,6 +1638,25 @@ img.alignleft,
   margin-top: 10px;
 }
 
+/*////////////////////// @Iphone horizontal and Ipad Vertical//////////////////*/
+
+@media screen and (min-width: 10px) and (max-width: 800px) {
+  #socialicons {
+    margin-bottom: 20px;
+  }
+
+  #lang_sel ul ul{ 
+  border: none}
+
+  #lang_sel a, #lang_sel a:visited {
+    font-size: 100% !important;
+  }
+#lang_sel ul ul a, #lang_sel ul ul a:visited {
+  font-size: 95% !important;
+  width: auto;
+}
+
+}
 
 
  
@@ -2413,9 +2439,10 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 }
 
 #postexperience {
-  max-height: 272px;
+  max-height: 222px;
   overflow: auto;
   padding:20px;
+  margin-right:10px;
 }
 
 #postroom::-webkit-scrollbar, #postexperience::-webkit-scrollbar {
@@ -2613,10 +2640,17 @@ ul.post-meta li span{
 @media screen and (min-width: 401px) and (max-width: 600px) {
     #locationpost {
       height: 700px;
-      width: 420px;
+      width: 92%;
+      margin-left: 0;
+      margin-right: 0;
+      padding-right: 4%;
     }
     #locationcontent{
       max-height: 700px;
+    }
+
+    #map {
+      margin-right: 17px;
     }
  }
 
@@ -2626,10 +2660,16 @@ ul.post-meta li span{
  @media screen and (min-width:200px) and (max-width: 400px) {
     #locationpost {
       height: 800px;
-      width: 289px;
+      width: 92%;
+      margin-left: 0;
+      padding-right: 3%;
     }
     #locationcontent{
       max-height: 800px;
+    }
+
+    #map {
+      margin-right: 15px;
     }
  }
 
@@ -2851,6 +2891,30 @@ color: #4e4946 ;
   padding-left: 7px;
 }
 
+
+/*////////////////////// @Iphone horizontal and Ipad Vertical//////////////////*/
+
+@media screen and (min-width: 10px) and (max-width: 800px) {
+    #postexperience {background: #CCC5BA !important;
+      height: auto;
+      overflow:visible;
+      max-height: 2000px;
+      padding-right: 12%;
+      width: 94%;
+    }
+    .related {
+      position: inherit;
+      width: 100%;
+    }
+
+    .relatedtopic1,.relatedtopic2 {
+      background-color: #CCC5BA ;
+    }
+
+
+ }
+
+
 .navigation {
 /*	width:100% !important;
 	max-width:960px !important;	*/
@@ -2915,6 +2979,7 @@ color: #4e4946 ;
 #core .row{ background: transparent;}
 
 .roomcontent {background: #CCC5BA;
+
 
 	/*padding:20px;*/
 
