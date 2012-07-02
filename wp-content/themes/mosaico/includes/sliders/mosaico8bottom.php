@@ -109,9 +109,15 @@
 						<option value="4">4</option>
 					</select></div></div>
 					<!-- <br/> -->
-            	<div class="bookoption clear"><label class="bookform bege">CHECK OUT:</label>
+            	<div class="bookoption clear"><label id="checkout" class="bookform bege">CHECK OUT:</label>
             	<div class="box clear"><input class="bookform cinza" id="view_check_out_date" maxlength="10" name="view_check_out_date" type="text"></div></div>
             	<!-- <br/> -->
+                <!--[if IE]>
+                <style type="text/css">
+                #number_adults, #number_children {
+                padding: 2px 0px 3px 4px;
+                }
+                <![endif]-->
             	
                 <input class="search" type="submit" value="<?php _e('Search','solar'); ?>">
             </div>

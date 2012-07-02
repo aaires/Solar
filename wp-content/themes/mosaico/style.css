@@ -1428,7 +1428,7 @@ max-height: 127px !important;
   color: #fff;
   font-family: 'RockwellStdBold';
   font-size: 26px;
-  margin: 6% 0 0 10%;
+  margin: 6% 0 0 8%;
 }
 
 .reserva .search{
@@ -1443,6 +1443,100 @@ max-height: 127px !important;
   cursor: pointer;
   -webkit-appearance: none;
 }
+
+.bookform
+{
+  font-size: 13px;
+  margin:3px 0;
+  font-family:'RockwellStdCondensed';
+  -webkit-appearance: none; 
+  line-height: 90%;
+}
+
+.box input {
+  padding:2px 0 1px 3px;
+}
+
+.bookoption {
+  margin-right: 4%;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.cinza{
+  color: #4D4D4D;
+}
+
+.bege {
+  color: #BBB1A3;
+}
+
+.box {
+
+}
+
+#checkin{
+  width: 45%;
+}
+.booktitle {
+  margin-bottom: 1.5%;
+}
+
+.reserva select{
+  padding: 5px;
+  padding-right: 15px;
+  background: #BBB1A3;
+  border: solid 2px #888075;
+}
+
+#number_adults, #number_children {
+  padding: 1px 10px 3px 4px;
+  -webkit-border-radius: 0;
+}
+
+ #view_check_out_date
+{
+  width: 35%;
+  background: #BBB1A3;
+  border: solid 2px #888075;
+}
+
+#view_check_in_date
+{
+  width: 75%;
+  background: #BBB1A3;
+  border: solid 2px #888075;
+}
+
+/*////////////////////// @Iphone horizontal //////////////////*/
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    .reserva{margin: 3.5% 0 1% 8%;}
+    .booktitle{font-size:80%;}
+    .bookform{margin:0; padding:0;font-size: 12px;}
+    #checkout{margin-top:3px;}
+ }
+
+
+/*////////////////////// @Iphone vertical //////////////////*/
+
+ @media screen and (min-width:200px) and (max-width: 400px) {
+    .reserva{margin: 3.5% 0 1% 8%;}
+    .booktitle{font-size:80%;}
+    .bookform{margin:0; padding:0;font-size: 12px;}
+    #checkout{margin-top:3px;}
+ }
+
 
 	
 	
@@ -3150,79 +3244,5 @@ max-width:960px;}
 	top:24px;
 }
 
-.bookform
-{
-	font-size: 13px;
-	margin:0px;
-	float:none;
-  font-family:'RockwellStdCondensed';
-  -webkit-appearance: none;	
-  line-height: 90%;
-}
-
-.box input {
-  padding:2px 0 1px 3px;
-}
-
-.bookoption {
-  margin-right: 4%;
-}
-
-.right {
-  float: right;
-}
-
-.left {
-  float: left;
-}
-
-.clear {
-  clear: both;
-}
-
-.cinza{
-  color: #4D4D4D;
-}
-
-.bege {
-  color: #BBB1A3;
-}
-
-.box {
-
-}
-
-#checkin{
-  width: 45%;
-}
-.booktitle {
-  margin-bottom: 1.5%;
-}
-
-.reserva select{
-  padding: 5px;
-  padding-right: 15px;
-  background: #BBB1A3;
-  border: solid 2px #888075;
-}
-
-#number_adults, #number_children {
-  padding: 1px 10px 3px 4px;
-  -webkit-border-radius: 0;
-}
-
- #view_check_out_date
-{
-	width: 35%;
-  background: #BBB1A3;
-  border: solid 2px #888075;
-}
-
-#view_check_in_date
-{
-  width: 75%;
-  background: #BBB1A3;
-  border: solid 2px #888075;
-}
 
 
