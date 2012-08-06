@@ -572,7 +572,7 @@ ul.medpost li .meta{
 ul.medpost li img{max-width: 98%; display: block; float:left; margin:20px 30px 20px 2px;}
 
 
-.entry p{ margin:0 0 15px 0}
+.entry p{ margin:0 0 10px 0}
 
 
 .post>iframe,ul.medpost li>iframe{ width:98%; margin:15px 0 0 0}
@@ -2513,7 +2513,7 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 	max-height:495px;
 /*  margin-right: 2.5%;
   margin-left: 4.5%;*/
-    font-family: 'PalatinoLTStdMedium';
+/*    font-family: 'PalatinoLTStdMedium';*/
 }
 
 .h2, .roomcontent h2 a:link, .roomcontent h2:hover, .roomcontent h2 a:visited{
@@ -2522,10 +2522,11 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 }
 
 .roomcontent p {
-  line-height: 1.6em;
-  font-size: 110%;
+  line-height: 1.4em;
+/*  font-size: 110%;
   margin-bottom: 4%;
-  padding-right: 2%;
+  padding-right: 2%;*/
+  font-size:12px;
 }
 
 #roomimg img{
