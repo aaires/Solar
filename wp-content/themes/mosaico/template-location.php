@@ -30,10 +30,10 @@ Template Name: Location
     
     
     
-        <div class="sixcolwide last" id="roompost">
-        <div class="roomcontent">
-            <h2 class="leading"><?php _e('Location','solar'); ?></h2>
-            <div id="postroom" class="entry">
+        <div class="sixcol last" id="locationpost">
+            
+            <h2 class="locationtitle"><?php _e('Location','solar'); ?></h2>
+            <div id="locationcontent">
             <?php the_content(); ?>
        
        <!-- This can go in the content -->
@@ -117,7 +117,7 @@ Template Name: Location
         </div>
 
 
-</div>
+
 </div><!--end #core .row-->
 
     
