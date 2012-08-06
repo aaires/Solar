@@ -2440,20 +2440,21 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 #postexperience {
   max-height: 222px;
   overflow: auto;
-  padding:20px;
-  margin-right:10px;
+  padding-left:10px;
+  padding-right:10px;
+  margin-right:0px;
 }
 
-#postroom::-webkit-scrollbar, #postexperience::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 6px;
 }
 
-#postroom::-webkit-scrollbar-track, #postexperience::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
     border-radius: 10px;
 }
 
-#postroom::-webkit-scrollbar-thumb, #postexperience::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
 }
@@ -2675,21 +2676,6 @@ ul.post-meta li span{
 
 
 
-
-
-#locationcontent::-webkit-scrollbar {
-    width: 10px;
-}
-
-#locationcontent::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
-    border-radius: 10px;
-}
-
-#locationcontent::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
-}
 
 #sharingoptionslocation{
   margin-left: 4.5%;
