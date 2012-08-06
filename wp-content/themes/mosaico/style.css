@@ -2445,7 +2445,7 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 }
 
 #postroom::-webkit-scrollbar, #postexperience::-webkit-scrollbar {
-    width: 12px;
+    width: 6px;
 }
 
 #postroom::-webkit-scrollbar-track, #postexperience::-webkit-scrollbar-track {
