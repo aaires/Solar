@@ -2623,16 +2623,17 @@ ul.post-meta li span{
 
 #locationcontent p{
   line-height: 1.4em;
-  font-family: 'PalatinoLTStdMedium';
   color: #2F2C29 ;
 
 }
 
 
 #locationcontent {
-	margin-left:4.5%;
-  max-height: 400px;
-  overflow: auto;
+	margin-left:3.5%;
+  	max-height: 400px;
+  	overflow: auto;
+	width:101%;
+	padding-right:10px;
 }
 
 
