@@ -237,10 +237,9 @@ h2{
 	}
 	
 h2.leading{
-	margin:0 0 10px 0;
 	padding:0;
-	padding-top: 20px;
-	padding-left: 20px;
+	padding-top: 5px;
+	padding-left: 10px;
 	}
 	
 h3{
@@ -2679,7 +2678,7 @@ ul.post-meta li span{
 
 
 #locationcontent::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
 }
 
 #locationcontent::-webkit-scrollbar-track {
