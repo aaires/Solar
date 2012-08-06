@@ -2633,9 +2633,9 @@ ul.post-meta li span{
   	max-height: 400px;
   	overflow: auto;
 	width:101%;
-	padding-right:10px;
+	
 }
-
+#locationcontent p{margin-right:3%;}
 
 /*////////////////////// @Iphone horizontal //////////////////*/
 
