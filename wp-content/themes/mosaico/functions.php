@@ -513,7 +513,11 @@ function sql_get_previous_post_where($where){
 	$current_order = $post->menu_order;
 	$current_parent = $post->post_parent;
 	
-	$where .= " AND p.post_parent = '{$current_parent}' AND p.menu_order < '{$current_order}'";
+	$order = $current_order -1;
+	
+	error_log('looking for previous = '.$order);
+	
+	$where .= " AND p.post_parent = '{$current_parent}' AND p.menu_order < '{$order}'";
 	
 	return $where;
 }
@@ -528,9 +532,11 @@ function sql_get_next_post_where($where){
 	$current_order = $post->menu_order;
 	$current_parent = $post->post_parent;
 
+	$order = $current_order +1;
 	
+	error_log('looking for next = '.$order);
 	
-	$where .= " AND p.post_parent = '{$current_parent}' AND p.menu_order > '{$current_order}'";
+	$where .= " AND p.post_parent = '{$current_parent}' AND p.menu_order = '{$order}'";
 	
 	return $where;
 }
