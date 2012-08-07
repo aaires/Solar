@@ -517,7 +517,7 @@ function sql_get_previous_post_where($where){
 	
 	error_log('looking for previous = '.$order);
 	
-	$where .= " p.post_type='page' AND p.post_parent = '{$current_parent}' AND p.menu_order < '{$order}'";
+	$where .= " p.post_type = 'page' AND p.post_parent = '{$current_parent}' AND p.menu_order < '{$order}'";
 	
 	return $where;
 }
@@ -536,7 +536,7 @@ function sql_get_next_post_where($where){
 	
 	error_log('looking for next = '.$order);
 	
-	$where .= " AND p.post_type='page' AND p.post_parent = '{$current_parent}' AND p.menu_order = '{$order}'";
+	$where .= " AND p.post_type = 'page' AND p.post_parent = '{$current_parent}' AND p.menu_order = '{$order}'";
 	
 	return $where;
 }
