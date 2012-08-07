@@ -20,6 +20,8 @@ Template Name: Room-Region
     
     if($previous)
    {
+   	error_log('previous order '.$previous->menu_order);
+   	
     	$previous_link =  get_permalink($previous->ID);
       ?><a href="<?php echo $previous_link?>"> <div class="previous  first"></div></a>  <?php 
    }
@@ -28,6 +30,10 @@ Template Name: Room-Region
     
   	if($next)
     {
+    	
+    	
+    	error_log('next order '.$next->menu_order);
+    	
       $next_link =  get_permalink($next->ID);
       ?><a href="<?php echo $next_link;?>"><div class="next  last"></div> </a><?php
     }
