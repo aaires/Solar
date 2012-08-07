@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Single
+Template Name: Room-Region
 */
 ?>
 
