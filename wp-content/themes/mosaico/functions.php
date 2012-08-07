@@ -502,4 +502,42 @@ function vt_resize( $attach_id = null, $img_url = null, $width, $height, $crop =
 } //END OF CHECK FOR CUSTOM POST TYPE
 
 
+
+add_filter( 'get_previous_post_where', 'sql_get_previous_post_where');
+function sql_get_previous_post_where($where){
+	global $wpdb;
+	global $post;
+	
+	error_log('get previous post where');
+	
+	$current_order = $post->menu_order;
+	$current_parent = $post->post_parent;
+	
+	$where .= " AND p.post_parent = '{$current_parent}' AND p.menu_order < '{$current_order}'";
+	
+	return $where;
+}
+
+add_filter( 'get_next_post_where', 'sql_get_next_post_where');
+function sql_get_next_post_where($where){
+	global $wpdb;
+	global $post;
+
+	error_log('get next post where');
+	
+	print_r($post,true);
+	
+
+	$current_order = $post->menu_order;
+	$current_parent = $post->post_parent;
+
+	
+	error_log("current parent ".$current_parent);
+	
+	
+	$where .= " AND p.post_parent = '{$current_parent}' AND p.menu_order > '{$current_order}'";
+	
+	return $where;
+}
+
 ?>
