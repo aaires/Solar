@@ -12,6 +12,8 @@ Template Name: Room-Region
 
     <div class="twelvecol navigation">
     <?php 
+
+    error_log('current order'.$post->menu_order);
     
     $post_parent = $post->post_parent;
 
