@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Portfolio 3 Columns
+Template-Name: Portfolio 3 Columns
 TODO: Disable
 */
 ?>

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Portfolio Project
+Template-Name: Portfolio Project
 TODO: Disable
 */
 ?>

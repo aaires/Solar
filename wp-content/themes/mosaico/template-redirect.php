@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Page Redirect
+Template-Name: Page Redirect
 
  * @author		Dave Stewart
  * @email		dave@davestewart.co.uk

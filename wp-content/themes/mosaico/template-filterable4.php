@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Portfolio 4 Col. - Filterable
+Template Name:-Portfolio 4 Col. - Filterable
 TODO: Disable
 */
 ?>
