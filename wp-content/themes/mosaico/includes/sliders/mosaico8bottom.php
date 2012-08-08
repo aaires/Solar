@@ -39,7 +39,7 @@
 				<input type="text" name="MERGE1" id="MERGE1" value="" placeholder="<?php _e('Name','solar');?>" >
 			
 				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="<?php _e('e-mail','solar');?>" required>
-				<div class="clear"><input type="submit" value="<?php _e('Subscribe','solar'); ?>" name="subscribe" id="mc-embedded-subscribe" class="button submit"></div>
+				<div class="clear subscricao"><input type="submit" value="<?php _e('Subscribe','solar'); ?>" name="subscribe" id="mc-embedded-subscribe" class="button submit"></div>
 			</form>
            
             </div>  
@@ -119,7 +119,7 @@
                 }
                 <![endif]-->
             	
-                <input class="search" type="submit" value="<?php _e('Search','solar'); ?>">
+                <div class="search"><input type="submit" value="<?php _e('Search','solar'); ?>"></div>
             </div>
             </form>
         </div>
