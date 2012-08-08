@@ -522,7 +522,7 @@ function sql_get_previous_post_where($where ){
 	$current_order = $post->menu_order;
 	$current_parent = $post->post_parent;
 	
-	$where = $wpdb->prepare("WHERE p.post_type = 'page' AND p.post_status = 'publish' AND p.post_parent = '{$current_parent}' AND p.menu_order < '{$order}'");
+	$where = $wpdb->prepare("WHERE p.post_type = 'page' AND p.post_status = 'publish' AND p.post_parent = '{$current_parent}' AND p.menu_order < '{$current_order}'");
 	
 	return $where;
 }
@@ -535,7 +535,7 @@ function sql_get_next_post_where($where ){
 	$current_order = $post->menu_order;
 	$current_parent = $post->post_parent;
 	
-	$where = $wpdb->prepare("WHERE p.post_type = 'page' AND p.post_status = 'publish' AND p.post_parent = '{$current_parent}' AND p.menu_order > '{$order}'");
+	$where = $wpdb->prepare("WHERE p.post_type = 'page' AND p.post_status = 'publish' AND p.post_parent = '{$current_parent}' AND p.menu_order > '{$current_order}'");
 	
 	return $where;
 }
