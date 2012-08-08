@@ -771,6 +771,9 @@ function themnificthemes_machine($options) {
     $counter = 0;
 	$menu = '';
 	$output = '';
+	
+	
+	
 	foreach ($options as $value) {
 	   
 		$counter++;

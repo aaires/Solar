@@ -53,6 +53,9 @@
 <?php if (get_option('themnific_socials_tw') == "") {} else { ?>
 <li class="sprite-twitter"><a title="Twitter" href="<?php echo get_option('themnific_socials_tw');?>" target="_blank">Twitter</a></li><?php } ?>
 
+<?php if (get_option('themnific_socials_pini') == "") {} else { ?>
+<li class="sprite-digg"><a title="PinInterest" href="<?php echo get_option('themnific_socials_pini');?>" target="_blank">PinInterest</a></li><?php } ?>
+
 
 
 
