@@ -515,7 +515,7 @@ function sql_get_post_sort($sort){
 
 add_filter( 'get_previous_post_where', 'sql_get_previous_post_where');
 
-function sql_get_previous_post_where($where,$in_same_cat, $excluded_categories ){
+function sql_get_previous_post_where($where ){
 	global $wpdb; global $post;
 	
 	
@@ -529,7 +529,7 @@ function sql_get_previous_post_where($where,$in_same_cat, $excluded_categories )
 
 add_filter( 'get_next_post_where', 'sql_get_next_post_where');
 
-function sql_get_next_post_where($where,$in_same_cat, $excluded_categories ){
+function sql_get_next_post_where($where ){
 	global $wpdb; global $post;
 
 	$current_order = $post->menu_order;
