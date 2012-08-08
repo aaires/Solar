@@ -503,40 +503,39 @@ function vt_resize( $attach_id = null, $img_url = null, $width, $height, $crop =
 
 
 
-add_filter( 'get_previous_post_where', 'sql_get_previous_post_where');
-function sql_get_previous_post_where($where){
-	global $wpdb;
-	global $post;
+add_filter( 'get_previous_post_sort', 'sql_get_post_sort');
+add_filter( 'get_next_post_sort', 'sql_get_post_sort');
+
+function sql_get_post_sort($sort){
+	$sort =  "ORDER BY p.menu_order $order LIMIT 1";
 	
+	return $sort;
+}
+
+
+add_filter( 'get_previous_post_where', 'sql_get_previous_post_where');
+
+function sql_get_previous_post_where($where,$in_same_cat, $excluded_categories ){
+	global $wpdb; global $post;
 	
 	
 	$current_order = $post->menu_order;
 	$current_parent = $post->post_parent;
 	
-	$order = $current_order -1;
-	
-	error_log('looking for previous = '.$order);
-	
-	$where .= "AND p.post_type = 'page' AND p.post_parent = '{$current_parent}' AND p.menu_order = '{$order}'";
+	$where = $wpdb->prepare("WHERE p.post_type = 'page' AND p.post_status = 'publish' AND p.post_parent = '{$current_parent}' AND p.menu_order < '{$order}'");
 	
 	return $where;
 }
 
 add_filter( 'get_next_post_where', 'sql_get_next_post_where');
-function sql_get_next_post_where($where){
-	global $wpdb;
-	global $post;
 
-	
+function sql_get_next_post_where($where,$in_same_cat, $excluded_categories ){
+	global $wpdb; global $post;
 
 	$current_order = $post->menu_order;
 	$current_parent = $post->post_parent;
-
-	$order = $current_order +1;
 	
-	error_log('looking for next = '.$order);
-	
-	$where .= " AND p.post_type = 'page' AND p.post_parent = '{$current_parent}' AND p.menu_order = '{$order}'";
+	$where = $wpdb->prepare("WHERE p.post_type = 'page' AND p.post_status = 'publish' AND p.post_parent = '{$current_parent}' AND p.menu_order > '{$order}'");
 	
 	return $where;
 }
