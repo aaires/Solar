@@ -564,6 +564,12 @@ $options[] = array( "name" => "Delicious",
 					"std" => "",
 					"type" => "text");
 
+$options[] = array( "name" => "Digg",
+		"desc" => "",
+		"id" => $shortname."_socials_digg",
+		"std" => "",
+		"type" => "text");
+
 
 
 					
