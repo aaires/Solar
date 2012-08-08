@@ -564,9 +564,9 @@ $options[] = array( "name" => "Delicious",
 					"std" => "",
 					"type" => "text");
 
-$options[] = array( "name" => "Digg",
+$options[] = array( "name" => "PinInterest",
 		"desc" => "",
-		"id" => $shortname."_socials_digg",
+		"id" => $shortname."_socials_pini",
 		"std" => "",
 		"type" => "text");
 
