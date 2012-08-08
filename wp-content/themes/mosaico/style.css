@@ -425,7 +425,7 @@ h4.leading{
   letter-spacing: 0em;
   width: 10px;
   background-color: #fff;
-  opacity: 0.8;
+  opacity: 0.9;
   color: #638B92 !important;
   z-index: 999;
   }
@@ -2529,6 +2529,13 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
   font-size:13px;
 }
 
+
+@media screen and (min-width: 750px) {
+  .roomcontent p {
+    padding-right: 20px;
+  }
+}
+
 #roomimg img{
  /* max-width: 104%*/ !important;
 }
@@ -2593,8 +2600,8 @@ ul.post-meta li span{
 ********************************************************************************************/
 
 #locationpost {
-  margin-left: 1.9% ;
-  height: 474px;
+  margin-left: 1.84% ;
+  height: 473px;
   background: #CCC5BA;
   padding-right: 2%;
   padding-top: 1%;
@@ -3081,7 +3088,7 @@ width: 50% !important;}
 .sharing{width:70%;}
 
 #sharebutton{
-	border:none; overflow:hidden; width:55px; height:21px;
+	border:none; overflow:hidden; width:50px; height:21px;
 }
 
 .sharing {
@@ -3296,5 +3303,10 @@ max-width:960px;}
 	top:24px;
 }
 
+#ui-datepicker-div {
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
 
 
