@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Room-Region
+Template Name: Single
 */
 ?>
 
@@ -8,39 +8,6 @@ Template Name: Room-Region
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		
 <div id="core" class="container rooms">
-<div class="row">
-
-    <div class="twelvecol navigation">
-    <?php 
-
-   
-    
-    $post_parent = $post->post_parent;
-
-    // Only shows related posts (same parent)
-    $previous = get_previous_post();
-    
-    if($previous)
-   {
-   	error_log('encontrei um previous');
-   	
-   	
-   		$previous_link =  get_permalink($previous->ID);
-      ?><a href="<?php echo $previous_link?>"> <div class="previous  first"></div></a>  <?php 
-   }
-    
-    $next = get_next_post();  
-    
-  	if($next)
-    {
-    	error_log('encontrei um next');
-      $next_link =  get_permalink($next->ID);
-      ?><a href="<?php echo $next_link;?>"><div class="next  last"></div> </a><?php
-    }
-    ?>
-    </div> <!-- #navigation -->
-</div>
-
 
 <div class="row">    
 <!-- 	<div class="sixcol first" id="roomimg">  -->
