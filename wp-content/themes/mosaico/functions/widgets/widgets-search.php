@@ -37,5 +37,5 @@ class Search extends WP_Widget {
    }
 } 
 
-register_widget('Search');
+//register_widget('Search');
 ?>
