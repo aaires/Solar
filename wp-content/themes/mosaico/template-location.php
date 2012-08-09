@@ -9,7 +9,7 @@ Template Name: Location
 <?php get_header(); ?>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		
-<div id="core" class="container">
+<div id="core" class="containerlocation">
 <div class="row" id="room">
     
         <div class="sixcol first" id="map">

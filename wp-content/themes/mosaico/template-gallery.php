@@ -7,7 +7,7 @@ Template Name: Gallery
 <?php get_header(); ?>
 		
 <div id="core">
-<div class="row">
+<div id="galeria" class="row">
     
         <div class="twelvecol sliderpage">
         <div id="slider-frame">
