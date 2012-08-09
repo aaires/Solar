@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  padding-top: 10px !important ;
+  padding-top: 5px !important ;
 }
 
 .body3 {
@@ -37,7 +37,10 @@ background-color: #638B92 !important;
 
 #logotipo .sevencol img {
   max-width: 104%;
+  margin-top: 7px;
 }
+
+
 
 p {text-align:justify;}
 
@@ -315,8 +318,8 @@ h4.leading{
   font-family: 'PalatinoLTStdMedium';
 	text-align:center;
   border-bottom: 1px solid #BBB1A3;
-  letter-spacing: -0.1em;
-  line-height: 160%;
+  letter-spacing: 0em;
+  line-height: 110%;
   }
   
   @media screen and (max-width: 799px) {
@@ -335,7 +338,19 @@ h4.leading{
   }
 }
   
-  
+  @media screen and (min-width: 600px) and (max-width: 800px) {
+    #navigation .nav li a {
+      font-size: 115%;
+    }
+
+    #navigation .nav a {
+      padding: 0px 7px;
+    }
+
+    #navigation {
+      letter-spacing: -0.1em;
+    }
+  }
   
   #navigation .nav li a {
   }
@@ -394,7 +409,7 @@ h4.leading{
 	display:inline-block;
 }
 
-.nav>li>a{ font-size:135%;}
+.nav>li>a{ font-size:120%;}
   
 #homes{ background:none;}   
 
@@ -441,7 +456,7 @@ h4.leading{
   }
 
 .sub-menu {
-  margin-top: 7px;
+  margin-top: 9px;
 }
 
 .triangle {
@@ -1297,13 +1312,13 @@ ul#serinfo {
   margin-top: 15px;
 }
 
-#homebottomrow{
+/*#homebottomrow{
   margin-top:15px;
-}
+}*/
 
 #footer {
 	padding:0;
-	margin-top: 15px;
+	margin-top: 10px;
 	width: 100%;
 	overflow: hidden; }
  
@@ -2542,7 +2557,7 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 
 
 .rooms{
-  padding-bottom: 15px !important;
+  padding-bottom: 5px !important;
 }
 
 #roompost {
