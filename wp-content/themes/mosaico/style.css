@@ -564,7 +564,8 @@ padding:10px; /* variable width */
 
 
 #mosaicogrande {
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /* @indexpost - types
@@ -2614,7 +2615,7 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
 
 
 .containerlocation {
-  padding-top: 10px !important;
+  padding-top: 5px !important;
   padding-bottom: 5px !important;
 }
 
