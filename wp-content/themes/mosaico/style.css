@@ -410,6 +410,12 @@ h4.leading{
 	display:inline-block;
 }
 
+ @media screen and (min-width: 10px) and (max-width: 500px) {
+  .nav {
+    line-height: 1.2;
+  }
+ }
+
 .nav>li>a{ font-size:120%;}
   
 #homes{ background:none;}   
@@ -1640,7 +1646,7 @@ max-height: 127px !important;
 @media screen and (min-width: 401px) and (max-width: 800px) {
     .reserva{margin: 3.5% 0 1% 8%;}
     .booktitle{font-size:80%;}
-    .bookform{margin:0; padding:0;font-size: 12px;}
+    .bookform{margin:0; padding:0;font-size: 11px;}
     #checkout{margin-top:3px;}
  }
 
@@ -1650,7 +1656,7 @@ max-height: 127px !important;
  @media screen and (min-width:200px) and (max-width: 400px) {
     .reserva{margin: 2% 0 1% 8%;}
     .booktitle{font-size:80%;}
-    .bookform{margin:0; padding:0;font-size: 12px;}
+    .bookform{margin:0; padding:0;font-size: 11px;}
     #checkout{margin-top:3px;}
  }
 
