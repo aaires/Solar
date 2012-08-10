@@ -80,13 +80,17 @@
     <div class="mosaicitem44" id="reserva">
         <div class="inpost2">
             <form action="https://www.thebookingbutton.co.uk/properties/SOLARDIRECT" method="get">
-            <div class="reserva"><div class="booktitle"><?php _e('Book now','solar'); ?></div>
-            	<div id="checkin" class="bookoption left"><label class="bookform bege">CHECK IN:</label>
-            	<div class="box clear"><input class="bookform cinza" id="view_check_in_date" maxlength="10" name="view_check_in_date" type="text"></div></div>
+            <div class="reserva">
+            	<div class="booktitle"><?php _e('Book now','solar'); ?></div>
+            	<div id="checkin" class="bookoption left">
+            		<label class="bookform bege"><?php _e('CHECK IN','solar'); ?></label>
+            		<div class="box clear"><input class="bookform cinza" id="view_check_in_date" maxlength="10" name="view_check_in_date" type="text"></div>
+            	</div>
             	
             	
-            	<div class="bookoption left"><label class="bookform bege">ADULTS</label>
-            	<div class="box clear"><select id="number_adults" name="number_adults" class="bookform cinza">
+            	<div class="bookoption left">
+            		<label class="bookform bege"><?php _e('ADULTS','solar'); ?></label>
+            		<div class="box clear"><select id="number_adults" name="number_adults" class="bookform cinza">
 						<option value="0">0</option>
 						<option value="1" selected="selected">1</option>
 						<option value="2">2</option>
@@ -98,32 +102,36 @@
 						<option value="8">8</option>
 						<option value="9">9</option>
 						<option value="10">10</option>
-					</select></div></div>
+					</select></div>
+				</div>
                     <!-- <br/> -->            	
-                <div class="bookoption left"><label class="bookform bege">CHILDREN</label>
-            	<div class="box clear"><select id="number_children" name="number_children" class="bookform cinza">
+                <div class="bookoption left">
+                	<label class="bookform bege"><?php _e('CHILDREN','solar'); ?></label>
+            		<div class="box clear"><select id="number_children" name="number_children" class="bookform cinza">
 						<option value="0">0</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
-					</select></div></div>
+					</select>
+					</div>
+				</div>
 					<!-- <br/> -->
-            	<div class="bookoption clear"><label id="checkout" class="bookform bege">CHECK OUT:</label>
-            	<div class="box clear"><input class="bookform cinza" id="view_check_out_date" maxlength="10" name="view_check_out_date" type="text"></div></div>
-            	<!-- <br/> -->
-                <!--[if IE]>
-                <style type="text/css">
-                #number_adults, #number_children {
-                padding: 2px 0px 3px 4px;
-                }
-                <![endif]-->
+					
+            	<div class="bookoption clear">
+            		<label id="checkout" class="bookform bege"><?php _e('CHECK OUT:','solar'); ?></label>
+            		<div class="box clear"><input class="bookform cinza" id="view_check_out_date" maxlength="10" name="view_check_out_date" type="text">
+            		</div>
+            	</div>
+           
             	
-                <div id="reservationbutton" class="search"><input type="submit" value="<?php _e('Search','solar'); ?>"></div>
-            </div>
+
+                <div class="search"><input type="submit" value="<?php _e('Search','solar'); ?>"></div>
+            </div> <!-- #reserva -->
+
             </form>
-        </div>
-    </div>
+        </div> <!-- inpost2 -->
+    </div> <!-- mosaicitem44 -->
 
 <!-- end mosaic #4 -->
 
