@@ -77,17 +77,12 @@
           </div>
                
    </div> <!-- #lastfooter -->
-        
+    
+</div><!-- /#footer  -->
 
 
 <?php wp_footer(); ?>
 <?php themnific_foot(); ?>
-
-
-    
-	</div><!-- /#footer  -->
-
-
 
 </body>
 </html>
