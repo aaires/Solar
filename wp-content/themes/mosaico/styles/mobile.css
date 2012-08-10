@@ -480,7 +480,7 @@ ul#social-menu,ul#social-menu li {
 		overflow:hidden; 
 		background:#fff; 
 		float:left; 
-		width:50% !important; 
+		width:49% !important; 
 		height:120px; 
 		top:auto; 
 		left:auto; 
@@ -491,8 +491,9 @@ ul#social-menu,ul#social-menu li {
 		   -ms-transition: all 1s ease-in-out; 
 		   transition: all 1s ease-in-out; 
 	
-	
+	background-size:100% !important;
 	}
+	
 
 } 
 
@@ -650,4 +651,5 @@ ul.medpost li img {
 	}*/
 
 }
+
 
