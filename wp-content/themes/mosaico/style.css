@@ -2745,6 +2745,8 @@ ul.post-meta li span{
  }
 
 
+
+
 /*////////////////////// @Iphone vertical //////////////////*/
 
  @media screen and (min-width:200px) and (max-width: 420px) {
@@ -2974,10 +2976,27 @@ color: #4e4946 ;
   padding-left: 7px;
 }
 
+@media screen and (min-width: 10px) and (max-width: 420px) {
+    .related {
+      width: 100%;
+      position: relative;
+    }
+
+    .relatedtopic1, .relatedtopic2 {
+      width: 100%;
+      background-color: #CCC5BA;
+    }
+
+    .relatedtopic2 {
+      clear:both;
+    }
+
+}
+
 
 /*////////////////////// @Iphone horizontal and Ipad Vertical//////////////////*/
 
-@media screen and (min-width: 10px) and (max-width: 800px) {
+@media screen and (min-width: 421px) and (max-width: 800px) {
     #postexperience {background: #CCC5BA !important;
       height: auto;
       overflow:visible;
@@ -3035,7 +3054,7 @@ color: #4e4946 ;
 .navigation .next{
 	position:absolute;
 	margin-left:925px;
-	margin-top: 225px; 
+	margin-top: 225px !important; 
 	background: url(images/right-arrow.png) no-repeat;
 	z-index:999;
 	width:23px;
@@ -3050,7 +3069,7 @@ color: #4e4946 ;
 
 /*////////////////////// @IPad vertical //////////////////*/
 
- @media screen and (max-width: 769px) {
+ @media screen and (min-width: 601) (max-width: 769px) {
   .navigation .next { 
   						margin-left: 700px;
                      	margin-top:135px ;}
@@ -3076,20 +3095,19 @@ color: #4e4946 ;
 /*////////////////////// @Iphone horizontal //////////////////*/
 
 @media screen and (min-width: 401px) and (max-width: 600px) {
-  .navigation .next { margin-left: 385px;
-                      margin-top:205px ;}
-  .navigation .previous { margin-left: -10px;
-                          margin-top:205px ;}
+  .navigation .next { right: 2%;}
+  .navigation .previous { margin-left: 2%;
+                      }
  }
 
 
 /*////////////////////// @Iphone vertical //////////////////*/
 
  @media screen and (min-width:200px) and (max-width: 400px) {
-  .navigation .next { margin-left: 245px;
-                      margin-top:135px ;}
-  .navigation .previous { margin-left: -10px;
-                          margin-top:135px ;}
+  .navigation .next { right: 2%;
+                      margin-top:205px ;}
+  .navigation .previous { margin-left: 2%;
+                          }
  }
 
 
