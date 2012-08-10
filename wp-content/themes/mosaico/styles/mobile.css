@@ -225,6 +225,8 @@ img {
 	   transition: all 1s ease-in-out;
 	   border-right:none;
 	   border-bottom:none;
+	   
+	  background:none !important; 
 }
 
 

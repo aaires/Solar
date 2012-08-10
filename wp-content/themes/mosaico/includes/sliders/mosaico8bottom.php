@@ -18,7 +18,7 @@
          <img class="meta-image" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image_url;?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>"/>
    	
    		<!-- visible image on hover -->
-   	    <img class="featured-image" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>" style="opacity:0;"/>
+   	    <img class="featured-image" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>"/>
    	    </a>
                     
     </div>
@@ -126,7 +126,7 @@
            
             	
 
-                <div id="reservationbutton" class="search"><input type="submit" value="<?php _e('Search','solar'); ?>"></div>
+                <div class="search"><input type="submit" value="<?php _e('Search','solar'); ?>"></div>
             </div> <!-- #reserva -->
 
             </form>
