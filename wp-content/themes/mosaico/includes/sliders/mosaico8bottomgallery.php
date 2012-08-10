@@ -38,7 +38,7 @@
         <div class="inpost2">
             <form action="">
             <div class="reserva"><?php _e('Book now','solar'); ?>
-                <input class="search" type="submit" value="<?php _e('Search','solar'); ?>">
+                <input id="reservationbutton" class="search" type="submit" value="<?php _e('Search','solar'); ?>">
             </div>
             </form>
         </div>

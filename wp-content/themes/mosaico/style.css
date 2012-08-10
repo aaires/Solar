@@ -24,6 +24,7 @@ body, a, a:visited{
 
 body {
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .container {
@@ -1478,7 +1479,7 @@ max-height: 127px !important;
   color: #fff;
   font-family: 'RockwellStdBold';
   font-size: 26px;
-  margin: 6% 0 0 8%;
+  margin: 4% 0 0 8%;
 }
 
 
@@ -1506,11 +1507,14 @@ max-height: 127px !important;
 .bookform
 {
   font-size: 13px;
-  margin:3px 0;
+  margin:3px 0 0 0;
   font-family:'RockwellStdCondensed';
+  appearance: field;
   -webkit-appearance: none; 
   line-height: 90%;
 }
+
+
 
 .box input {
   padding:2px 0 1px 3px;
@@ -1548,7 +1552,7 @@ max-height: 127px !important;
   width: 45%;
 }
 .booktitle {
-  margin-bottom: 1.5%;
+  margin-bottom: 3.5%;
 }
 
 .reserva select{
@@ -1556,12 +1560,18 @@ max-height: 127px !important;
   padding-right: 15px;
   background: #BBB1A3;
   border: solid 2px #888075;
+  -moz-appearance: none !important;
 }
 
-#number_adults, #number_children {
-  padding: 1px 10px 3px 4px;
+#number_adults {
+  padding: 1px 0px 0px 4px;
   -webkit-border-radius: 0;
   cursor: text;
+  -moz-appearance: none;
+}
+
+#number_children {
+    padding: 1px 3px 0px 4px;
 }
 
  #view_check_out_date
@@ -1576,6 +1586,20 @@ max-height: 127px !important;
   width: 75%;
   background: #BBB1A3;
   border: solid 2px #888075;
+}
+
+#view_check_in_date, #view_check_out_date, #number_adults, #number_children{
+  margin-top: 1px;
+}  
+
+#checkout {margin-top: 10px;}
+
+#reservationbutton input {
+  margin-bottom: 5px;
+  float: right;
+}
+
+#reservationbutton {
 }
 
 /*////////////////////// @Iphone horizontal and Ipad Vertical//////////////////*/

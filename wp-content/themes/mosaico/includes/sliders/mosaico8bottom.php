@@ -119,7 +119,7 @@
                 }
                 <![endif]-->
             	
-                <div class="search"><input type="submit" value="<?php _e('Search','solar'); ?>"></div>
+                <div id="reservationbutton" class="search"><input type="submit" value="<?php _e('Search','solar'); ?>"></div>
             </div>
             </form>
         </div>
