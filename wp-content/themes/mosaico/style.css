@@ -457,7 +457,7 @@ h4.leading{
   }
 
 .sub-menu {
-  margin-top: 9px;
+  margin-top: 4px;
 }
 
 .triangle {
@@ -1496,6 +1496,13 @@ max-height: 127px !important;
   -webkit-appearance: none;
 }
 
+@media screen and (min-width: 10px) and (max-width: 900px) {
+  .reserva .search input{
+    font-size: 55%;
+    padding: 1%;
+  }
+}
+
 .reserva .search input:hover{
   background-color: #EEE;
 }
@@ -1595,12 +1602,23 @@ max-height: 127px !important;
 #checkout {margin-top: 10px;}
 
 #reservationbutton input {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   float: right;
 }
 
-#reservationbutton {
+@media screen and (min-width: 10px) and (max-width: 800px) {
+  #reservationbutton input {
+  margin-bottom: 0;
 }
+
+#view_check_in_date, #view_check_out_date {
+  font-size: 35%;
+}
+
+}
+
+
+
 
 /*////////////////////// @Iphone horizontal and Ipad Vertical//////////////////*/
 
@@ -1615,7 +1633,7 @@ max-height: 127px !important;
 /*////////////////////// @Iphone vertical //////////////////*/
 
  @media screen and (min-width:200px) and (max-width: 400px) {
-    .reserva{margin: 3.5% 0 1% 8%;}
+    .reserva{margin: 2% 0 1% 8%;}
     .booktitle{font-size:80%;}
     .bookform{margin:0; padding:0;font-size: 12px;}
     #checkout{margin-top:3px;}
@@ -3093,13 +3111,13 @@ color: #4e4946 ;
 
 /*////////////////////// @IPad vertical //////////////////*/
 
- @media screen and (min-width: 601) (max-width: 769px) {
+ @media screen and (min-width: 601px) and (max-width: 769px) {
   .navigation .next { 
-  						margin-left: 700px;
-                     	margin-top:135px ;}
+  						right: 4%;
+                     	}
  
  .navigation .previous { 
-                           margin-top:135px ;
+                          
                         }
                         
 #core .row{ background: transparent;}
