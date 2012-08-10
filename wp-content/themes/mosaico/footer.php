@@ -1,18 +1,24 @@
-  <div id="homebottomrow" class="row">
+<!--   <div id="homebottomrow" class="row">
         
        <div class="twelvecol">
        
                     
-           <?php if(is_home()) 
-           {
+           <?php /*if(is_home()) 
+           		{
     			
 					echo get_template_part('/includes/sliders/mosaico8bottom' );;	
 											
-				} 
+				} */
 			?>
                    
        	</div>
     </div>
+   -->  
+    
+<div class="row container">
+	<?php get_template_part('/includes/sliders/mosaico8bottom' ); ?> 
+</div>
+    
     
 <div id="footer">
         

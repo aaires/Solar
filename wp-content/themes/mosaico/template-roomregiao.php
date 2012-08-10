@@ -134,8 +134,6 @@ Template Name: Room-Region
    
   <div style="clear: both;"></div> 
   
-<div class="row">
-	<?php get_template_part('/includes/sliders/mosaico8bottom' ); ?> 
-</div>
+
 
 <?php get_footer(); ?>
