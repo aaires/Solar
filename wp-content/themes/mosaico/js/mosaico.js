@@ -3,9 +3,9 @@ jQuery(document).ready(function() {
 	// Do Something on page load
 	$('.newsletter').css("display","none");
 	
-	//$('#view_check_in_date').datepicker();
+	$('#view_check_in_date').datepicker();
 
-	//$('#view_check_out_date').datepicker();
+	$('#view_check_out_date').datepicker();
 	
 	
 	$('#newsletter').hover(
