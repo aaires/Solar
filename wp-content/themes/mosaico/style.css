@@ -609,7 +609,7 @@ ul.medpost li img{max-width: 98%; display: block; float:left; margin:20px 30px 2
 }
 
 #core {
- /* padding-top: 10px !important;*/
+  padding-top: 5px !important;
 }
 
 #post{
