@@ -270,7 +270,7 @@ function mosaico_enqueue_scripts() {
 		
 //		wp_register_script( 'conference', get_template_directory_uri() . '/js/mosaico.js', 'jquery' );
 		// Enqueue nivo slicer script
-		wp_enqueue_script( 'conference',  get_template_directory_uri() . '/js/mosaico.js', 'jquery','1.0',true);
+		wp_enqueue_script( 'conference',  get_template_directory_uri() . '/js/mosaico.js', 'jquery','1.0',false); /*aaires was false*/
 
 		
 		
