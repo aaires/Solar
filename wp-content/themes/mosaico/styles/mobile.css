@@ -226,10 +226,13 @@ img {
 	   border-right:none;
 	   border-bottom:none;
 	   
-	  background:none !important; 
+	  
 }
 
-
+.mosaicitembottom41,.mosaicitembottom43{
+	
+	background:none !important; 
+}
 
 .mosaicintro{ 
 	position:relative !important; 
