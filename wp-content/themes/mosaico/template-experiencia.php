@@ -42,7 +42,7 @@ Template Name: Experience
 
     
 <!-- 	<div class="sixcolwide last" id="relatedpost"> -->
-	<div class="sixcolwide last">
+	<div id="extendrelated" class="sixcolwide last">
          <div class="roomcontent">
 
                 <h2 class="leading"> <a href="<?php  the_permalink(); ?>"><?php the_title(); ?></a></h2>
