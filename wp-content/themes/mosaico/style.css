@@ -1600,6 +1600,8 @@ max-height: 127px !important;
 
 #number_children {
     padding: 1px 3px 0px 4px;
+    -webkit-border-radius: 0;
+    cursor: text;
 }
 
  #view_check_out_date
@@ -1646,7 +1648,7 @@ max-height: 127px !important;
 @media screen and (min-width: 401px) and (max-width: 800px) {
     .reserva{margin: 3.5% 0 1% 8%;}
     .booktitle{font-size:80%;}
-    .bookform{margin:0; padding:0;font-size: 11px;}
+    .bookform{margin:0; padding:0;font-size: 9px;}
     #checkout{margin-top:3px;}
  }
 
@@ -1656,7 +1658,7 @@ max-height: 127px !important;
  @media screen and (min-width:200px) and (max-width: 400px) {
     .reserva{margin: 2% 0 1% 8%;}
     .booktitle{font-size:80%;}
-    .bookform{margin:0; padding:0;font-size: 11px;}
+    .bookform{margin:0; padding:0;font-size: 9px;}
     #checkout{margin-top:3px;}
  }
 
