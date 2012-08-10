@@ -2713,19 +2713,20 @@ ul.post-meta li span{
 
 }
 
-
+@media screen and (min-width: 900px) and (max-width: 3000px) {
 #locationcontent {
 	margin-left:3.5%;
   max-height: 400px;
   overflow: auto;
-	width:100.5%;
-	
+	width:100.5%;	
+}
+
 }
 #locationcontent p{margin-right:3%;}
 
 /*////////////////////// @Iphone horizontal //////////////////*/
 
-@media screen and (min-width: 401px) and (max-width: 600px) {
+@media screen and (min-width: 420px) and (max-width: 600px) {
     #locationpost {
       height: 700px;
       width: 92%;
@@ -2734,7 +2735,8 @@ ul.post-meta li span{
       padding-right: 4%;
     }
     #locationcontent{
-      max-height: 700px;
+      min-height: 700px;
+      max-height: none;
     }
 
     #map {
@@ -2745,15 +2747,18 @@ ul.post-meta li span{
 
 /*////////////////////// @Iphone vertical //////////////////*/
 
- @media screen and (min-width:200px) and (max-width: 400px) {
+ @media screen and (min-width:200px) and (max-width: 420px) {
     #locationpost {
-      height: 800px;
-      width: 92%;
+      height: auto;
       margin-left: 0;
-      padding-right: 3%;
+      padding-left: 0;
     }
     #locationcontent{
-      max-height: 800px;
+      max-height: none;
+      margin-left: 0;
+      padding-left: 10px;
+      height: auto;
+      width: 100%;
     }
 
     #map {
