@@ -2573,19 +2573,19 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
   color: #638c92;
 }
 
-::-webkit-scrollbar {
+.barra::-webkit-scrollbar {
     width: 6px;
 }
 
-::-webkit-scrollbar-track {
+.barra::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
     border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb {
+.barra::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
-}
+}*/
 
 #postroom {
   scrollbar-base-color:       #CCC5BA;

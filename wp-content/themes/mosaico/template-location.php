@@ -33,7 +33,7 @@ Template Name: Location
         <div class="sixcol last" id="locationpost">
             
             <h2 class="locationtitle"><?php _e('Location','solar'); ?></h2>
-            <div id="locationcontent">
+            <div id="locationcontent" class="barra">
             <?php the_content(); ?>
        
        <!-- This can go in the content -->

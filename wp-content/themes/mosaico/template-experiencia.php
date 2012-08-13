@@ -46,7 +46,7 @@ Template Name: Experience
          <div class="roomcontent">
 
                 <h2 class="leading"> <a href="<?php  the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                 <div class="entry" id="postexperience">
+                 <div class="entry barra" id="postexperience">
                  <?php the_content(); ?>
                     <?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:','themnific') . '</span>', 'after' => '</div>' ) ); ?>
                     <?php the_tags( '<p>' . __( 'Tags: ','themnific') . '', ', ', '</p>'); ?>
