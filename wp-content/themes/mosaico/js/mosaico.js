@@ -1,8 +1,6 @@
 jQuery(document).ready(function() {
 		
 	
-	console.log('mosaico foi carregado');
-	
 	// Do Something on page load
 	$('.newsletter').css("display","none");
 	

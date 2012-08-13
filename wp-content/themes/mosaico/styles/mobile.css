@@ -225,9 +225,16 @@ img {
 	   transition: all 1s ease-in-out;
 	   border-right:none;
 	   border-bottom:none;
+	   
+	  
 }
 
+.mosaicitem41,.mosaicitem43{
+	
+	background:none !important; 
+}
 
+.idnewsletter{border:none !important;}
 
 .mosaicintro{ 
 	position:relative !important; 
