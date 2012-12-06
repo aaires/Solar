@@ -34,7 +34,7 @@
             <?php _e('Newsletter','solar'); ?>
             
             
-            <form action="http://wordpress.us5.list-manage1.com/subscribe/post?u=c4a298ac48b121d8405b851ff&amp;id=f3dc3eee92" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+            <form action="http://solaregasmoniz.us6.list-manage2.com/subscribe/post?u=c924c99c0d0356d4e2c384f1e&amp;id=e82544f9aa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 			
 				<input type="text" name="MERGE1" id="MERGE1" value="" placeholder="<?php _e('Name','solar');?>" >
 			
