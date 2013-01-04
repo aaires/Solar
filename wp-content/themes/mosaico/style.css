@@ -3091,13 +3091,13 @@ color: #4e4946 ;
 
 
 
-.nivo-prevNav{
+.nivo-prevNav, .arrow_prev{
 	background: url(images/left-arrow.png) no-repeat;
 	height:40px;
 	color:transparent;
 	left:2% !important;
 }
-.nivo-nextNav{
+.nivo-nextNav, .arrow_next{
 	background: url(images/right-arrow.png) no-repeat; height:40px;
 	color:transparent;
 	right:2% !important;
@@ -3360,7 +3360,7 @@ padding: 0 0 0px 0 !important;
 	opacity:0.7;
 }
 /* Control nav styles (e.g. 1,2,3...) */
- .nivo-controlNav a {
+ .nivo-controlNav a{
 	display:block;
 	width:92px;
 	height:70px;
@@ -3388,6 +3388,10 @@ margin-left: -40px;
 .nivo-controlNav a.active {
 	font-weight:bold;
 }
+
+
+
+
 
 #galeria {
   margin-top: 5px;
@@ -3421,10 +3425,15 @@ max-width:960px;}
 	margin-left:auto;
 	margin-right:auto;
 	position:relative;
-	top:500px;
-	
+	/*top:500px;*/
+	top:7px;
 	left:2px;
 }
+
+
+
+
+
 #slider .nivo-controlNav img {
 	display:inline; /* Unhide the thumbnails */
 	position:relative;
