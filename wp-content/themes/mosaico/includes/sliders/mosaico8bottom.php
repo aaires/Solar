@@ -10,7 +10,7 @@
 	
 	
 	 <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight'); ?>
-    <div class="mosaicitem41" style="background-image:url(<?php echo $image[0]; ?>);">
+    <div class="mosaicitem41 bottomitem" style="background-image:url(<?php echo $image[0]; ?>);">
         <?php $image_url =  get_post_meta($post->ID, 'special-offer',true); ?>
  		<a href="<?php the_permalink(); ?>">
        		<!-- visible image on load -->	
@@ -27,7 +27,7 @@
 
 
 	
-    <div class="mosaicitem42  idnewsletter newslayout" id="newsletter" >
+    <div class="mosaicitem42 bottomitem idnewsletter newslayout" id="newsletter" >
         <div class="inpost2">
             <div class="newsletter">
             <?php _e('Newsletter','solar'); ?>
@@ -56,7 +56,7 @@
 	
 	<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight'); ?>
 	
-    <div class="mosaicitem43" style="background-image:url(<?php echo $image[0]; ?>);">
+    <div class="mosaicitem43 bottomitem" style="background-image:url(<?php echo $image[0]; ?>);">
         <a href="<?php the_permalink(); ?>">
          <?php $image_url =  get_post_meta($post->ID, 'new-offer',true); ?>
     	<!-- visible image on load -->	
@@ -77,7 +77,7 @@
 <!-- end mosaic #3 -->
 
 
-    <div class="mosaicitem44" id="reserva">
+    <div class="mosaicitem44 bottomitem" id="reserva">
         <div class="inpost2">
             <form action="https://www.thebookingbutton.co.uk/properties/SOLARDIRECT" method="get">
             <div class="reserva">
