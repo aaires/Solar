@@ -11,9 +11,6 @@ Template Name: Gallery
 <div id="galeria" class="row">
     
         <div class="twelvecol sliderpage">
-    
-	
-	
 	
 	<div id="mySlider" class="evoslider default">    
     <dl>
@@ -133,52 +130,15 @@ Template Name: Gallery
     });                                
     
 </script>
-		<script type="text/javascript">
-
-
-		/*jQuery(document).ready(function() { console.log(jQuery('#slider'));
-		jQuery('#slider').nivoSlider({
-			effect:'fade', //Specify sets like: 'fold,fade,sliceDown,sliceUpDown'
-			animSpeed:500,
-			pauseTime:6000,
-			startSlide:0, //Set starting Slide (0 index)
-			directionNav:true, //Next & Prev
-			directionNavHide:false, //Only show on hover
-			controlNav:true, //1,2,3...
-			controlNavThumbs:true, //Use thumbnails for Control Nav
-			controlNavThumbsScroll: true,
-	      	controlNavThumbsFromRel:false, //Use image rel for thumbs
-			controlNavThumbsSearch: 'check.jpg', //Replace this with...
-			controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
-			keyboardNav:false, //Use left & right arrows
-			pauseOnHover:true, //Stop animation while hovering
-			manualAdvance:true, //Force manual transitions
-			captionOpacity:0.8, //Universal caption opacity
-			
-			beforeChange: function(){},
-
-			afterLoad: function(){
-				},
-			
-			afterChange: function(){
-
-			
-			
-				},
-			slideshowEnd: function(){} //Triggers after all slides have been shown
-		});
-		});*/
-		</script>
+		
 		
         
+
         
         </div> <!-- twelvecolumn -->
               
 
         </div> <!-- #row -->
-
-
-
 
 
 </div> <!-- #core -->

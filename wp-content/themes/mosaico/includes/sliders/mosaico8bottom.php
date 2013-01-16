@@ -11,14 +11,13 @@
 	
 	 <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight'); ?>
     <div class="mosaicitem41" style="background-image:url(<?php echo $image[0]; ?>);">
-        <a href="<?php the_permalink(); ?>">
-       
         <?php $image_url =  get_post_meta($post->ID, 'special-offer',true); ?>
-    	<!-- visible image on load -->	
+ 		<a href="<?php the_permalink(); ?>">
+       		<!-- visible image on load -->	
          <img class="meta-image" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image_url;?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>"/>
    	
    		<!-- visible image on hover -->
-   	    <img class="featured-image" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>"/>
+   	   <img class="featured-image" src="<?php //echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php //echo $image[0]; ?>&amp;w=240&amp;h=129" alt="<?php //the_title(); ?>"/>
    	    </a>
                     
     </div>
@@ -61,10 +60,11 @@
         <a href="<?php the_permalink(); ?>">
          <?php $image_url =  get_post_meta($post->ID, 'new-offer',true); ?>
     	<!-- visible image on load -->	
-		<img class="meta-image" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image_url ?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>"/>
+	<!--	<img class="meta-image" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image_url ?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>"/>-->
+	<img class="meta-image" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>"/>
    	
    		<!-- visible image on hover -->
-   	    <img class="featured-image" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>"/>
+   	    <img class="featured-image" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>"/> 
         </a>
         
         <div class="inpost">
