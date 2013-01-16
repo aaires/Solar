@@ -2202,28 +2202,28 @@ border-left:2px solid #fff;
 
 
 .mosaicitem41{
-width:240px;
-height:240px;
+width:25%;
+height:100%;
 top:0px;
 left:0px;
 }
 .mosaicitem42{
-width:240px;
-height:240px;
+width:25%;
+height:100%;
 top:0px;
 left:240px;
 }
 
 .mosaicitem43{
-width:240px;
-height:240px;
+width:25%;
+height:100%;
 top:0px;
 left:480px;
 }
 
 .mosaicitem44{
-width:240px;
-height:240px;
+width:25%;
+height:100%;
 top:0px;
 left:720px;
 }
@@ -2955,6 +2955,7 @@ color: #4e4946 ;
 	position:absolute;
 	bottom:0px;
 	width:480px;
+  padding-top: 20px;
 }
 
 #sharingoptionsrelated{
@@ -3497,4 +3498,25 @@ max-width:960px;}
   position: absolute;
   z-index: 1;
   display: none;
+}
+
+
+/*** Fix ***/
+
+@media screen and (max-width: 799px) {
+      .outer_control {
+        display:none;
+      }
+      #galeria {
+        height:  495px;
+      }
+
+}
+
+#mySlider {
+  width: 100% !important;
+}
+
+.controlNav {
+  width: 100% !important;
 }
