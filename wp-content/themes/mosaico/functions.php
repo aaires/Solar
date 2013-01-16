@@ -255,23 +255,34 @@ function mosaico_enqueue_scripts() {
 	if ( ! is_admin() ) {
 		// Only enqueue the core-bundled jQuery script
 		wp_deregister_script('jquery');//deregister current jquery
-		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', false, '1.7.1', false);//load jquery from google api, and place in footer
-		wp_enqueue_script('jquery');
-		
-		wp_register_style( 'jquery-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/smoothness/jquery-ui.css', true);
-		wp_enqueue_style('jquery-style');
-		
-		wp_enqueue_script('jquery-ui');
-		wp_enqueue_script('jquery-ui-datepicker');
-		
-		wp_register_script( 'nivo', get_template_directory_uri() . '/js/jquery.nivo.slider.pack.js', 'jquery' );
-		// Enqueue superfish script
-		wp_enqueue_script( 'nivo' );
-		
-//		wp_register_script( 'conference', get_template_directory_uri() . '/js/mosaico.js', 'jquery' );
-		// Enqueue nivo slicer script
-		wp_enqueue_script( 'conference',  get_template_directory_uri() . '/js/mosaico.js', 'jquery','1.0',true);
+				wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', false, '1.7.1', false);//load jquery from google api, and place in footer
+				wp_enqueue_script('jquery');
 
+				wp_register_style( 'evoslidercss', get_template_directory_uri() . '/styles/evoslider.css');
+				wp_enqueue_style('evoslidercss');
+				wp_register_style( 'default', get_template_directory_uri() . '/styles/default.css');
+				wp_enqueue_style('default');
+
+				wp_register_style( 'jquery-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/smoothness/jquery-ui.css', true);
+				wp_enqueue_style('jquery-style');
+
+				wp_enqueue_script('jquery-ui');
+				wp_enqueue_script('jquery-ui-datepicker');
+
+				//wp_register_script( 'nivo', get_template_directory_uri() . '/js/jquery.nivo.slider.pack.js', 'jquery' );
+				// Enqueue superfish script
+				//wp_enqueue_script( 'nivo' );
+
+		//		wp_register_script( 'conference', get_template_directory_uri() . '/js/mosaico.js', 'jquery' );
+				// Enqueue nivo slicer script
+				wp_enqueue_script( 'conference',  get_template_directory_uri() . '/js/mosaico.js', 'jquery','1.0',true);
+
+
+				wp_register_script( 'easing', get_template_directory_uri() . '/js/slider/jquery.easing.1.3.js', 'jquery',true );
+				wp_enqueue_script( 'easing' );
+				wp_register_script( 'evoslider', get_template_directory_uri() . '/js/slider/jquery.evoslider-2.1.2.js', 'jquery',true );
+				wp_enqueue_script( 'evoslider' );
+	
 		
 		
 	}
