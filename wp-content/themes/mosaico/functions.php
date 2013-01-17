@@ -270,7 +270,7 @@ function mosaico_enqueue_scripts() {
 		wp_enqueue_script('jquery-ui');
 		wp_enqueue_script('jquery-ui-datepicker');
 		
-		wp_register_script( 'nivo', get_template_directory_uri() . '/js/jquery.nivo.slider.pack.js', 'jquery' );
+		wp_register_script( 'nivo', get_template_directory_uri() . '/js/jquery.nivo.slider.pack.js', 'jquery','',true );
 		// Enqueue superfish script
 		wp_enqueue_script( 'nivo' );
 		
