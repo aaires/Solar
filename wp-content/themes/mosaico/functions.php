@@ -270,32 +270,13 @@ function mosaico_enqueue_scripts() {
 		wp_enqueue_script('jquery-ui');
 		wp_enqueue_script('jquery-ui-datepicker');
 		
-		//wp_register_script( 'nivo', get_template_directory_uri() . '/js/jquery.nivo.slider.pack.js', 'jquery' );
+		wp_register_script( 'nivo', get_template_directory_uri() . '/js/jquery.nivo.slider.pack.js', 'jquery' );
 		// Enqueue superfish script
-		//wp_enqueue_script( 'nivo' );
+		wp_enqueue_script( 'nivo' );
 		
-//		wp_register_script( 'conference', get_template_directory_uri() . '/js/mosaico.js', 'jquery' );
 		// Enqueue nivo slicer script
 		wp_enqueue_script( 'conference',  get_template_directory_uri() . '/js/mosaico.js', 'jquery','1.0',true);
 
-				wp_enqueue_script('jquery-ui');
-				wp_enqueue_script('jquery-ui-datepicker');
-
-				//wp_register_script( 'nivo', get_template_directory_uri() . '/js/jquery.nivo.slider.pack.js', 'jquery' );
-				// Enqueue superfish script
-				//wp_enqueue_script( 'nivo' );
-
-		//		wp_register_script( 'conference', get_template_directory_uri() . '/js/mosaico.js', 'jquery' );
-				// Enqueue nivo slicer script
-				wp_enqueue_script( 'conference',  get_template_directory_uri() . '/js/mosaico.js', 'jquery','1.0',true);
-
-
-				wp_register_script( 'easing', get_template_directory_uri() . '/js/slider/jquery.easing.1.3.js', 'jquery',true );
-				wp_enqueue_script( 'easing' );
-				wp_register_script( 'evoslider', get_template_directory_uri() . '/js/slider/jquery.evoslider-2.1.2.js', 'jquery',true );
-				wp_enqueue_script( 'evoslider' );
-	
-		
 		wp_register_script( 'easing', get_template_directory_uri() . '/js/slider/jquery.easing.1.3.js', 'jquery',true );
 		wp_enqueue_script( 'easing' );
 		wp_register_script( 'evoslider', get_template_directory_uri() . '/js/slider/jquery.evoslider-2.1.2.js', 'jquery',true );
