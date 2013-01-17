@@ -2636,6 +2636,12 @@ a.page-numbers  { font-size: 13pt; color: #3888ff; padding:3px 8px;line-height:1
   padding-bottom: 5px !important;
 }
 
+@media screen and (max-width: 400px){
+.rooms .sixcolwide {
+  overflow:hidden;
+}
+}
+
 #roompost {
  /* margin-left: 1.9% ;*/
   min-height: 495px;
