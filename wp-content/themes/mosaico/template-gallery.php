@@ -46,7 +46,7 @@ Template Name: Gallery
     var myPlugin = $("#mySlider").evoSlider({
         mode: "slider",                     // Sets slider mode ("accordion", "slider", or "scroller")
         width: 1000,                         // The width of slider
-        height: 495,                        // The height of slider
+        height: 495,                       // The height of slider
                 
         slideSpace: 5,                      // The space between slides
         paddingRight: 0,                    // Padding right of the container/frame
