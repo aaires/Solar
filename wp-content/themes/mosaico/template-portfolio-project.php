@@ -17,8 +17,9 @@ TODO: Disable
 	?>
 	<div class="project">	
 	<div class="sevencol first">
-                <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image'); ?>
+                <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image'); if($image) { ?>
                 <img class="bags" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=550&amp;h=230" alt="<?php the_title(); ?>"/>
+                <?php }?>
 	</div>	
 		
 			<div class="overview fivecol">
