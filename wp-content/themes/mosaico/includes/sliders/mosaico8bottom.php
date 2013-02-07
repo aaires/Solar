@@ -14,7 +14,9 @@
         <?php $image_url =  get_post_meta($post->ID, 'special-offer',true);  ?>
  		<a href="<?php the_permalink(); ?>">
        		<!-- visible image on load -->	
-         <img class="meta-image" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image_url;?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>"/>
+       	 <?php if($image_url){?>
+         	<img class="meta-image" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image_url;?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>"/>
+         <?php }?>
    	
    			<!-- visible image on hover -->
    	 	 <!--  <img class="featured-image" src="<?php //echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php //echo $image[0]; ?>&amp;w=240&amp;h=129" alt="<?php //the_title(); ?>"/>-->
@@ -61,10 +63,14 @@
          <?php $image_url =  get_post_meta($post->ID, 'new-offer',true); ?>
     	<!-- visible image on load -->	
 	<!--	<img class="meta-image" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image_url ?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>"/>-->
+		<?php if($image){?>
 	<img class="meta-image" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>"/>
+	<?php }?>
    	
    		<!-- visible image on hover -->
-   	    <img class="featured-image" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>"/> 
+   		<?php if($image){?>
+   	    <img class="featured-image" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=129" alt="<?php the_title(); ?>"/>
+   	    <?php }?> 
         </a>
         
         <div class="inpost">

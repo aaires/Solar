@@ -41,8 +41,8 @@ while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $pos
 	
     <div class="mosaicitem3" style="top:120px; height:120px;">
         <a href="<?php the_permalink(); ?>">
-        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image'); ?>
-        <img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=200" alt="<?php the_title(); ?>"/>
+        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image');  if($image){ ?>
+        <img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=200" alt="<?php the_title(); ?>"/><?php }?>
         </a>
         
         <div class="inpost">
@@ -63,8 +63,9 @@ while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $pos
 	
     <div class="mosaicitem6">
         <a href="<?php the_permalink(); ?>">
-        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image'); ?>
+        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image');  if($image){ ?>
         <img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=150&amp;h=150" alt="<?php the_title(); ?>"/>
+        <?php }?>
         </a>
         
         <div class="inpost">
@@ -83,8 +84,9 @@ while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $pos
 	
     <div class="mosaicitem7">
         <a href="<?php the_permalink(); ?>">
-        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image'); ?>
+        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image');  if($image){?>
         <img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=240" alt="<?php the_title(); ?>"/>
+        <?php }?>
         </a>
         
         <div class="inpost">
@@ -104,8 +106,9 @@ while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $pos
 	
     <div class="mosaicitem8">
         <a href="<?php the_permalink(); ?>">
-        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image'); ?>
+        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image');  if($image){?>
         <img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=120&amp;h=240" alt="<?php the_title(); ?>"/>
+        <?php }?>
         </a>
         
         <div class="inpost">
@@ -125,8 +128,9 @@ while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $pos
 	
     <div class="mosaicitem9" style="height:240px">
         <a href="<?php the_permalink(); ?>">
-        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image'); ?>
+        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image');  if($image){?>
         <img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=240" alt="<?php the_title(); ?>"/>
+        <?php }?>
         </a>
         
         <div class="inpost">
@@ -146,8 +150,9 @@ while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $pos
 	
     <div class="mosaicitem10">
         <a href="<?php the_permalink(); ?>">
-        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image'); ?>
+        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image');  if($image){?>
         <img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=200" alt="<?php the_title(); ?>"/>
+        <?php }?>
         </a>
         
         <div class="inpost">

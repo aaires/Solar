@@ -77,8 +77,10 @@ class featured_widget extends WP_Widget {
 
                                         <li class="fblock">
                                             <a href="<?php the_permalink(); ?>">
-                                            <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image'); ?>
-                                            <img class="" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=55&amp;h=55" alt="<?php the_title(); ?>" /></a>
+                                            <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'folio-image'); if($image){ ?>
+                                            <img class="" src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=55&amp;h=55" alt="<?php the_title(); ?>" />
+                                            <?php }?>
+                                            </a>
                                             <div class="fblock-inn">
                                             <h3><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
 											<p><?php echo pov_excerpt( get_the_excerpt(), '100'); ?></p>

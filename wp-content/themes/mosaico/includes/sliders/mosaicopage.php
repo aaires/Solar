@@ -12,8 +12,9 @@
 		?>
 		<div class="mosaicitem4<?php echo $i; ?>">
 		<a href="<?php the_permalink(); ?>">
-		<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight'); ?>
+		<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight');  if($image) { ?>
 		<img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=240" alt="<?php the_title(); ?>"/>
+		<?php }?>
 		</a>
 		
 		<div class="inpost">

@@ -18,8 +18,9 @@
 	
     <div class="mosaicitem41">
         <a href="<?php the_permalink(); ?>">
-        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight'); ?>
+        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight');  if($image){?>
         <img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=240" alt="<?php the_title(); ?>"/>
+        <?php }?>
         </a>
         
         <div class="inpost">
@@ -41,8 +42,9 @@
 	
     <div class="mosaicitem42">
         <a href="<?php the_permalink(); ?>">
-        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight'); ?>
+        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight');  if($image){ ?>
         <img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=240" alt="<?php the_title(); ?>"/>
+        <?php }?>
         </a>
         
         <div class="inpost">
@@ -62,8 +64,9 @@
 	
     <div class="mosaicitem43">
         <a href="<?php the_permalink(); ?>">
-        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight'); ?>
+        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight');  if($image){?>
         <img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=240" alt="<?php the_title(); ?>"/>
+        <?php }?>
         </a>
         
         <div class="inpost">
@@ -83,8 +86,9 @@
 	
     <div class="mosaicitem44">
         <a href="<?php the_permalink(); ?>">
-        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight'); ?>
+        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight');  if($image){ ?>
         <img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=240" alt="<?php the_title(); ?>"/>
+        <?php }?>
         </a>
         
         <div class="inpost">
@@ -105,8 +109,9 @@ while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $pos
 	
     <div class="mosaicitem45">
         <a href="<?php the_permalink(); ?>">
-        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight'); ?>
+        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight');  if($image){?>
         <img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=240" alt="<?php the_title(); ?>"/>
+        <?php }?>
         </a>
         
         <div class="inpost">
@@ -126,8 +131,9 @@ while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $pos
 	
     <div class="mosaicitem46">
         <a href="<?php the_permalink(); ?>">
-        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight'); ?>
+        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight');  if($image){?>
         <img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=240" alt="<?php the_title(); ?>"/>
+        <?php }?>
         </a>
         
         <div class="inpost">
@@ -147,8 +153,9 @@ while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $pos
 	
     <div class="mosaicitem47">
         <a href="<?php the_permalink(); ?>">
-        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight'); ?>
+        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight');  if($image){ ?>
         <img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=240" alt="<?php the_title(); ?>"/>
+        <?php }?>
         </a>
         
         <div class="inpost">
@@ -168,8 +175,9 @@ while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $pos
 	
     <div class="mosaicitem48">
         <a href="<?php the_permalink(); ?>">
-        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight'); ?>
+        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square_eight');  if($image){?>
         <img src="<?php echo get_template_directory_uri(); ?>/js/timthumb.php?src=<?php echo $image[0]; ?>&amp;w=240&amp;h=240" alt="<?php the_title(); ?>"/>
+        <?php }?>
         </a>
         
         <div class="inpost">
