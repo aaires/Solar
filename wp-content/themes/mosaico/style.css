@@ -3581,7 +3581,7 @@ max-width:960px;}
 @media screen and (max-width: 700px){
 #mySlider dd, #mySlider dl{
   width: 100% !important;
-  height: auto !important;
+//  height: auto !important;
 }
   #galeria{
     height: 300px !important;
@@ -3596,7 +3596,7 @@ max-width:960px;}
 @media screen and (max-width: 430px){
 #mySlider dd, #mySlider dl{
   width: 100% !important;
-  height: auto !important;
+  //height: auto !important;
 }
   #galeria{
     height: 200px !important;
@@ -3608,3 +3608,5 @@ max-width:960px;}
   }
 
 }
+
+.evoslider .default dd { background: transparent }
