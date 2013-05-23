@@ -34,9 +34,11 @@
             <div class="newsletter">
             <?php _e('Newsletter','solar'); ?>
             
-            
+            <?php if(ICL_LANGUAGE_CODE == 'pt-pt') {?>
             <form action="http://solaregasmoniz.us6.list-manage2.com/subscribe/post?u=c924c99c0d0356d4e2c384f1e&amp;id=e82544f9aa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-			
+			<?php } else {?>
+			<form action="http://solaregasmoniz.us6.list-manage.com/subscribe/post?u=c924c99c0d0356d4e2c384f1e&amp;id=72b282ed19" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+			<?php }?>
 				<input type="text" name="MERGE1" id="MERGE1" value="" placeholder="<?php _e('Name','solar');?>" >
 			
 				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="<?php _e('e-mail','solar');?>" required>
